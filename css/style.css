@@ -132,6 +132,11 @@ font-family: 'Teko', sans-serif;
     border-radius: 30px;
 }
 
+.img-text-about {
+    color: white;
+    text-align: center;
+}
+
 .about-grid .item2 {
     grid-area: b;
 }
