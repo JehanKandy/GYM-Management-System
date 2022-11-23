@@ -9,6 +9,9 @@
     <div class="topic">
         “Strength does not come <br> from physical capacity. <br> It comes from an indomitable will.”
     </div>
+    <div class="person">
+        -Mahatma Gandhi
+    </div>
 </div>
 <div class="follow">
     <div class="icon1">hi</div>
