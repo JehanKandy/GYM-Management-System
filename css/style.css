@@ -41,6 +41,7 @@ font-family: 'Teko', sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 25px;
+    margin-right: 25px;
 }
 
 .brands-grid {
@@ -56,10 +57,51 @@ font-family: 'Teko', sans-serif;
     margin-bottom: 20px;
 }
 
+.brands-grid .icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6 {
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
 .brands-grid .icon1 {
     grid-area: a;
     background-image: url("../images/sup2.jfif");
-    background-position: center;
-    background-size: cover;
-    border-radius: 40px;
+}
+
+.brands-grid .icon2 {
+    grid-area: b;
+    background-image: url("../images/sup5.jfif");
+}
+
+.brands-grid .icon3 {
+    grid-area: c;
+    background-image: url("../images/sup7.png");
+}
+
+.brands-grid .icon4 {
+    grid-area: d;
+    background-image: url("../images/sup6.png");
+}
+
+.brands-grid .icon5 {
+    grid-area: e;
+    background-image: url("../images/sup8.jfif");
+}
+
+.brands-grid .icon6 {
+    grid-area: f;
+    background-image: url("../images/sup3.png");
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .body-home {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/body4.jpg");
+    }
 }
