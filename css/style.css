@@ -99,7 +99,7 @@ font-family: 'Teko', sans-serif;
 }
 
 .home-about {
-    background-color: rgb(240, 239, 239);
+    background-color: rgba(241, 240, 240, 0.719);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -150,6 +150,9 @@ font-family: 'Teko', sans-serif;
 
 .about-grid .item2 .topic2 {
     font-size: 50px;
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-style: italic;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
