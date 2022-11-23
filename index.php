@@ -24,6 +24,10 @@
     </div>
 </div>
 
+<div class="home-about">
+    hi all
+</div>
+
 <?php 
     include("lib/layouts/footer_home.php");
 ?>
