@@ -13,15 +13,15 @@
         -Mahatma Gandhi
     </div>
 </div>
-<div class="follow">
-    <div class="icon1">icon1</div>
-    <div class="icon2">icon1</div>
-    <div class="icon3">icon1</div>
-    <div class="icon4">icon1</div>
-    <div class="icon5">icon1</div>
-    <div class="icon6">icon1</div>
-    <div class="icon7">icon1</div>
-    <div class="icon8">icon1</div>
+<div class="brands">
+    <div class="brands-grid">
+        <div class="icon1"></div>
+        <div class="icon2"></div>
+        <div class="icon3"></div>
+        <div class="icon4"></div>
+        <div class="icon5"></div>
+        <div class="icon6"></div>
+    </div>
 </div>
 
 <?php 
