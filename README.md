@@ -14,3 +14,6 @@ GYM Management System
  - css
  - - css/style.js
  - index.php
+ - lib
+ - - lib/layouts
+ - - - lib/layouts/
