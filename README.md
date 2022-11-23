@@ -8,5 +8,6 @@ GYM Management System
 <br>
 
 # DEVELOPMENT HISTORY
+
 <br>
-<b>
+<b>23 November 2022</b>
