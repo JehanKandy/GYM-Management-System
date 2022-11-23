@@ -128,7 +128,8 @@ font-family: 'Teko', sans-serif;
     height: 60vh;
     background-position: center;
     background-size: cover;
-    margin: 50px;
+    margin: 20px;
+    border-radius: 30px;
 }
 
 .about-grid .item2 {
