@@ -12,3 +12,5 @@ GYM Management System
 <br>
 <b>23 November 2022</b><br>
 1. DEVELOP 
+  - css
+  - - css/style.css
