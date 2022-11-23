@@ -17,3 +17,4 @@ GYM Management System
  - lib
  - - lib/layouts
  - - - lib/layouts/footer_home.php
+ - - - lib.layouts/header.php
