@@ -40,6 +40,13 @@
             <div class="topic2">
                 GYM WORKOUT
             </div>
+            <div class="few-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius laudantium pariatur corrupti delectus. Omnis animi praesentium eius deserunt totam voluptate vel sapiente a ratione magnam voluptas at, veritatis hic.
+                Incidunt delectus laudantium, cum officia nam commodi magnam distinctio eaque consequatur nesciunt obcaecati labore, atque recusandae quisquam tempore eligendi unde, voluptates dicta. Consectetur cum, labore possimus quod iste suscipit provident.
+                Est velit assumenda et. Voluptas maxime velit quidem, id asperiores, doloremque ratione incidunt et officiis quis commodi repellat maiores ab dignissimos possimus deleniti. Dolor itaque in quasi hic enim cupiditate.
+                Enim, amet. Distinctio officiis est nam ipsam et voluptate molestias natus sint, alias repudiandae, hic iste esse repellendus amet accusamus. Reiciendis corrupti quisquam hic earum asperiores, deserunt alias pariatur unde!
+                Sint inventore alias asperiores velit quidem commodi? Omnis quo nihil debitis. Sapiente molestiae nostrum dolore illo, alias suscipit omnis distinctio doloremque in at consectetur veniam aliquid ab nobis assumenda sunt.
+            </div>
         </div>
     </div>
 </div>
@@ -47,4 +54,3 @@
 <?php 
     include("lib/layouts/footer_home.php");
 ?>
-
