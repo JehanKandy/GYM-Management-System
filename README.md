@@ -7,5 +7,8 @@ GYM Management System
 # DEVELOPMENT HISTORY
 
 <br>
-<b>23 November 2022</b><br>
-1. DEVELOP 
+
+<b>02 September 2022</b>
+1. DEVELOP
+ - js
+ - - js/script.js
