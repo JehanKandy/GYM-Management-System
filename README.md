@@ -13,3 +13,4 @@ GYM Management System
  - start to develop the project
  - css
  - - css/style.js
+ - index.php
