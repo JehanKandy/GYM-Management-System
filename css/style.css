@@ -11,3 +11,9 @@ font-family: 'Roboto Flex', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Teko', sans-serif;
 */
+
+.body-home {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
