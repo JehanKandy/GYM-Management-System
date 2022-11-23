@@ -28,6 +28,11 @@ font-family: 'Teko', sans-serif;
     text-align: center;
 }
 
+.body-home .person {
+    margin-top: 25px;
+    color: orange;
+}
+
 .follow {
     display: grid;
     width: 100%;
