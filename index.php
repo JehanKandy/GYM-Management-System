@@ -5,10 +5,13 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<img src="images/body1.jpg" alt="body1" class="body-home">
-
+<div class="body-home">
+    <div class="topic">
+        “Strength does not come from physical capacity. It comes from an indomitable will.”
+    </div>
+</div>
 <div class="follow">
-    
+    <div class="icon1">hi</div>
 </div>
 
 <?php 
