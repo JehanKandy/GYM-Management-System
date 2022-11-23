@@ -102,6 +102,8 @@ font-family: 'Teko', sans-serif;
     background-color: rgb(224, 224, 224);
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
