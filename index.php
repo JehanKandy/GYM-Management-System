@@ -28,7 +28,7 @@
     <div class="about-grid">
         <div class="item1">
             <div class="img-about">
-                hi all
+                GYM WORKOUT
             </div>
         </div>
         <div class="item2">hi</div>
