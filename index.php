@@ -28,10 +28,19 @@
     <div class="about-grid">
         <div class="item1">
             <div class="img-about">
+                <div class="img-text-about">
+                    GYM WORKOUT
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="topic1">
+                Welcome to
+            </div>
+            <div class="topic2">
                 GYM WORKOUT
             </div>
         </div>
-        <div class="item2">hi</div>
     </div>
 </div>
 
