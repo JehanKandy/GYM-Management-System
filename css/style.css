@@ -14,6 +14,23 @@ font-family: 'Teko', sans-serif;
 
 .body-home {
     width: 100%;
+    height: 95vh;
     background-position: center;
     background-size: cover;
+    background-image: url("../images/body3.jpg");
+}
+
+.body-home .topic {
+    color: white;
+}
+
+.follow {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(350px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d" "e f g h";
+    padding: 45 45 45 45;
 }
