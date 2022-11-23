@@ -7,7 +7,7 @@
 
 <div class="body-home">
     <div class="topic">
-        “Strength does not come from physical capacity. It comes from an indomitable will.”
+        “Strength does not come <br> from physical capacity. <br> It comes from an indomitable will.”
     </div>
 </div>
 <div class="follow">
