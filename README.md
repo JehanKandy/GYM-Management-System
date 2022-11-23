@@ -13,5 +13,5 @@ GYM Management System
 
 <b>02 September 2022</b>
 1. DEVELOP
- - js
- - - js/script.js
+ - css
+ - - css/style.js
