@@ -7,6 +7,9 @@
 
 <img src="images/body1.jpg" alt="body1" class="body-home">
 
+<div class="follow">
+    
+</div>
 
 <?php 
     include("lib/layouts/footer_home.php");
