@@ -19,12 +19,12 @@
                     <h5 class="text-uppercase md-4 font-wight-bold text-warning">contact details</h5>
                     <p><i class="fas fa-map-marked-alt"></i> &nbsp;88/A, ABC Street, Kandy, Sri Lanka</p>
                     <p><i class="fas fa-phone-alt"></i>&nbsp; +94 77 806 4983</p>
-                    <p><i class="fas fa-envelope-open"></i> &nbsp; maleesha123@abc.com</p>
+                    <p><i class="fas fa-envelope-open"></i> &nbsp; maneesha123@abc.com</p>
                 </div>
                 <hr class="mb-4">
                 <div class="col-md-7 col-lg-8">
                     <p>Copyright <i class="far fa-copyright"></i> Project GYM Workout : 2022 All Right Reserved by : 
-                        <a href="#" style="text-decoration:none;" class="text-warning">Maleesha</a></p>
+                        <a href="#" style="text-decoration:none;" class="text-warning">Maneesha</a></p>
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <div class="text-center text-md-right">
