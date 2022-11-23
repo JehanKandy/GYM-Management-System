@@ -14,7 +14,14 @@
     </div>
 </div>
 <div class="follow">
-    <div class="icon1">hi</div>
+    <div class="icon1">icon1</div>
+    <div class="icon2">icon1</div>
+    <div class="icon3">icon1</div>
+    <div class="icon4">icon1</div>
+    <div class="icon5">icon1</div>
+    <div class="icon6">icon1</div>
+    <div class="icon7">icon1</div>
+    <div class="icon8">icon1</div>
 </div>
 
 <?php 
