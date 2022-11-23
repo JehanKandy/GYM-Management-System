@@ -153,6 +153,24 @@ font-family: 'Teko', sans-serif;
     color: black;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: italic;
+    font-weight: bold;
+}
+
+.more-about-btn {
+    border: 2px solid orange;
+    height: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.more-about-btn:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
