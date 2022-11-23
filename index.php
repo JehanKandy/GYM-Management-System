@@ -25,7 +25,7 @@
 </div>
 
 <div class="home-about">
-    <div class="grid">
+    <div class="about-grid">
         <div class="item1">hi</div>
         <div class="item2">hi</div>
     </div>
