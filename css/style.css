@@ -99,7 +99,7 @@ font-family: 'Teko', sans-serif;
 }
 
 .home-about {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(240, 239, 239);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -121,6 +121,13 @@ font-family: 'Teko', sans-serif;
 
 .about-grid .item1 {
     grid-area: a;
+}
+
+.about-grid .item1 .img-about {
+    background-image: url("../images/body5.jpg");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .about-grid .item2 {
