@@ -10,5 +10,5 @@ GYM Management System
 # DEVELOPMENT HISTORY
 
 <br>
-<b>23 November 2022</b>
+<b>23 November 2022</b><br>
 1. DEVELOP 
