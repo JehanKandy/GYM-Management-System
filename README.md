@@ -10,5 +10,6 @@ GYM Management System
 
 <b>02 September 2022</b>
 1. DEVELOP
+ - start to develop the project
  - css
  - - css/style.js
