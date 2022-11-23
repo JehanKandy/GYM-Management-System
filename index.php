@@ -47,6 +47,9 @@
                 Enim, amet. Distinctio officiis est nam ipsam et voluptate molestias natus sint, alias repudiandae, hic iste esse repellendus amet accusamus. Reiciendis corrupti quisquam hic earum asperiores, deserunt alias pariatur unde!
                 Sint inventore alias asperiores velit quidem commodi? Omnis quo nihil debitis. Sapiente molestiae nostrum dolore illo, alias suscipit omnis distinctio doloremque in at consectetur veniam aliquid ab nobis assumenda sunt.
             </div>
+
+            <a href="#"><button class="more-about-btn">Read More</button></a>
+
         </div>
     </div>
 </div>
@@ -54,3 +57,5 @@
 <?php 
     include("lib/layouts/footer_home.php");
 ?>
+
+<script src="js/script.js"></script>
