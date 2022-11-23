@@ -144,6 +144,14 @@ font-family: 'Teko', sans-serif;
     grid-area: b;
 }
 
+.about-grid .item2 .topic1 {
+    font-size: 30px;
+}
+
+.about-grid .item2 .topic2 {
+    font-size: 50px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
         width: 100%;
@@ -151,7 +159,7 @@ font-family: 'Teko', sans-serif;
         background-image: url("../images/body5.jpg");
     }
     .body-home .topic {
-        padding-top: 220px;
+        padding-top: 210px;
         color: white;
         font-family: 'Kdam Thmor Pro', sans-serif;
         font-size: 200%;
