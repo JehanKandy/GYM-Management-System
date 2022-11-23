@@ -23,9 +23,6 @@
               <a class="nav-link text-white" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link text-white" href="#">Pricing</a>
             </li>
             <li class="nav-item">
