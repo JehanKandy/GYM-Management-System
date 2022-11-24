@@ -283,6 +283,18 @@ font-family: 'Teko', sans-serif;
     color: orange;
 }
 
+.team-grid .item2:hover .team-name {
+    color: orange;
+}
+
+.team-grid .item3:hover .team-name {
+    color: orange;
+}
+
+.team-grid .item4:hover .team-name {
+    color: orange;
+}
+
 .team-post {
     text-align: center;
     color: orange;
@@ -292,6 +304,18 @@ font-family: 'Teko', sans-serif;
 }
 
 .team-grid .item1:hover .team-post {
+    color: black;
+}
+
+.team-grid .item2:hover .team-post {
+    color: black;
+}
+
+.team-grid .item3:hover .team-post {
+    color: black;
+}
+
+.team-grid .item4:hover .team-post {
     color: black;
 }
 
