@@ -71,12 +71,30 @@
             </div>
             <div class="item2">
                 <img src="images/person2.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    Emma
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
             </div>
             <div class="item3">
                 <img src="images/person3.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    James
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
             </div>
             <div class="item4">
                 <img src="images/person4.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    William
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
             </div>
         </div>
     </div>
