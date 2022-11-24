@@ -189,6 +189,10 @@ font-family: 'Teko', sans-serif;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
+.team-members .body {
+    padding: 10px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
         width: 100%;
