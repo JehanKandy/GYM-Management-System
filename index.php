@@ -54,6 +54,12 @@
     </div>
 </div>
 
+<div class="team-members">
+    <div class="title">
+        Out Team
+    </div>
+</div>
+
 <?php 
     include("lib/layouts/footer_home.php");
 ?>
