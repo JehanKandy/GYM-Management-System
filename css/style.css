@@ -229,7 +229,15 @@ font-family: 'Teko', sans-serif;
     text-align: center;
     color: white;
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.team-post {
+    text-align: center;
+    color: orange;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-style: italic;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
