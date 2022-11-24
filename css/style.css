@@ -178,11 +178,14 @@ font-family: 'Teko', sans-serif;
     height: 100vh;
     background-position: center;
     background-size: cover;
+    padding: 50px 30px 50px 30px;
 }
 
 .team-members .title {
-    color: orange;
-    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
