@@ -24,3 +24,5 @@ GYM Management System
 
 <b>24 November 2022</b>
 1. DEVELOP
+
+2. UPDATE
