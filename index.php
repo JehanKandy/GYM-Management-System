@@ -62,6 +62,12 @@
         <div class="team-grid">
             <div class="item1">
                 <img src="images/person1.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    John Wick
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
             </div>
             <div class="item2">
                 <img src="images/person2.jfif" alt="person1" class="team-member-profile">
