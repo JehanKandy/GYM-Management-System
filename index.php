@@ -59,7 +59,20 @@
         Out Team
     </div>
     <div class="body">
-        hi all
+        <div class="team-grid">
+            <div class="item1">
+                <img src="images/person1.jfif" alt="person1" class="team-member-profile">
+            </div>
+            <div class="item2">
+                <img src="images/person2.jfif" alt="person1" class="team-member-profile">
+            </div>
+            <div class="item3">
+                <img src="images/person3.jfif" alt="person1" class="team-member-profile">
+            </div>
+            <div class="item4">
+                <img src="images/person4.jfif" alt="person1" class="team-member-profile">
+            </div>
+        </div>
     </div>
 </div>
 
