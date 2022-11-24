@@ -193,6 +193,32 @@ font-family: 'Teko', sans-serif;
     padding: 10px;
 }
 
+.team-members .body .team-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c d";
+    padding: 45 45 45 45;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team-grid .item1 {
+    grid-area: a;
+    border: 1px solid white;
+    padding: 60px 20px 60px 20px;
+}
+
+.team-member-profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 25%;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
         width: 100%;
