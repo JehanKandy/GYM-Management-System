@@ -215,6 +215,26 @@ font-family: 'Teko', sans-serif;
 
 .team-grid .item1 {
     grid-area: a;
+    transition: 0.5s;
+}
+
+.team-grid .item2 {
+    grid-area: b;
+}
+
+.team-grid .item3 {
+    grid-area: c;
+}
+
+.team-grid .item4 {
+    grid-area: d;
+}
+
+.team-grid .item1:hover {
+    grid-area: a;
+    background-color: white;
+    border-radius: 20px;
+    color: black
 }
 
 .team-member-profile {
@@ -229,6 +249,10 @@ font-family: 'Teko', sans-serif;
     color: white;
     padding-top: 15px;
     font-size: 25px;
+}
+
+.team-grid .item1:hover .team-name {
+    color: black;
 }
 
 .team-post {
