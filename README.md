@@ -29,3 +29,4 @@ GYM Management System
  - lib
  - - lib/layouts
  - - - lib/layouts/nav.php
+ - index.php
