@@ -179,6 +179,7 @@ font-family: 'Teko', sans-serif;
     background-position: center;
     background-size: cover;
     padding: 50px 30px 50px 30px;
+    /* padding--> top,right,bottom,left */
 }
 
 .team-members .title {
