@@ -58,6 +58,9 @@
     <div class="title">
         Out Team
     </div>
+    <div class="body">
+        hi all
+    </div>
 </div>
 
 <?php 
