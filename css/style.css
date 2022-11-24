@@ -215,23 +215,50 @@ font-family: 'Teko', sans-serif;
 
 .team-grid .item1 {
     grid-area: a;
-    transition: 0.5s;
+    transition: 1.5s;
 }
 
 .team-grid .item2 {
     grid-area: b;
+    transition: 1.5s;
 }
 
 .team-grid .item3 {
     grid-area: c;
+    transition: 1.5s;
 }
 
 .team-grid .item4 {
     grid-area: d;
+    transition: 1.5s;
 }
 
 .team-grid .item1:hover {
     grid-area: a;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.team-grid .item2:hover {
+    grid-area: b;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.team-grid .item3:hover {
+    grid-area: c;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.team-grid .item4:hover {
+    grid-area: d;
     background-color: white;
     border-radius: 20px;
     color: black;
