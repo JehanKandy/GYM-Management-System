@@ -68,6 +68,10 @@
                 <div class="team-post">
                     gym trainer
                 </div>
+                <div class="member-infor">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae labore iusto cum, tempora itaque officia enim at ipsa inventore deleniti voluptates, id voluptatem nihil autem dolores aut ipsam cumque doloribus!
+                    Ducimus provident at nesciunt, corporis repellat tenetur quibusdam minima deleniti laborum consectetur voluptatibus sapiente quas repudiandae id quod quasi obcaecati debitis officiis veniam libero facilis vitae! Neque repudiandae minus dolorum?
+                </div>
             </div>
             <div class="item2">
                 <img src="images/person2.jfif" alt="person1" class="team-member-profile">
@@ -76,6 +80,10 @@
                 </div>
                 <div class="team-post">
                     gym trainer
+                </div>
+                <div class="member-infor">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae labore iusto cum, tempora itaque officia enim at ipsa inventore deleniti voluptates, id voluptatem nihil autem dolores aut ipsam cumque doloribus!
+                    Ducimus provident at nesciunt, corporis repellat tenetur quibusdam minima deleniti laborum consectetur voluptatibus sapiente quas repudiandae id quod quasi obcaecati debitis officiis veniam libero facilis vitae! Neque repudiandae minus dolorum?
                 </div>
             </div>
             <div class="item3">
@@ -98,6 +106,10 @@
                 </div>
                 <div class="team-post">
                     gym trainer
+                </div>
+                <div class="member-infor">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae labore iusto cum, tempora itaque officia enim at ipsa inventore deleniti voluptates, id voluptatem nihil autem dolores aut ipsam cumque doloribus!
+                    Ducimus provident at nesciunt, corporis repellat tenetur quibusdam minima deleniti laborum consectetur voluptatibus sapiente quas repudiandae id quod quasi obcaecati debitis officiis veniam libero facilis vitae! Neque repudiandae minus dolorum?
                 </div>
             </div>
         </div>
