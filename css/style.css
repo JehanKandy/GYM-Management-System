@@ -393,6 +393,14 @@ font-family: 'Teko', sans-serif;
     .img-text-about {
         font-size: 40px;
     }
+    .team-members {
+        background-image: url("../images/body-mobile.jpg");
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        padding: 50px 30px 50px 30px;
+        /* padding--> top,right,bottom,left */
+    }
     .team-members .body .team-grid {
         display: grid;
         width: 100%;
