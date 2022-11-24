@@ -28,3 +28,4 @@ GYM Management System
 2. UPDATE
  - lib
  - - lib/layouts
+ - - - lib/layouts/nav.php
