@@ -21,3 +21,6 @@ GYM Management System
  - - - lib/layouts/nav.php
  - js
  - - js/script.js
+
+<b>23 November 2022</b>
+1. DEVELOP
