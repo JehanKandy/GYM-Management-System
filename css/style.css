@@ -180,6 +180,11 @@ font-family: 'Teko', sans-serif;
     background-size: cover;
 }
 
+.team-members .title {
+    color: orange;
+    font-weight: bold;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
         width: 100%;
