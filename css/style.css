@@ -206,10 +206,16 @@ font-family: 'Teko', sans-serif;
     margin-bottom: 20px;
 }
 
-.team-grid .item1 {
-    grid-area: a;
+.team-grid .item1,
+.item2,
+.item3,
+.item4 {
     border: 1px solid white;
     padding: 60px 20px 60px 20px;
+}
+
+.team-grid .item1 {
+    grid-area: a;
 }
 
 .team-member-profile {
