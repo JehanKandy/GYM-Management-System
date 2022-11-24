@@ -240,6 +240,12 @@ font-family: 'Teko', sans-serif;
     font-style: italic;
 }
 
+.member-infor {
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
         width: 100%;
