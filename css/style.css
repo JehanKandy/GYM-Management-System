@@ -234,7 +234,8 @@ font-family: 'Teko', sans-serif;
     grid-area: a;
     background-color: white;
     border-radius: 20px;
-    color: black
+    color: black;
+    cursor: pointer;
 }
 
 .team-member-profile {
