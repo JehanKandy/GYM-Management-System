@@ -1,301 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Kdam+Thmor+Pro&family=Roboto+Flex:opsz@8..144&family=Rubik&family=Teko:wght@300&display=swap+Sharp');
+<?php 
+    include("lib/layouts/header.php");
+    include("lib/layouts/nav.php");
+?>
 
-/*
+<link rel="stylesheet" href="css/style.css">
 
-use font families
+<div class="body-home">
+    <div class="topic">
+        “Strength does not come <br> from physical capacity. <br> It comes from an indomitable will.”
+    </div>
+    <div class="person">
+        -Mahatma Gandhi
+    </div>
+</div>
+<div class="brands">
+    <div class="brands-grid">
+        <div class="icon1"></div>
+        <div class="icon2"></div>
+        <div class="icon3"></div>
+        <div class="icon4"></div>
+        <div class="icon5"></div>
+        <div class="icon6"></div>
+    </div>
+</div>
 
-font-family: 'Bebas Neue', cursive;
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Kdam Thmor Pro', sans-serif;
-font-family: 'Roboto Flex', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Teko', sans-serif;
-*/
+<div class="home-about">
+    <div class="about-grid">
+        <div class="item1">
+            <div class="img-about">
+                <div class="img-text-about">
+                    GYM WORKOUT
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="topic1">
+                Welcome to
+            </div>
+            <div class="topic2">
+                GYM WORKOUT
+            </div>
+            <div class="few-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius laudantium pariatur corrupti delectus. Omnis animi praesentium eius deserunt totam voluptate vel sapiente a ratione magnam voluptas at, veritatis hic.
+                Incidunt delectus laudantium, cum officia nam commodi magnam distinctio eaque consequatur nesciunt obcaecati labore, atque recusandae quisquam tempore eligendi unde, voluptates dicta. Consectetur cum, labore possimus quod iste suscipit provident.
+                Est velit assumenda et. Voluptas maxime velit quidem, id asperiores, doloremque ratione incidunt et officiis quis commodi repellat maiores ab dignissimos possimus deleniti. Dolor itaque in quasi hic enim cupiditate.
+                Enim, amet. Distinctio officiis est nam ipsam et voluptate molestias natus sint, alias repudiandae, hic iste esse repellendus amet accusamus. Reiciendis corrupti quisquam hic earum asperiores, deserunt alias pariatur unde!
+                Sint inventore alias asperiores velit quidem commodi? Omnis quo nihil debitis. Sapiente molestiae nostrum dolore illo, alias suscipit omnis distinctio doloremque in at consectetur veniam aliquid ab nobis assumenda sunt.
+            </div>
 
-.body-home {
-    width: 100%;
-    height: 95vh;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/body3.jpg");
-}
+            <a href="#"><button class="more-about-btn">Read More</button></a>
 
-.body-home .topic {
-    padding-top: 230px;
-    color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 400%;
-    text-align: center;
-}
+        </div>
+    </div>
+</div>
 
-.body-home .person {
-    margin-top: 25px;
-    color: orange;
-    text-align: right;
-    padding-right: 300px;
-    font-size: 350%;
-    font-style: italic;
-}
+<div class="team-members">
+    <div class="title">
+        Out Team
+    </div>
+    <div class="body">
+        <div class="team-grid">
+            <div class="item1">
+                <img src="images/person1.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    John Wick
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
+            </div>
+            <div class="item2">
+                <img src="images/person2.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    Emma
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
+            </div>
+            <div class="item3">
+                <img src="images/person3.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    James
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
+                <div class="member-infor">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae labore iusto cum, tempora itaque officia enim at ipsa inventore deleniti voluptates, id voluptatem nihil autem dolores aut ipsam cumque doloribus!
+                    Ducimus provident at nesciunt, corporis repellat tenetur quibusdam minima deleniti laborum consectetur voluptatibus sapiente quas repudiandae id quod quasi obcaecati debitis officiis veniam libero facilis vitae! Neque repudiandae minus dolorum?
+                </div>
+            </div>
+            <div class="item4">
+                <img src="images/person4.jfif" alt="person1" class="team-member-profile">
+                <div class="team-name">
+                    William
+                </div>
+                <div class="team-post">
+                    gym trainer
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-.brands {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
+<?php 
+    include("lib/layouts/footer_home.php");
+?>
 
-.brands-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d e f";
-    padding: 45 45 45 45;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.brands-grid .icon1,
-.icon2,
-.icon3,
-.icon4,
-.icon5,
-.icon6 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-}
-
-.brands-grid .icon1 {
-    grid-area: a;
-    background-image: url("../images/sup2.jfif");
-}
-
-.brands-grid .icon2 {
-    grid-area: b;
-    background-image: url("../images/sup5.jfif");
-}
-
-.brands-grid .icon3 {
-    grid-area: c;
-    background-image: url("../images/sup7.png");
-}
-
-.brands-grid .icon4 {
-    grid-area: d;
-    background-image: url("../images/sup6.png");
-}
-
-.brands-grid .icon5 {
-    grid-area: e;
-    background-image: url("../images/sup8.jfif");
-}
-
-.brands-grid .icon6 {
-    grid-area: f;
-    background-image: url("../images/sup3.png");
-}
-
-.home-about {
-    background-color: rgba(241, 240, 240, 0.719);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.home-about .about-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b";
-    padding: 45 45 45 45;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.about-grid .item1 {
-    grid-area: a;
-}
-
-.about-grid .item1 .img-about {
-    background-image: url("../images/body5.jpg");
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
-    margin: 20px;
-    border-radius: 30px;
-}
-
-.img-text-about {
-    color: white;
-    text-align: center;
-    padding-top: 250px;
-    font-size: 50px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.about-grid .item2 {
-    grid-area: b;
-}
-
-.about-grid .item2 .topic1 {
-    font-size: 30px;
-}
-
-.about-grid .item2 .topic2 {
-    font-size: 50px;
-    color: black;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.more-about-btn {
-    border: 2px solid orange;
-    height: 50px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-top: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-.more-about-btn:hover {
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-}
-
-.team-members {
-    background-image: url("../images/body-about.jpg");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    padding: 50px 30px 50px 30px;
-    /* padding--> top,right,bottom,left */
-}
-
-.team-members .title {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.team-members .body {
-    padding: 10px;
-}
-
-.team-members .body .team-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d";
-    padding: 45 45 45 45;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.team-grid .item1,
-.item2,
-.item3,
-.item4 {
-    border: 1px solid white;
-    padding: 60px 20px 60px 20px;
-}
-
-.team-grid .item1 {
-    grid-area: a;
-}
-
-.team-member-profile {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-left: 28%;
-}
-
-.team-name {
-    text-align: center;
-    color: white;
-    padding-top: 15px;
-    font-size: 25px;
-}
-
-.team-post {
-    text-align: center;
-    color: orange;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-style: italic;
-}
-
-.member-infor {
-    padding-top: 20px;
-    color: white;
-    text-align: center;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .body-home {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .body-home .topic {
-        padding-top: 210px;
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 200%;
-        text-align: center;
-    }
-    .body-home .person {
-        margin-top: 15px;
-        color: orange;
-        text-align: right;
-        padding-right: 20px;
-        font-size: 150%;
-        font-style: italic;
-        padding-bottom: 50px;
-    }
-    .brands-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d" "e f";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .home-about .about-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .about-grid .item2 .topic2 {
-        font-size: 40px;
-    }
-    .img-text-about {
-        font-size: 40px;
-    }
-}
+<script src="js/script.js"></script>
