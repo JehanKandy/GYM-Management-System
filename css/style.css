@@ -692,6 +692,7 @@ font-family: 'Teko', sans-serif;
 }
 
 .subscribe .body .infor {
+    padding-top: 20px;
     text-align: center;
     color: white;
     font-family: 'Fjalla One', sans-serif;
