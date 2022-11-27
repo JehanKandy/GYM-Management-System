@@ -39,9 +39,15 @@
       </div>
     </nav>
 
+
+<div class="shopping">
+    <div class="title">
+        Shopping
+    </div>
+</div>
+
 <?php
     include("../lib/layouts/footer_home.php")
-
 ?>
 
 <script src="../js/script.js"></script>
