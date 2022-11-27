@@ -498,6 +498,7 @@ font-family: 'Teko', sans-serif;
 .p-item4 {
     border-radius: 15px;
     transition: 0.5s;
+    border: 1px solid rgb(231, 231, 231);
 }
 
 .p-item1 {
@@ -593,6 +594,9 @@ font-family: 'Teko', sans-serif;
 
 .p-item2:hover {
     cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .p-item2:hover .p-name {
@@ -609,6 +613,9 @@ font-family: 'Teko', sans-serif;
 
 .p-item3:hover {
     cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .p-item3:hover .p-name {
@@ -625,6 +632,9 @@ font-family: 'Teko', sans-serif;
 
 .p-item4:hover {
     cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .p-item4:hover .p-name {
