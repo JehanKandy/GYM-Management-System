@@ -169,7 +169,8 @@
     <?php 
         include("lib/function/function.php");
         if(isset($_POST['subscribe'])){
-            
+            $result = subsucribe_user($_POST['sub_email']);
+            echo $result;
         }
     ?>
 
