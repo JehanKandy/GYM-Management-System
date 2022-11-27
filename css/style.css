@@ -28,6 +28,11 @@ font-family: 'Teko', sans-serif;
     background-image: url("../images/body3.jpg");
 }
 
+.about-us .title {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
 .body-home .topic {
     padding-top: 230px;
     color: white;
