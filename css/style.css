@@ -523,9 +523,13 @@ font-family: 'Teko', sans-serif;
     text-align: center;
     padding: 50px 0px 50px 0px;
 }
-.product-btn{
-    
+
+.product-btn {
+    margin: 50px 0px 50px 0px;
+    border: 1px solid orange;
+    padding: 10px 20px 10px 20px;
 }
+
 
 /* 
     ***************************************************************************************
