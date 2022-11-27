@@ -48,11 +48,13 @@
 
 <div class="shop-content">
     <div class="product-title">Supplements</div>
-
-    <div class="supp-gird">
-        <div class="supp-item1">item1</div>
-        <div class="supp-item2">item1</div>
-        <div class="supp-item3">item1</div>
+    <div class="product-content">
+        <div class="p-grid">
+            <div class="p-item1">item1</div>
+            <div class="p-item2">item1</div>
+            <div class="p-item3">item1</div>
+            <div class="p-item4">item1</div>
+        </div>
     </div>
 
     <div class="product-title">GYM Equipment</div>
