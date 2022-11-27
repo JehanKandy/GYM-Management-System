@@ -151,7 +151,9 @@
         </div>
     </div>
 </div>
-
+<div class="subscribe">
+    <div class="title">get touch with us</div>
+</div>
 <?php 
     include("lib/layouts/footer_home.php");
 ?>
