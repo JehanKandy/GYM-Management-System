@@ -132,8 +132,10 @@
                 </div>
             </div>
         </div>
+        <a href="#"><button class="product-btn">More Products</button></a>
     </div>
 </div>
+
 
 <?php
     include("../lib/layouts/footer_home.php");
