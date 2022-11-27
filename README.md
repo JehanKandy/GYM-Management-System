@@ -59,3 +59,4 @@ GYM Management System
 
 2. UPDATE 
  - index.php
+ - css/style.css
