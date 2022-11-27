@@ -492,10 +492,16 @@ font-family: 'Teko', sans-serif;
     margin-bottom: 20px;
 }
 
-.p-item1 {
-    grid-area: a;
+.p-item1,
+.p-item2,
+.p-item3,
+.p-item4 {
     border-radius: 15px;
     transition: 0.5s;
+}
+
+.p-item1 {
+    grid-area: a;
 }
 
 .p-infor {
@@ -566,7 +572,9 @@ font-family: 'Teko', sans-serif;
     transition: 0.5s;
 }
 
-.p-item1:hover {}
+.p-item1:hover {
+    cursor: pointer;
+}
 
 .p-item1:hover .p-name {
     color: orange;
