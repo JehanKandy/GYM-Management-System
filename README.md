@@ -39,6 +39,7 @@ GYM Management System
  - docs
  - - docs/about.php
  - - docs/contact.php
+ - - docs/shop.php
  - lib
  - - lib/function
  - - - lib/function/config.php
