@@ -51,3 +51,17 @@ GYM Management System
 
 3. REMOVE 
  - lib/layouts/nav.php
+ 
+<hr> 
+ 
+ <b>27 November 2022</b>
+1. DEVELOP
+ - docs
+ - - docs/about.php
+ - - docs/contact.php
+ - - docs/shop.php
+ - lib
+ - - lib/function
+ - - - lib/function/config.php
+
+2. UPDATE 
