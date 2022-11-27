@@ -50,7 +50,7 @@
     <div class="product-title">Supplements</div>
     <div class="product-content">
         <div class="p-grid">
-            <div class="p-item1">item1</div>
+            <div class="p-item1"><img src="../images/supp1.jfif" alt=""></div>
             <div class="p-item2">item1</div>
             <div class="p-item3">item1</div>
             <div class="p-item4">item1</div>
