@@ -495,7 +495,11 @@ font-family: 'Teko', sans-serif;
 .p-item1 {
     grid-area: a;
     border: 1px solid gray;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+
+.p-infor {
+    padding: 20px;
 }
 
 .p-item2 {
