@@ -48,6 +48,20 @@
     </div>
 </div>
 
+<div class="about-content">
+    <div class="title">
+        GYM WORKOUT
+    </div>
+    <div class="body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur ullam nam, odio porro voluptates voluptatem dolor cumque optio est at! Molestias quidem tempore magnam. Pariatur magni ex quis.
+        Cum architecto vitae deserunt perspiciatis quidem cumque ad consectetur praesentium eos doloremque eum minus, explicabo quod. Delectus, placeat totam magni quas iure id? Minus ea quia culpa tenetur quos maxime.
+        Deserunt cumque, fugit, ipsum assumenda praesentium itaque quas illum neque illo numquam totam dolores ducimus inventore dolorum rerum provident optio sapiente vitae aperiam nostrum a. Eos explicabo debitis quam magnam!
+        Nisi, at maiores repudiandae voluptatem eveniet dolor porro quod aliquid suscipit harum assumenda cumque adipisci tempora modi cum officia nobis mollitia earum eum. Cumque quod, ducimus totam ipsum voluptas iste.
+        Quidem, esse quae delectus accusantium repudiandae minus rerum commodi iure fugiat nisi culpa recusandae neque veritatis qui vitae omnis quod doloremque provident cupiditate amet quaerat nemo. Rerum libero culpa delectus?
+        Dicta omnis odit repudiandae blanditiis rem placeat iste odio, quod, quos quasi repellendus sint at voluptates facere itaque magnam non, accusantium ducimus voluptas culpa sit eaque dolor esse. Totam, possimus.
+    </div>
+</div>
+
 <?php
     include("../lib/layouts/footer_home.php")
 
