@@ -554,10 +554,23 @@ font-family: 'Teko', sans-serif;
 .p-price {
     font-family: 'Fjalla One', sans-serif;
     color: red;
+    font-size: 20px;
 }
 
 .p-infor {
     font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.p-item1:hover .p-name {
+    color: orange;
+}
+
+.p-item1:hover .qty {
+    color: black;
+}
+
+.p-item1:hover .p-price {
+    font-size: ;
 }
 
 
