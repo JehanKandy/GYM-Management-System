@@ -39,6 +39,9 @@ GYM Management System
  - docs
  - - docs/about.php
  - - docs/contact.php
+ - lib
+ - - lib/function
+ - - - lib/function/config.php
 
 2. UPDATE
  - index.php
