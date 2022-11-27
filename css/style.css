@@ -494,7 +494,6 @@ font-family: 'Teko', sans-serif;
 
 .p-item1 {
     grid-area: a;
-    border: 1px solid gray;
     border-radius: 15px;
 }
 
@@ -530,6 +529,37 @@ font-family: 'Teko', sans-serif;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     background: none;
+    color: orange;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.product-btn:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.p-name {
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.qty {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p-price {
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+.p-infor {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
 }
 
 
