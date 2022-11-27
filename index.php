@@ -166,7 +166,7 @@
     <div class="title">get touch with us</div>
     <div class="body">
         <form action="<?php echo($_SERVER['PHP_SELF']);?>" method="post">
-            <center><input type="email" name="sub_email" class="email-sub"><br>
+            <center><input type="email" name="sub_email" class="email-sub" placeholder="Email"><br>
             <input type="submit" value="Subscribe" class="sub-btn" name="subscribe"></center>
         </form>
     </div>
