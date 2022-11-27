@@ -574,6 +574,8 @@ font-family: 'Teko', sans-serif;
 
 .p-item1:hover {
     cursor: pointer;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
 }
 
 .p-item1:hover .p-name {
