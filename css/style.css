@@ -653,6 +653,14 @@ font-family: 'Teko', sans-serif;
     padding: 70px 50px 70px 50px;
 }
 
+.subscribe .title {
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding-bottom: 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 
 /* 
     ***************************************************************************************
