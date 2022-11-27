@@ -55,6 +55,10 @@ font-family: 'Teko', sans-serif;
     font-size: 45px;
 }
 
+.about-content .body {
+    font-size: 20px;
+}
+
 .body-home .person {
     margin-top: 25px;
     color: orange;
