@@ -456,6 +456,11 @@ font-family: 'Teko', sans-serif;
         height: 100%;
         background-image: url("../images/body5.jpg");
     }
+    .aout-us {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/body5.jpg");
+    }
     .body-home .topic {
         padding-top: 210px;
         color: white;
@@ -537,6 +542,11 @@ font-family: 'Teko', sans-serif;
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .body-home {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/body5.jpg");
+    }
+    .about-us {
         width: 100%;
         height: 100%;
         background-image: url("../images/body5.jpg");
