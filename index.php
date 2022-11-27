@@ -32,9 +32,6 @@
               <a class="nav-link text-warning" href="">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link text-warning" href="#">Login</a>
             </li>
           </ul>
