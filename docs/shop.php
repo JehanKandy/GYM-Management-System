@@ -89,7 +89,7 @@
             </div>
         </div>
     </div>
-    <a href="#"><button class="product-btn">More Products</button></a>
+    <center><a href="#"><button class="product-btn">More Products</button></a></center>
 
     <div class="product-title">GYM Equipment</div>
     <div class="product-content">
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <a href="#"><button class="product-btn">More Products</button></a>
+        <center><a href="#"><button class="product-btn">More Products</button></a></center>
     </div>
 </div>
 
