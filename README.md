@@ -22,6 +22,8 @@ GYM Management System
  - js
  - - js/script.js
 
+<hr>
+
 <b>24 November 2022</b>
 1. DEVELOP
 
