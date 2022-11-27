@@ -42,5 +42,12 @@
       </div>
     </nav>
 
+<div class="about-us">
+    <div class="title">
+        
+    </div>
+</div>
+
+
 
 <script src="../js/script.js"></script>
