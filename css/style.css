@@ -588,6 +588,54 @@ font-family: 'Teko', sans-serif;
     font-size: 23px;
 }
 
+.p-item2:hover {
+    cursor: pointer;
+}
+
+.p-item2:hover .p-name {
+    color: orange;
+}
+
+.p-item2:hover .qty {
+    color: black;
+}
+
+.p-item2:hover .p-price {
+    font-size: 23px;
+}
+
+.p-item3:hover {
+    cursor: pointer;
+}
+
+.p-item3:hover .p-name {
+    color: orange;
+}
+
+.p-item3:hover .qty {
+    color: black;
+}
+
+.p-item3:hover .p-price {
+    font-size: 23px;
+}
+
+.p-item4:hover {
+    cursor: pointer;
+}
+
+.p-item4:hover .p-name {
+    color: orange;
+}
+
+.p-item4:hover .qty {
+    color: black;
+}
+
+.p-item4:hover .p-price {
+    font-size: 23px;
+}
+
 
 /* 
     ***************************************************************************************
