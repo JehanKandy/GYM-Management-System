@@ -38,6 +38,3 @@ GYM Management System
 1. DEVELOP
 
 2. UPDATE
- - lib/layouts/nav.php
- - index.php
- - css/style.css
