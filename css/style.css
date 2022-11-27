@@ -672,6 +672,16 @@ font-family: 'Teko', sans-serif;
     border: 1px solid white;
     background: none;
     color: white;
+    border-radius: 2px;
+}
+
+.subscribe .body .sub-btn {
+    width: 250px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    transition: 0.5s;
 }
 
 
