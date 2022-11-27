@@ -31,6 +31,9 @@ font-family: 'Teko', sans-serif;
 .about-us .title {
     color: white;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 45px;
 }
 
 .body-home .topic {
@@ -562,6 +565,14 @@ font-family: 'Teko', sans-serif;
         font-family: 'Kdam Thmor Pro', sans-serif;
         font-size: 200%;
         text-align: center;
+    }
+    .about-us .title {
+        color: white;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        text-align: center;
+        padding-top: 210px;
+        font-size: 45px;
+        padding-bottom: 100px;
     }
     .body-home .person {
         margin-top: 15px;
