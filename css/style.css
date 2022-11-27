@@ -543,7 +543,6 @@ font-family: 'Teko', sans-serif;
 .p-name {
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
-
 }
 
 .qty {
@@ -554,12 +553,11 @@ font-family: 'Teko', sans-serif;
 
 .p-price {
     font-family: 'Fjalla One', sans-serif;
-
+    color: red;
 }
 
 .p-infor {
     font-family: 'Kdam Thmor Pro', sans-serif;
-
 }
 
 
