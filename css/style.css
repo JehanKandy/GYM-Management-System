@@ -1,726 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Kdam+Thmor+Pro&family=Roboto+Flex:opsz@8..144&family=Rubik&family=Teko:wght@300&display=swap+Sharp');
-
-/*
-
-use font families
-
-font-family: 'Bebas Neue', cursive;
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Kdam Thmor Pro', sans-serif;
-font-family: 'Roboto Flex', sans-serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Teko', sans-serif;
-*/
-
-.body-home {
-    width: 100%;
-    height: 95vh;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/body3.jpg");
-}
-
-.about-us {
-    width: 100%;
-    height: 70vh;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../images/body3.jpg");
-}
-
-.about-us .title {
-    color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    text-align: center;
-    padding-top: 300px;
-    font-size: 45px;
-}
-
-.body-home .topic {
-    padding-top: 230px;
-    color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 400%;
-    text-align: center;
-}
-
-.about-content {
-    padding: 50px 40px 50px 40px;
-    text-align: center;
-}
-
-.about-content .title {
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    padding-bottom: 15px;
-    font-size: 45px;
-}
-
-.about-content .body {
-    font-size: 20px;
-}
-
-.body-home .person {
-    margin-top: 25px;
-    color: orange;
-    text-align: right;
-    padding-right: 300px;
-    font-size: 350%;
-    font-style: italic;
-}
-
-.brands {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.about-img-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(250px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d" "e f g h";
-    padding: 45 45 45 45;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.about-img-grid .img-item1,
-.img-item2,
-.img-item3,
-.img-item4,
-.img-item5,
-.img-item6,
-.img-item7,
-.img-item8 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item1 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item2 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item3 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item4 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item5 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item6 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item7 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.about-img-grid .img-item8 {
-    background-image: url("../images/sup2.jfif");
-}
-
-.brands-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d e f";
-    padding: 45 45 45 45;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.brands-grid .icon1,
-.icon2,
-.icon3,
-.icon4,
-.icon5,
-.icon6 {
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-}
-
-.brands-grid .icon1 {
-    grid-area: a;
-    background-image: url("../images/sup2.jfif");
-}
-
-.brands-grid .icon2 {
-    grid-area: b;
-    background-image: url("../images/sup5.jfif");
-}
-
-.brands-grid .icon3 {
-    grid-area: c;
-    background-image: url("../images/sup7.png");
-}
-
-.brands-grid .icon4 {
-    grid-area: d;
-    background-image: url("../images/sup6.png");
-}
-
-.brands-grid .icon5 {
-    grid-area: e;
-    background-image: url("../images/sup8.jfif");
-}
-
-.brands-grid .icon6 {
-    grid-area: f;
-    background-image: url("../images/sup3.png");
-}
-
-.home-about {
-    background-color: rgba(241, 240, 240, 0.719);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.home-about .about-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b";
-    padding: 45 45 45 45;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.about-grid .item1 {
-    grid-area: a;
-}
-
-.about-grid .item1 .img-about {
-    background-image: url("../images/body5.jpg");
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
-    margin: 20px;
-    border-radius: 30px;
-}
-
-.img-text-about {
-    color: white;
-    text-align: center;
-    padding-top: 250px;
-    font-size: 50px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.about-grid .item2 {
-    grid-area: b;
-}
-
-.about-grid .item2 .topic1 {
-    font-size: 30px;
-}
-
-.about-grid .item2 .topic2 {
-    font-size: 50px;
-    color: black;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.more-about-btn {
-    border: 2px solid orange;
-    height: 50px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-top: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-.more-about-btn:hover {
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-}
-
-.team-members {
-    background-image: url("../images/body-about.jpg");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    padding: 50px 30px 50px 30px;
-    /* padding--> top,right,bottom,left */
-}
-
-.team-members .title {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-
-.team-members .body {
-    padding: 10px;
-}
-
-.team-members .body .team-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 1rem;
-    grid-template-areas: "a b c d";
-    padding: 45 45 45 45;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.team-grid .item1,
-.item2,
-.item3,
-.item4 {
-    padding: 60px 20px 60px 20px;
-}
-
-.team-grid .item1 {
-    grid-area: a;
-    transition: 1.5s;
-}
-
-.team-grid .item2 {
-    grid-area: b;
-    transition: 1.5s;
-}
-
-.team-grid .item3 {
-    grid-area: c;
-    transition: 1.5s;
-}
-
-.team-grid .item4 {
-    grid-area: d;
-    transition: 1.5s;
-}
-
-.team-grid .item1:hover {
-    grid-area: a;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.team-grid .item2:hover {
-    grid-area: b;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.team-grid .item3:hover {
-    grid-area: c;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.team-grid .item4:hover {
-    grid-area: d;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    cursor: pointer;
-}
-
-.team-member-profile {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-left: 28%;
-}
-
-.team-name {
-    text-align: center;
-    color: white;
-    padding-top: 15px;
-    font-size: 25px;
-}
-
-.team-grid .item1:hover .team-name {
-    color: orange;
-}
-
-.team-grid .item2:hover .team-name {
-    color: orange;
-}
-
-.team-grid .item3:hover .team-name {
-    color: orange;
-}
-
-.team-grid .item4:hover .team-name {
-    color: orange;
-}
-
-.team-post {
-    text-align: center;
-    color: orange;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-style: italic;
-}
-
-.team-grid .item1:hover .team-post {
-    color: black;
-}
-
-.team-grid .item2:hover .team-post {
-    color: black;
-}
-
-.team-grid .item3:hover .team-post {
-    color: black;
-}
-
-.team-grid .item4:hover .team-post {
-    color: black;
-}
-
-.member-infor {
-    padding-top: 20px;
-    color: white;
-    text-align: center;
-}
-
-.team-grid .item1:hover .member-infor {
-    color: black;
-}
-
-.team-grid .item2:hover .member-infor {
-    color: black;
-}
-
-.team-grid .item3:hover .member-infor {
-    color: black;
-}
-
-.team-grid .item4:hover .member-infor {
-    color: black;
-}
-
-
-/* 
-    ***************************************************************************************
-
-                             commen laptop screen and small screens
-
-                                            769px - 1400px
-
-    ***************************************************************************************
-*/
-
-@media only screen and (min-device-width: 821px) and (max-device-width: 1400px) {
-    .body-home {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .about-us {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body3.jpg");
-        padding-bottom: 200px;
-    }
-    .body-home .topic {
-        padding-top: 210px;
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 200%;
-        text-align: center;
-    }
-    .about-us .title {
-        padding-top: 210px;
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 200%;
-        text-align: center;
-    }
-    .body-home .person {
-        margin-top: 15px;
-        color: orange;
-        text-align: right;
-        padding-right: 200px;
-        font-size: 150%;
-        font-style: italic;
-        padding-bottom: 170px;
-    }
-    .brands-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b c d e f";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .home-about .about-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .about-grid .item2 .topic2 {
-        font-size: 40px;
-    }
-    .img-text-about {
-        font-size: 40px;
-    }
-    .team-members {
-        background-image: url("../images/body3.jpg");
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        padding: 50px 30px 50px 30px;
-        /* padding--> top,right,bottom,left */
-    }
-    .team-members .body .team-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b c d";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* 
-    ***************************************************************************************
-
-                                        iPads, Tablets
-
-                                        481px — 768px
-
-    ***************************************************************************************
-*/
-
-@media only screen and (min-device-width: 481px) and (max-device-width: 820px) {
-    .body-home {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .aout-us {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .body-home .topic {
-        padding-top: 210px;
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 200%;
-        text-align: center;
-    }
-    .about-us .title {
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        text-align: center;
-        padding-top: 310px;
-        font-size: 45px;
-        padding-bottom: 200px;
-    }
-    .body-home .person {
-        margin-top: 15px;
-        color: orange;
-        text-align: right;
-        padding-right: 20px;
-        font-size: 150%;
-        font-style: italic;
-        padding-bottom: 50px;
-    }
-    .brands-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d" "e f";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .home-about .about-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .about-grid .item2 .topic2 {
-        font-size: 40px;
-    }
-    .img-text-about {
-        font-size: 40px;
-    }
-    .team-members {
-        background-image: url("../images/body4.jpg");
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        padding: 50px 30px 50px 30px;
-        /* padding--> top,right,bottom,left */
-    }
-    .team-members .body .team-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* 
-    ***************************************************************************************
-
-                                     commen mobile screen
-
-                                            320x480
-
-    ***************************************************************************************
-*/
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .body-home {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .about-us {
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/body5.jpg");
-    }
-    .body-home .topic {
-        padding-top: 210px;
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 200%;
-        text-align: center;
-    }
-    .about-us .title {
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        text-align: center;
-        padding-top: 210px;
-        font-size: 45px;
-        padding-bottom: 100px;
-    }
-    .body-home .person {
-        margin-top: 15px;
-        color: orange;
-        text-align: right;
-        padding-right: 20px;
-        font-size: 150%;
-        font-style: italic;
-        padding-bottom: 50px;
-    }
-    .brands-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a b" "c d" "e f";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .home-about .about-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .about-grid .item2 .topic2 {
-        font-size: 40px;
-    }
-    .img-text-about {
-        font-size: 40px;
-    }
-    .team-members {
-        background-image: url("../images/body4.jpg");
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        padding: 50px 30px 50px 30px;
-        /* padding--> top,right,bottom,left */
-    }
-    .team-members .body .team-grid {
-        display: grid;
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(150px, auto);
-        grid-gap: 1rem;
-        grid-template-areas: "a" "b" "c" "d";
-        padding: 45 45 45 45;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
+<?php 
+    include("../lib/layouts/header.php");
+?>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand text-warning" href="#">GYM Workout</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="../index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="about.php">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="about-us">
+    <div class="title">
+        About Us
+    </div>
+</div>
+
+<div class="about-content">
+    <div class="title">
+        GYM WORKOUT
+    </div>
+    <div class="body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore consequuntur ullam nam, odio porro voluptates voluptatem dolor cumque optio est at! Molestias quidem tempore magnam. Pariatur magni ex quis.
+        Cum architecto vitae deserunt perspiciatis quidem cumque ad consectetur praesentium eos doloremque eum minus, explicabo quod. Delectus, placeat totam magni quas iure id? Minus ea quia culpa tenetur quos maxime.
+        Deserunt cumque, fugit, ipsum assumenda praesentium itaque quas illum neque illo numquam totam dolores ducimus inventore dolorum rerum provident optio sapiente vitae aperiam nostrum a. Eos explicabo debitis quam magnam!
+        Nisi, at maiores repudiandae voluptatem eveniet dolor porro quod aliquid suscipit harum assumenda cumque adipisci tempora modi cum officia nobis mollitia earum eum. Cumque quod, ducimus totam ipsum voluptas iste.
+        Quidem, esse quae delectus accusantium repudiandae minus rerum commodi iure fugiat nisi culpa recusandae neque veritatis qui vitae omnis quod doloremque provident cupiditate amet quaerat nemo. Rerum libero culpa delectus?
+        Dicta omnis odit repudiandae blanditiis rem placeat iste odio, quod, quos quasi repellendus sint at voluptates facere itaque magnam non, accusantium ducimus voluptas culpa sit eaque dolor esse. Totam, possimus.
+    
+        <div class="about-img-grid">
+            <div class="img-item1"></div>
+            <div class="img-item2"></div>
+            <div class="img-item3"></div>
+            <div class="img-item4"></div>
+            <div class="img-item5"></div>
+            <div class="img-item6"></div>
+            <div class="img-item7"></div>
+            <div class="img-item8"></div>
+        </div>
+    
+    </div>
+</div>
+
+<?php
+    include("../lib/layouts/footer_home.php")
+
+?>
+
+<script src="../js/script.js"></script>
