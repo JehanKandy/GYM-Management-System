@@ -29,7 +29,7 @@
               <a class="nav-link text-warning" href="about.php">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="">Pricing</a>
+              <a class="nav-link text-warning" href="shop.php">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-warning" href="#">Login</a>
