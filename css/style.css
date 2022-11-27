@@ -651,6 +651,9 @@ font-family: 'Teko', sans-serif;
 
 .subscribe {
     padding: 70px 50px 70px 50px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(27, 27, 27, 0.7)), url(../images/body3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .subscribe .title {
@@ -659,6 +662,15 @@ font-family: 'Teko', sans-serif;
     padding-bottom: 40px;
     font-size: 40px;
     text-transform: uppercase;
+    color: white;
+}
+
+.subscribe .body form .email-sub {
+    width: 500px;
+    margin-bottom: 40px;
+    height: 45px;
+    border: 1px solid white;
+    background: none;
 }
 
 
