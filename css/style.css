@@ -492,6 +492,18 @@ font-family: 'Teko', sans-serif;
     margin-bottom: 20px;
 }
 
+.p-item1 {
+    grid-area: a;
+}
+
+.p-item2 {
+    grid-area: b;
+}
+
+.p-item3 {
+    grid-area: c;
+}
+
 
 /* 
     ***************************************************************************************
