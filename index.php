@@ -163,12 +163,24 @@
 </div>
 
 <div class="subscribe">
-    <div class="title">get touch with us</div>
+    <div class="title">Getting touch with us</div>
     <div class="body">
+
+    <?php 
+        include("lib/function/function.php");
+        if(isset($_POST['subscribe'])){
+            
+        }
+    ?>
+
         <form action="<?php echo($_SERVER['PHP_SELF']);?>" method="post">
             <center><input type="email" name="sub_email" class="email-sub" placeholder="Email"><br>
             <input type="submit" value="Subscribe" class="sub-btn" name="subscribe"></center>
         </form>
+
+        <div class="infor">
+            Getting touch with us using email. we send a email as soon as posiible
+        </div>
     </div>
 </div>
 <?php 
