@@ -44,6 +44,15 @@ font-family: 'Teko', sans-serif;
     text-align: center;
 }
 
+.about-content {
+    padding: 50px 40px 50px 40px;
+    text-align: center;
+}
+
+.about-content .title {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
 .body-home .person {
     margin-top: 25px;
     color: orange;
