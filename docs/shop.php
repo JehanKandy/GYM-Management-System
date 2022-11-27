@@ -91,6 +91,7 @@
     </div>
     <center><a href="#"><button class="product-btn">More Products</button></a></center>
 
+    <hr>
     <div class="product-title">GYM Equipment</div>
     <div class="product-content">
         <div class="p-grid">
