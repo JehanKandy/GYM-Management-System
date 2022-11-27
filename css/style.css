@@ -681,6 +681,7 @@ font-family: 'Teko', sans-serif;
     border: 1px solid orange;
     border-radius: 5px;
     color: orange;
+    background: none;
     transition: 0.5s;
 }
 
