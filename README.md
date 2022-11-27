@@ -40,3 +40,5 @@ GYM Management System
  - - docs/about.php
 
 2. UPDATE
+3. REMOVE 
+ - lib/layouts/nav.php
