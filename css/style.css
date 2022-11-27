@@ -685,6 +685,12 @@ font-family: 'Teko', sans-serif;
     transition: 0.5s;
 }
 
+.subscribe .body .sub-btn:hover {
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+
 
 /* 
     ***************************************************************************************
