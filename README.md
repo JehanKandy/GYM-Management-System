@@ -56,7 +56,9 @@ GYM Management System
  
  <b>28 November 2022</b>
 1. DEVELOP
-
+ - lib
+ - - lib/function
+ - - - lib/function/function.php
 2. UPDATE 
  - index.php
  - css/style.css
