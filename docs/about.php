@@ -44,7 +44,7 @@
 
 <div class="about-us">
     <div class="title">
-        
+        About Us
     </div>
 </div>
 
