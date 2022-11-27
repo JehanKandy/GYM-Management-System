@@ -29,3 +29,12 @@ GYM Management System
  - lib/layouts/nav.php
  - index.php
  - css/style.css
+ 
+ 
+ <b>24 November 2022</b>
+1. DEVELOP
+
+2. UPDATE
+ - lib/layouts/nav.php
+ - index.php
+ - css/style.css
