@@ -46,8 +46,20 @@
     </div>
 </div>
 
+<div class="shop-content">
+    <div class="product-title">Supplements</div>
+
+    <div class="supp-gird">
+        <div class="supp-item1">item1</div>
+        <div class="supp-item2">item1</div>
+        <div class="supp-item3">item1</div>
+    </div>
+
+    <div class="product-title">GYM Equipment</div>
+</div>
+
 <?php
-    include("../lib/layouts/footer_home.php")
+    include("../lib/layouts/footer_home.php");
 ?>
 
 <script src="../js/script.js"></script>
