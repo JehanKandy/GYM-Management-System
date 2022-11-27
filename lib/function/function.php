@@ -11,5 +11,11 @@
         $check_sub_user_result = mysqli_query($con, $check_sub_user);
         $check_sub_user_nor = mysqli_num_rows($check_sub_user_result);
 
+        if($check_sub_user_nor > 0){
+            return "no";
+        }else{
+            return "yes";
+        }
+
     }
 ?>
