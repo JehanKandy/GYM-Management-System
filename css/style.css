@@ -495,6 +495,7 @@ font-family: 'Teko', sans-serif;
 .p-item1 {
     grid-area: a;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
 .p-infor {
@@ -531,7 +532,7 @@ font-family: 'Teko', sans-serif;
     background: none;
     color: orange;
     font-weight: 600;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .product-btn:hover {
@@ -543,23 +544,29 @@ font-family: 'Teko', sans-serif;
 .p-name {
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
+    transition: 1s;
 }
 
 .qty {
     color: orange;
     font-size: 20px;
     font-weight: bold;
+    transition: 0.5s;
 }
 
 .p-price {
     font-family: 'Fjalla One', sans-serif;
     color: red;
     font-size: 20px;
+    transition: 0.5s;
 }
 
 .p-infor {
     font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.5s;
 }
+
+.p-item1:hover {}
 
 .p-item1:hover .p-name {
     color: orange;
@@ -570,7 +577,7 @@ font-family: 'Teko', sans-serif;
 }
 
 .p-item1:hover .p-price {
-    font-size: ;
+    font-size: 23px;
 }
 
 
