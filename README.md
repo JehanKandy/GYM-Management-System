@@ -38,6 +38,7 @@ GYM Management System
 1. DEVELOP
  - docs
  - - docs/about.php
+ - - docs/contact.php
 
 2. UPDATE
  - index.php
