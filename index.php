@@ -153,6 +153,11 @@
 </div>
 <div class="subscribe">
     <div class="title">get touch with us</div>
+    <div class="body">
+        <form action="<?php echo($_SERVER['PHP_SELF']);?>" method="post">
+    
+        </form>
+    </div>
 </div>
 <?php 
     include("lib/layouts/footer_home.php");
