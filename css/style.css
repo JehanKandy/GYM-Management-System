@@ -698,6 +698,10 @@ font-family: 'Teko', sans-serif;
     font-family: 'Fjalla One', sans-serif;
 }
 
+.footer1 {
+    text-align: center;
+}
+
 
 /* 
     ***************************************************************************************
@@ -1063,5 +1067,14 @@ font-family: 'Teko', sans-serif;
         padding: 45 45 45 45;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .subscribe .body form .email-sub {
+        width: 100%;
+        margin-bottom: 40px;
+        height: 45px;
+        border: 1px solid white;
+        background: none;
+        color: white;
+        border-radius: 2px;
     }
 }
