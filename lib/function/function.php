@@ -26,6 +26,10 @@
                         </button>
                     </div>";
             }
+            else{
+                $insert_email_g = "INSERT INTO geting_touch_tbl(g_email,date_time)VALUES('$email',NOW())";
+                $insert_email_g_result = mysqli_query($con, $insert_email_g);
+            }
         }
     }
 ?>
