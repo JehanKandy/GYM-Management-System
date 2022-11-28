@@ -175,7 +175,7 @@
     ?>
 
         <form action="<?php echo($_SERVER['PHP_SELF']);?>" method="post">
-            <center><input type="email" name="sub_email" class="email-sub" placeholder="Email"><br>
+            <center><input type="email" name="sub_email" class="email-sub" placeholder="Email" required><br>
             <input type="submit" value="Subscribe" class="sub-btn" name="subscribe"></center>
         </form>
 
