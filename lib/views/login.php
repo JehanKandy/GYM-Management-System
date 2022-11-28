@@ -38,3 +38,9 @@
         </div>
       </div>
     </nav>
+
+
+
+<?php 
+    include("../layouts/footer_home.php")    
+?>
