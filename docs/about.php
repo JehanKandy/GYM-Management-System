@@ -32,7 +32,7 @@
               <a class="nav-link text-warning" href="shop.php">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-warning" href="#">Login</a>
+              <a class="nav-link text-warning" href="../lib/views/login.php">Login</a>
             </li>
           </ul>
         </div>
