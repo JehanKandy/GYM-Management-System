@@ -710,8 +710,12 @@ font-family: 'Teko', sans-serif;
     background: linear-gradient(to bottom, #36b8e4 0%, #bd2fe0 100%);
 }
 
-.login .login-content {
-    padding: 200px 400px 200px 400px;
+.login-content {
+    padding-top: 200px;
+}
+
+.login-box {
+    border: 1px solid white;
 }
 
 
