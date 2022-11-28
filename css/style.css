@@ -708,6 +708,7 @@ font-family: 'Teko', sans-serif;
 .login {
     width: 100vh;
     padding: 200px 400px 200px 400px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
 
 
