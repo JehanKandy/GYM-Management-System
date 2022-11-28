@@ -48,13 +48,15 @@
                 <div class="body">
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
-                        <input type="text" name="login_username" class="form-input" id="usernamelogin">
-
+                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">
+                        <br><br>
                         <p class="form-text">Password : </p>
-                        <input type="password" name="login_password" class="form-input" id="passwordlogin">
+                        <input type="password" name="login_password" class="form-input" id="passwordlogin" placeholder="Enter Password">                        
                         <br>
-                        <input type="submit" value="Login" name="login" class="login-btn">
+                        <input type="submit" value="Login" name="login" class="login-btn">                        
                     </form>
+                    <hr>
+                    <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
                 </div>
             </div>
         </div>
