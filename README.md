@@ -61,6 +61,8 @@ GYM Management System
  - - - lib/function/function.php
  - - lib/views
  - - - lib/views/login.php
+ - - lib/layouts
+ - - - lib/layout/footer1.php
 2. UPDATE 
  - index.php
  - css/style.css
