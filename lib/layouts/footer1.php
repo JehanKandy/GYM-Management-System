@@ -1,3 +1,3 @@
 <div class="footer1">
-    footer
+<p>Copyright <i class="far fa-copyright"></i> Project GYM Workout : 2022 All Right Reserved by : 
 </div>
