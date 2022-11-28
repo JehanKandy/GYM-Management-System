@@ -6,7 +6,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand text-primary" href="#">GYM Workout</a>
+        <a class="navbar-brand text-white" href="#">GYM Workout</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,16 +23,16 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-primary" href="../../index.php">Home</a>
+              <a class="nav-link text-white" href="../../index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="../../docs/about.php">About</a>
+              <a class="nav-link text-white" href="../../docs/about.php">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="../../docs/shop.php">Pricing</a>
+              <a class="nav-link text-white" href="../../docs/shop.php">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="login.php">Login</a>
+              <a class="nav-link text-white" href="login.php">Login</a>
             </li>
           </ul>
         </div>
@@ -42,7 +42,9 @@
 
 <div class="login">
     <div class="container">
-        <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
+        <div class="login-content">
+            <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
+        </div>
     </div>
 </div>
 
