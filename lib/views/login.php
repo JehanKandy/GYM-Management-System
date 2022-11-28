@@ -39,11 +39,13 @@
       </div>
     </nav>
 
-<div class="container">
-    <div class="login">
+
+<div class="login">
+    <div class="container">
         <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
     </div>
 </div>
+
 
 <?php 
     include("../layouts/footer1.php")    
