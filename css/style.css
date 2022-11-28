@@ -747,7 +747,23 @@ font-family: 'Teko', sans-serif;
 .login-box .body .login-btn {
     width: 100%;
     margin: 20px 0px 20px 0px;
-    height: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, #36b8e4 0%, #bd2fe0 100%);
+    color: white;
+    transition: 0.5s;
+}
+
+.login-box .body .login-btn:hover {
+    background: linear-gradient(to right, #bd2fe0 0%, #36b8e4 100%);
+    cursor: pointer;
+    box-shadow: 5px 8px 8px #888888;
+}
+
+.login-box .body .bottom-by {
+    color: #888888;
+    font-family: 'Rubik', sans-serif;
 }
 
 
