@@ -706,8 +706,8 @@ font-family: 'Teko', sans-serif;
 }
 
 .login {
-    width: 100vh;
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 98vh;
+    background: linear-gradient(to bottom, #36b8e4 0%, #bd2fe0 100%);
 }
 
 .login .login-content {
