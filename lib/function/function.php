@@ -66,6 +66,22 @@
                         </button>
                     </div>";
             }
+            if(empty($email)){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+            }
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error</strong> &nbsp; Check Again Your Email
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+            }
         }
             
     }
