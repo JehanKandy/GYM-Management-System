@@ -57,7 +57,7 @@
                     </form>
                     <hr>
                     <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
-                    <p>Doesn't Have an Account ? <a href="#" style="color: #bd2fe0;">Create One</a></p>
+                    <p>Doesn't Have an Account ? <a href="reg.php" style="color: #bd2fe0;">Create One</a></p>
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
@@ -70,3 +70,5 @@
 <?php 
     include("../layouts/footer1.php")    
 ?>
+
+<script src="../../js/script.js"></script>
