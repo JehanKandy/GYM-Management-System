@@ -51,13 +51,13 @@
                         <input type="text" name="reg_username" class="form-input" id="usernamereg" placeholder="Enter Username">
                         <br><br> 
                         <p class="form-text">Email : </p>
-                        <input type="text" name="reg_email" class="form-input" id="emailreg" placeholder="Enter Email">
+                        <input type="email" name="reg_email" class="form-input" id="emailreg" placeholder="Enter Email">
                         <br><br>      
                         <p class="form-text">Password : </p>
-                        <input type="text" name="reg_pass" class="form-input" id="passreg" placeholder="Enter Password">
+                        <input type="password" name="reg_pass" class="form-input" id="passreg" placeholder="Enter Password">
                         <br><br>  
                         <p class="form-text">Confarm Password : </p>
-                        <input type="text" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Enter Confarm Password">
+                        <input type="password" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Enter Confarm Password">
                         <br><br>
                         <input type="reset" value="Clear" class="clear-btn">&nbsp;&nbsp;<input type="submit" value="Register" name="register" class="register-btn">
                     </form>
