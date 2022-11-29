@@ -780,7 +780,7 @@ font-family: 'Teko', sans-serif;
     height: 40px;
     border-radius: 5px;
     border: none;
-    background: linear-gradient(to right, #36b8e4 0%, #bd2fe0 100%);
+    background: linear-gradient(to right, #bebebe 0%, #919191 100%);
     color: white;
     transition: 0.5s;
 }
