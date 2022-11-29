@@ -50,7 +50,7 @@
                                      
                     </form>
                     <hr>
-                    <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
+
                     <p>Already Have an Account ? <a href="login.php" style="color: #bd2fe0;">Create One</a></p>
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
