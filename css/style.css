@@ -716,7 +716,7 @@ font-family: 'Teko', sans-serif;
 
 .login-box {
     border: 1px solid white;
-    padding: 100px;
+    padding: 100px 100px 0 100px;
     background-color: white;
     border-radius: 15px;
 }
@@ -764,6 +764,8 @@ font-family: 'Teko', sans-serif;
 .login-box .body .bottom-by {
     color: #888888;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding-top: 50px;
 }
 
 
@@ -861,6 +863,18 @@ font-family: 'Teko', sans-serif;
         padding: 45 45 45 45;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .login {
+        height: 100%;
+    }
+    .login-content {
+        padding: 150px 300px 150px 250px;
+    }
+    .login-box {
+        border: 1px solid white;
+        padding: 100px 100px 0 100px;
+        background-color: white;
+        border-radius: 15px;
     }
 }
 
@@ -996,6 +1010,18 @@ font-family: 'Teko', sans-serif;
         padding: 45 45 45 45;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .login {
+        height: 100%;
+    }
+    .login-content {
+        padding: 100px 0 100px 0;
+    }
+    .login-box {
+        border: 1px solid white;
+        padding: 100px 100px 0 100px;
+        background-color: white;
+        border-radius: 15px;
     }
 }
 
@@ -1140,5 +1166,17 @@ font-family: 'Teko', sans-serif;
         background: none;
         color: white;
         border-radius: 2px;
+    }
+    .login {
+        height: 100%;
+    }
+    .login-content {
+        padding: 100px 0 100px 0;
+    }
+    .login-box {
+        border: 1px solid white;
+        padding: 50px 10px 0 10px;
+        background-color: white;
+        border-radius: 15px;
     }
 }
