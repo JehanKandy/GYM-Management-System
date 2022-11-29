@@ -40,7 +40,7 @@
     </nav>
 
 
-<div class="login">
+<div class="register">
     <div class="container">
         <div class="login-content">
             <div class="login-box">
@@ -59,7 +59,7 @@
                         <p class="form-text">Confarm Password : </p>
                         <input type="text" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Enter Confarm Password">
                         <br><br>
-                        <input type="reset" value="Clear" class="clear-btn"><input type="submit" value="Register" name="register" class="register-btn">
+                        <input type="reset" value="Clear" class="clear-btn">&nbsp;&nbsp;<input type="submit" value="Register" name="register" class="register-btn">
                     </form>
                     <hr>
 
