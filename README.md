@@ -79,5 +79,4 @@ GYM Management System
  - - lib/layouts
  - - - lib/layout/footer1.php
 2. UPDATE 
- - index.php
- - css/style.css
+
