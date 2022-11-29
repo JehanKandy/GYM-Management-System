@@ -46,6 +46,13 @@
             <div class="login-box">
                 <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Register Here</div>
                 <div class="body">
+                    <?php 
+                        include("../function/function.php");
+                        if(isset($_POST['register'])){
+                            reg_user()
+                        }
+                    
+                    ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
                         <input type="text" name="reg_username" class="form-input" id="usernamereg" placeholder="Enter Username">
