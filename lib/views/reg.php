@@ -47,12 +47,13 @@
                 <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
                 <div class="body">
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
-                                     
+                        <p class="form-text">Username : </p>
+                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">
+                        <br><br>          
                     </form>
                     <hr>
 
                     <p>Already Have an Account ? <a href="login.php" style="color: #bd2fe0;">Create One</a></p>
-
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
             </div>
