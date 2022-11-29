@@ -52,5 +52,18 @@
 
     function reg_user($username, $email, $pass1, $cpass){
         $con = Connection();
+
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$username' && user_email = '$email'";
+        $check_user_result = mysqli_query($con, $check_user);
+
+        if(empty($username)){
+            return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Error : </strong> &nbsp; Username Cannot be Empty.....!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
+        }
+        
     }
 ?>
