@@ -71,12 +71,6 @@ GYM Management System
  
  <b>28 November 2022</b>
 1. DEVELOP
- - lib
- - - lib/function
- - - - lib/function/function.php
- - - lib/views
- - - - lib/views/login.php
- - - lib/layouts
- - - - lib/layout/footer1.php
+
 2. UPDATE 
 
