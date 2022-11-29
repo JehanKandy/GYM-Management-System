@@ -797,6 +797,12 @@ font-family: 'Teko', sans-serif;
     transition: 0.5s;
 }
 
+.clear-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #919191 0%, #bebebe 100%);
+    box-shadow: 5px 8px 8px #888888;
+}
+
 
 /* 
     ***************************************************************************************
