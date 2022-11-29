@@ -77,5 +77,5 @@ GYM Management System
 2. UPDATE 
  - lib/layouts/login.php
  - css/style.css
- - lib/function
+ - lib/function/function.php
  
