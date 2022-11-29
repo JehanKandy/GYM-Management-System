@@ -1,7 +1,7 @@
 <?php 
     include("config.php");
     use FTP\Connection;
-    
+
 
     function subsucribe_user($email){
         $con = Connection();
@@ -29,7 +29,28 @@
             else{
                 $insert_email_g = "INSERT INTO geting_touch_tbl(g_email,date_time)VALUES('$email',NOW())";
                 $insert_email_g_result = mysqli_query($con, $insert_email_g);
+
+                if(!$insert_email_g_result){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Error</strong> &nbsp; While insert data in to Database
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+                }else{
+                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Success</strong> &nbsp; Data Insert to DataBase Successfully...!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+                }
             }
         }
+    }
+
+
+    function reg_user($username, $email, $pass1, $cpass){
+        $con = Connection();
     }
 ?>
