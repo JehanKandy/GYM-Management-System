@@ -803,6 +803,12 @@ font-family: 'Teko', sans-serif;
     box-shadow: 5px 8px 8px #888888;
 }
 
+.register-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #bd2fe0 0%, #36b8e4 100%);
+    box-shadow: 5px 8px 8px #888888;
+}
+
 
 /* 
     ***************************************************************************************
