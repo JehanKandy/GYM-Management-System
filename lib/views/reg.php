@@ -44,7 +44,7 @@
     <div class="container">
         <div class="login-content">
             <div class="login-box">
-                <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
+                <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Register Here</div>
                 <div class="body">
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
