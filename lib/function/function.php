@@ -59,7 +59,7 @@
 
         if(empty($username)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; Username Cannot be Empty.....!
+                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -67,7 +67,7 @@
         }
         if(empty($email)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -83,7 +83,7 @@
         }
         if(empty($pass1)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
@@ -91,7 +91,7 @@
         }
         if(empty($cpass)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
