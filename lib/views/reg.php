@@ -48,8 +48,18 @@
                 <div class="body">
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
-                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">
-                        <br><br>          
+                        <input type="text" name="reg_username" class="form-input" id="usernamereg" placeholder="Enter Username">
+                        <br><br> 
+                        <p class="form-text">Email : </p>
+                        <input type="text" name="reg_email" class="form-input" id="emailreg" placeholder="Enter Email">
+                        <br><br>      
+                        <p class="form-text">Password : </p>
+                        <input type="text" name="reg_pass" class="form-input" id="passreg" placeholder="Enter Password">
+                        <br><br>  
+                        <p class="form-text">Confarm Password : </p>
+                        <input type="text" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Enter Confarm Password">
+                        <br><br>
+
                     </form>
                     <hr>
 
