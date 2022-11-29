@@ -75,4 +75,4 @@ GYM Management System
  - - lib/layouts/
  - - - lib.layouts/reg.php
 2. UPDATE 
-
+ - lib/layouts/login.php
