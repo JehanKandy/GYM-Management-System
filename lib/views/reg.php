@@ -49,7 +49,7 @@
                     <?php 
                         include("../function/function.php");
                         if(isset($_POST['register'])){
-                            $result = reg_user($_POST['reg_username'], $_POST['reg_email'], $_POST['reg_pass'], $_POST['reg_cpass']);
+                            $result = reg_user($_POST['reg_username'], $_POST['reg_email'], md5($_POST['reg_pass']), md5($_POST['reg_cpass']));
                             echo $result;
                         }
                     
