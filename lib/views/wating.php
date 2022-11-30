@@ -46,7 +46,8 @@
             <div class="login-box">
                 <div class="title"><i class="fas fa-user-lock"></i>&nbsp; Account Approval </div>
                 <div class="body">
-
+                    
+                <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
             </div>
         </div>
