@@ -87,6 +87,7 @@ GYM Management System
 1. DEVELOP
  - lib
  - - lib/views
+ - - - lib/views/wating.php
 2. UPDATE 
  - lib/function/function.php
  - lib/views/reg.php
