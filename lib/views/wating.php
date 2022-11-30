@@ -46,7 +46,9 @@
             <div class="login-box">
                 <div class="title"><i class="fas fa-user-lock"></i>&nbsp; Account Approval </div>
                 <div class="body">
-                    
+                    <div class="waiting-text">                  
+                        wait for Approve your user account <br> will take some time to approve 
+                    </div>  
                 <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
             </div>
