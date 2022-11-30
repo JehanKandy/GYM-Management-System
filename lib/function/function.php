@@ -156,7 +156,7 @@
                     </div>"; 
         }
 
-        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass'";
         $check_user_result = mysqli_query($con, $check_user); 
         $check_user_row = mysqli_fetch_assoc($check_user_result);
 
@@ -176,7 +176,6 @@
                         </button>
                     </div>";
         }
-
     }
             
 ?>
