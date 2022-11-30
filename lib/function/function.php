@@ -99,7 +99,7 @@
         }
         if($pass1 != $cpass){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <strong>Password Error : </strong> &nbsp; Password and Confarm Password doesn't match.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
