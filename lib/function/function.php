@@ -138,6 +138,23 @@
 
     function login_user($login_username,$login_pass){
         $con = Connection();
+
+        if(empty($login_username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($login_pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp; Password Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>"; 
+        }
     }
             
 ?>
