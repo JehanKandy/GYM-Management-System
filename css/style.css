@@ -813,6 +813,10 @@ font-family: 'Teko', sans-serif;
     text-align: center;
 }
 
+.waiting-text .username-waiting {
+    font-size: 20px;
+}
+
 
 /* 
     ***************************************************************************************
