@@ -1,5 +1,6 @@
 <?php 
     include("../layouts/header.php");
+    include("../function/function.php");
 ?>
 
 <link rel="stylesheet" href="../css/style.css">
@@ -46,8 +47,14 @@
             <div class="login-box">
                 <div class="title"><i class="fas fa-user-lock"></i>&nbsp; Account Approval </div>
                 <div class="body">
-                    <div class="waiting-text">                  
-                        wait for Approve your user account <br> will take some time to approve 
+                    <div class="waiting-text"> 
+                        <div class="username-waiting">
+                            <?php 
+                                wating_user();
+                            ?>     
+                        </div>            
+                        wait for Approve your user account <br> will take some time to approve <br><br><br>
+                        <a href="login.php"><button class="btn btn-primary">Back To Login</button></a>
                     </div>  
                 <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
