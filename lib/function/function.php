@@ -114,7 +114,7 @@
                         </button>
                     </div>";
         }else{
-            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status)VALUES('$username','$email','$pass1',NOW(),0)";
+            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status,is_pending)VALUES('$username','$email','$pass1',NOW(),0,1)";
             $insert_user_result = mysqli_query($con, $insert_user);
 
             if(!$insert_user_result){
