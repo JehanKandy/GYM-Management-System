@@ -105,6 +105,8 @@
                         <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
+        }else{
+            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status)"
         }
     }
             
