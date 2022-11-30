@@ -106,7 +106,7 @@
                         </button>
                     </div>";
         }else{
-            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status)"
+            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status)VALUES('$username','$email','$pass1','NOW()',0)";
         }
     }
             
