@@ -155,6 +155,8 @@
                         </button>
                     </div>"; 
         }
+
+        $get_user_data = "SELECT * FROM user_tbl WHERE username = '$login_username' && 	user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
     }
             
 ?>
