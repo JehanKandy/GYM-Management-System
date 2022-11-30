@@ -97,6 +97,15 @@
                         </button>
                     </div>";
         }
+
+        if($check_user_nor > 0){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
     }
             
 ?>
