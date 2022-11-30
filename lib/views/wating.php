@@ -44,7 +44,7 @@
     <div class="container">
         <div class="login-content">
             <div class="login-box">
-                <div class="title"><i class="fas fa-user-alt"></i>&nbsp; Login Here</div>
+                <div class="title"><i class="fas fa-user-lock"></i>&nbsp; Account Approval </div>
                 <div class="body">
 
                 </div>
