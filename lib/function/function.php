@@ -199,5 +199,8 @@
             
     function wating_user(){
         $con = Connection();
+
+        $login_id_user = strval($_SESSION['getEmail']);
+        echo $login_id_user;
     }
 ?>
