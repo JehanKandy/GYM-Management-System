@@ -160,6 +160,9 @@
         $check_user_result = mysqli_query($con, $check_user); 
         $check_user_row = mysqli_fetch_assoc($check_user_result);
 
+        $_SESSION['getEmail'] = $login_username;
+
+
         if($login_username != $check_user_row['u_username']){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Error : </strong> &nbsp; User does not exist.....!
@@ -194,4 +197,7 @@
         }
     }
             
+    function wating_user(){
+        $con = Connection();
+    }
 ?>
