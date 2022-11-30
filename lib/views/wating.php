@@ -49,6 +49,7 @@
                 <div class="body">
                     <div class="waiting-text"> 
                         <div class="username-waiting">
+                            Hi, 
                             <?php 
                                 wating_user();
                             ?>     
