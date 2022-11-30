@@ -156,8 +156,17 @@
                     </div>"; 
         }
 
-        $get_user_is_padding = "SELECT * FROM user_tbl WHERE username = '$login_username' && 	user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
+        $get_user_is_padding = "SELECT * FROM user_tbl WHERE username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
         $get_user_is_padding_result = mysqli_query($con, $get_user_is_padding); 
+
+        if(!$get_user_is_padding_result){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; While Accessing data in Database.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>"; 
+        }
     }
             
 ?>
