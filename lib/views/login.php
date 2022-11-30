@@ -48,7 +48,9 @@
                 <div class="body">
                   <?php 
                     include("../function/function.php");
-
+                    if(isset($_POST['login'])){
+                      
+                    }
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
