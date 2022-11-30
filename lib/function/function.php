@@ -111,14 +111,15 @@
 
             if(!$insert_user_result){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>User Error : </strong> &nbsp; Email Cannot be Empty.....!
+                            <strong>Error : </strong> &nbsp; While insert data in to Database.....!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>";
             }else{
                 return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                            <strong>Success</strong> &nbsp; Data Insert to DataBase Successfully...!
+                            <strong>Success</strong> &nbsp; User Created Syccessflly..! <br>
+                            <a href='../views/login.php'>Login To account</a>
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
