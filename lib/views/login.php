@@ -49,7 +49,8 @@
                   <?php 
                     include("../function/function.php");
                     if(isset($_POST['login'])){
-                      
+                        $result = login_user($_POST['login_username'], md5($_POST['login_password']));
+                        echo $result;
                     }
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
