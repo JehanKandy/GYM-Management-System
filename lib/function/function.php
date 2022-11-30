@@ -1,69 +1,209 @@
 <?php 
-    include("../layouts/header.php");
+    include("config.php");
+    use FTP\Connection;
+
+
+    session_start();
+
+    function subsucribe_user($email){
+        $con = Connection();
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> &nbsp; Check Again Your Email
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
+        }else{
+            $check_sub_user = "SELECT * FROM geting_touch_tbl WHERE g_email = '$email'";
+            $check_sub_user_result = mysqli_query($con, $check_sub_user);
+            $sub_nor = mysqli_num_rows($check_sub_user_result); 
+
+            if($sub_nor > 0){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error</strong> &nbsp; Email Already Exists...!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+            }
+            else{
+                $insert_email_g = "INSERT INTO geting_touch_tbl(g_email,date_time)VALUES('$email',NOW())";
+                $insert_email_g_result = mysqli_query($con, $insert_email_g);
+
+                if(!$insert_email_g_result){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Error</strong> &nbsp; While insert data in to Database
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+                }else{
+                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Success</strong> &nbsp; Data Insert to DataBase Successfully...!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+                }
+            }
+        }
+    }
+
+
+    function reg_user($username, $email, $pass1, $cpass){
+        $con = Connection();
+
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$username' && user_email = '$email'";
+        $check_user_result = mysqli_query($con, $check_user);
+        $check_user_nor = mysqli_num_rows($check_user_result);
+
+        if(empty($username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error</strong> &nbsp; Check Again Your Email
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($pass1)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($cpass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if($pass1 != $cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp; Password and Confarm Password doesn't match.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+
+        if($check_user_nor > 0){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>User Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }else{
+            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,user_type,join_date,user_status,is_pending)VALUES('$username','$email','$pass1','user',NOW(),0,1)";
+            $insert_user_result = mysqli_query($con, $insert_user);
+
+            if(!$insert_user_result){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Error : </strong> &nbsp; While insert data in to Database.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }else{
+                return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Success</strong> &nbsp; User Created Syccessflly..! <br>
+                            <a href='../views/login.php'>Login To account</a>
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }
+        }
+    }
+
+    function login_user($login_username,$login_pass){
+        $con = Connection();
+
+        if(empty($login_username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($login_pass)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp; Password Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>"; 
+        }
+
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass'";
+        $check_user_result = mysqli_query($con, $check_user); 
+        $check_user_row = mysqli_fetch_assoc($check_user_result);
+
+        $_SESSION['getEmail'] = $login_username;
+
+
+        if($login_username != $check_user_row['u_username']){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; User does not exist.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if($login_pass != $check_user_row['user_pass']){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; User does not exist.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+
+        $check_user_is_panding = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
+        $check_user_is_panding_result = mysqli_query($con, $check_user_is_panding); 
+        $check_user_is_padding_nor = mysqli_num_rows($check_user_is_panding_result);
+
+        if($check_user_is_padding_nor > 0){
+            header("location:wating.php");
+        }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; While accessing data in Database.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+    }
+            
+    function wating_user(){
+        $con = Connection();
+
+
+        $login_id_user = strval($_SESSION['getEmail']);
+        echo $login_id_user;
+    }
 ?>
-
-<link rel="stylesheet" href="../css/style.css">
-
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-      <div class="container">
-        <a class="navbar-brand text-white" href="#">GYM Workout</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../docs/about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="../../docs/shop.php">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="login.php">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
-<div class="login">
-    <div class="container">
-        <div class="login-content">
-            <div class="login-box">
-                <div class="title"><i class="fas fa-user-lock"></i>&nbsp; Account Approval </div>
-                <div class="body">
-                    <div class="waiting-text">   
-                        <?php 
-                            include("../function/function.php");
-                            wating_user();
-                        ?>               
-                        wait for Approve your user account <br> will take some time to approve <br><br><br>
-                        <a href="login.php"><button class="btn btn-primary">Back To Login</button></a>
-                    </div>  
-                <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<?php 
-    include("../layouts/footer1.php")    
-?>
-
-<script src="../../js/script.js"></script>
