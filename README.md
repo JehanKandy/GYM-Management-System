@@ -92,5 +92,5 @@ GYM Management System
  - lib/function/function.php
  - lib/views/reg.php
  - lib/views/login.php
-
+ - css/style.css
  
