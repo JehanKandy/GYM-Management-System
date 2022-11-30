@@ -135,5 +135,9 @@
             }
         }
     }
+
+    function login_user($login_username,$login_pass){
+        $con = Connection();
+    }
             
 ?>
