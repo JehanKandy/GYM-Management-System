@@ -814,7 +814,9 @@ font-family: 'Teko', sans-serif;
 }
 
 .waiting-text .username-waiting {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
 
 
