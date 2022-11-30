@@ -156,7 +156,7 @@
                     </div>"; 
         }
 
-        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass'";
         $check_user_result = mysqli_query($con, $check_user); 
         $check_user_row = mysqli_fetch_assoc($check_user_result);
 
@@ -171,6 +171,22 @@
         if($login_pass != $check_user_row['user_pass']){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Error : </strong> &nbsp; User does not exist.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+
+        $check_user_is_panding = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
+        $check_user_is_panding_result = mysqli_query($con, $check_user_is_panding); 
+        $check_user_is_padding_nor = mysqli_num_rows($check_user_is_panding_result);
+
+        if($check_user_is_padding_nor > 0){
+            header("location:wating.php");
+        }
+        else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; While accessing data in Database.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
