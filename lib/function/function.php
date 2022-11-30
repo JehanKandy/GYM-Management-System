@@ -107,6 +107,23 @@
                     </div>";
         }else{
             $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,join_date,user_status)VALUES('$username','$email','$pass1','NOW()',0)";
+            $insert_user_result = mysqli_query($con, $check_user);
+
+            if(!$insert_user_result){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>User Error : </strong> &nbsp; Email Cannot be Empty.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }else{
+                return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                            <strong>Success</strong> &nbsp; Data Insert to DataBase Successfully...!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }
         }
     }
             
