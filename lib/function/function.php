@@ -49,7 +49,8 @@
                   <?php 
                     include("../function/function.php");
                     if(isset($_POST['request_otp'])){
-                        $result = check_otp_email()
+                        $result = check_otp_email($_POST['pass_opt_username'], $_POST['pass_opt_email']);
+                        echo $result;
                     }
 
                   ?>
