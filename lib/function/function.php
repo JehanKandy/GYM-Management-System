@@ -294,7 +294,11 @@
                     $body = "OTP For Resent Password /n GYM Workout /n/n OTP is ".$otp_num;
                     $sender = "From:jehankandy@gmail.com";
 
-                    mail($receiver,$subject,$body,$sender);
+                    if(mail($receiver,$subject,$body,$sender)){
+                        echo "Send";
+                    }else{
+                        echo "not";
+                    }
 
                     $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$otp_email','$otp_num',NOW())";
                     $inset_otp_data_result = mysqli_query($con, $inset_otp_data);
@@ -319,5 +323,9 @@
                         </button>
                     </div>";
         }
+    }
+
+    function otp_check($otp_get){
+        $con = Connection();
     }
 ?>
