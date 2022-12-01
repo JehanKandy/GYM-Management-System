@@ -240,6 +240,14 @@
                         </button>
                     </div>"; 
         }
+        if(!filter_var($otp_email, FILTER_VALIDATE_EMAIL)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Email Error</strong> &nbsp; Check Again Your Email
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
+        }
 
         $check_otp_user = "SELECT * FROM user_tbl WHERE u_username = '$otp_username' && user_pass = '$otp_email' && user_status = 1 && is_pending = 0";
         $check_otp_user_result = mysqli_query($con, $check_otp_user);
