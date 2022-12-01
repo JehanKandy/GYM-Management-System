@@ -55,9 +55,9 @@
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Enter You Email : </p>
-                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Email">                                              
+                        <input type="text" name="pass_opt_email" class="form-input" id="otpEmail" placeholder="Enter Email">                                              
                         <br>
-                        <input type="submit" value="Request OTP" name="login" class="login-btn">                        
+                        <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
                     </form>
                     <hr>
                     <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
