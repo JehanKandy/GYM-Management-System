@@ -242,5 +242,9 @@
                         </button>
                     </div>"; 
         }
+
+        $check_otp_user = "SELECT * FROM user_tbl WHERE u_username = '$otp_username' && user_pass = '$otp_email'";
+        $check_otp_user_result = mysqli_query($con, $check_otp_user);
+        
     }
 ?>
