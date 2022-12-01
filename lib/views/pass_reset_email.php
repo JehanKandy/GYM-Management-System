@@ -55,10 +55,7 @@
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
-                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">
-                        <br><br>
-                        <p class="form-text">Password : </p>
-                        <input type="password" name="login_password" class="form-input" id="passwordlogin" placeholder="Enter Password">                        
+                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">                                              
                         <br>
                         <input type="submit" value="Login" name="login" class="login-btn">                        
                     </form>
