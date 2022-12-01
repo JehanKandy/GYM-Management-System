@@ -341,5 +341,7 @@
 
         $check_pass_otp = "SELECT * FROM pass_reset_tbl WHERE pass_email = '$login_user_otp' && otp_no = '$otp_get'";
         $check_pass_otp_result = mysqli_query($con, $check_pass_otp);
+        $check_pass_otp_row = mysqli_fetch_assoc($check_pass_otp_result);
+        $check_pass_otp_nor = mysqli_num_rows($check_pass_otp_result);
     }
 ?>
