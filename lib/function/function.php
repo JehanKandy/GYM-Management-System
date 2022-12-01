@@ -246,16 +246,25 @@
         $check_otp_user_row = mysqli_fetch_assoc($check_otp_user_result);
         $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
 
-        if($otp_username != $check_otp_user_row['u_username']){
+        if($check_otp_user_nor > 0){
+            if($otp_username != $check_otp_user_row['u_username']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>"; 
+            }elseif($otp_email != $check_otp_user_row['user_pass']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }
+        }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>"; 
-        }elseif($otp_email != $check_otp_user_row['user_pass']){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <strong>Error : </strong> &nbsp; While Accessing Data in Database.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
