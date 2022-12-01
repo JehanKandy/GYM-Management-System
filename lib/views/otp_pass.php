@@ -55,9 +55,6 @@
                         <p class="form-text">Enter Your Username : </p>
                         <input type="text" name="pass_opt_username" class="form-input" id="otpUsernme" placeholder="Enter Username">
                         <br><br>
-                        <p class="form-text">Enter Your Email : </p>
-                        <input type="email" name="pass_opt_email" class="form-input" id="otpEmail" placeholder="Enter Email">                                              
-                        <br>
                         <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
                     </form>
                     <hr>
