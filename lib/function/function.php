@@ -225,5 +225,22 @@
 
     function check_otp_email($otp_username, $otp_email){
         $con = Connection();
+
+        if(empty($otp_username)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($otp_email)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>"; 
+        }
     }
 ?>
