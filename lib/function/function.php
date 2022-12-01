@@ -288,6 +288,8 @@
                     $subject = "Resent Password..!";
                     $body = "OTP For Resent Password /n GYM Workout /n/n OTP is ".$otp_num;
                     $sender = "From:jehankandy@gmail.com";
+
+                    mail($receiver,$subject,$body,$sender);
                 }
 
                 header("location:otp_pass.php");
