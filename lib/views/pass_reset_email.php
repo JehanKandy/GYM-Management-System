@@ -57,7 +57,7 @@
                         <p class="form-text">Enter You Email : </p>
                         <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Email">                                              
                         <br>
-                        <input type="submit" value="Login" name="login" class="login-btn">                        
+                        <input type="submit" value="Request OTP" name="login" class="login-btn">                        
                     </form>
                     <hr>
                     <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
