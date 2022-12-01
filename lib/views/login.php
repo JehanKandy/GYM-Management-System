@@ -63,7 +63,7 @@
                         <input type="submit" value="Login" name="login" class="login-btn">                        
                     </form>
                     <hr>
-                    <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
+                    <p><a href="pass_reset_email.php" style="color: #bd2fe0;">Forget Password ?</a></p>
                     <p>Doesn't Have an Account ? <a href="reg.php" style="color: #bd2fe0;">Create One</a></p>
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
