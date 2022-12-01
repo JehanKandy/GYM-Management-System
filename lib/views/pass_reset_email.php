@@ -60,8 +60,8 @@
                         <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
                     </form>
                     <hr>
-                    <p><a href="#" style="color: #bd2fe0;">Forget Password ?</a></p>
-                    <p>Doesn't Have an Account ? <a href="reg.php" style="color: #bd2fe0;">Create One</a></p>
+                    <p>Enter Your Email for get OTP</p>
+
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
                 </div>
