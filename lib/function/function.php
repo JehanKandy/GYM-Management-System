@@ -270,7 +270,7 @@
                             </button>
                         </div>";
             }else{
-
+                header("location:otp_pass.php");
             }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
