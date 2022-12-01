@@ -48,14 +48,16 @@
                 <div class="body">
                   <?php 
                     include("../function/function.php");
+                    if(isset($_POST['otp_check'])){
 
+                    }
 
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Enter OTP : </p>
                         <input type="number" name="otp_num" class="form-input" id="otpNum" placeholder="Enter OTP">
                         <br><br>
-                        <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
+                        <input type="submit" value="Verify OTP" name="otp_check" class="login-btn">                        
                     </form>
                     <hr>
                     <p>Enter One Time Password (OTP) that you rescued by email</p>
