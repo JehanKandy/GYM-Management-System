@@ -290,6 +290,11 @@
                     $sender = "From:jehankandy@gmail.com";
 
                     mail($receiver,$subject,$body,$sender);
+
+                    $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$otp_email','$otp_num',NOW())";
+                    $inset_otp_data_result = mysqli_query($con, $inset_otp_data);
+
+                    
                 }
 
                 header("location:otp_pass.php");
