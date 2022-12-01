@@ -158,10 +158,9 @@
                     </div>"; 
         }
 
-        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && 	user_status = 1";
+        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass'";
         $check_user_result = mysqli_query($con, $check_user); 
         $check_user_row = mysqli_fetch_assoc($check_user_result);
-        $check_user_nor = mysqli_num_rows($check_user_result);
 
         $_SESSION['getEmail'] = $login_username;
 
@@ -190,16 +189,21 @@
         if($check_user_is_padding_nor > 0){
             header("location:wating.php");
         }
+
+        $check_login_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass ='$login_pass' && user_status = 1 && is_pending = 0";
+        $check_login_user_result = mysqli_query($con, $check_login_user);
+        $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
+        $check_login_user_nor = mysqli_num_rows($check_login_user_result);
         
-        if($check_user_nor > 0){
+        if($check_login_user_nor > 0){
             if($check_user_row['user_type'] == 'user'){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
+                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
+                $_SESSION['LoginSession'] = $check_login_user_row['email'];
                 header("location:../routes/admin.php");  
             }
             if($check_user_row['user_type'] == 'admin'){
-                setcookie('login',$check_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_user_row['email'];
+                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
+                $_SESSION['LoginSession'] = $check_login_user_row['email'];
                 header("location:../routes/admin.php");  
             }
         else{
@@ -211,6 +215,7 @@
                     </div>";
             }
         }
+
     }
             
     function wating_user(){
@@ -305,8 +310,6 @@
                         header("location:otp_pass.php");
                     }
                 }
-
-
             }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
