@@ -352,5 +352,8 @@
                         </button>
                     </div>";
         }
+        else{
+            header("location:new_pass.php");
+        }
     }
 ?>
