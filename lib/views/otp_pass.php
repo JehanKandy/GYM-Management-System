@@ -52,13 +52,13 @@
 
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
-                        <p class="form-text">Enter Your Username : </p>
-                        <input type="text" name="pass_opt_username" class="form-input" id="otpUsernme" placeholder="Enter Username">
+                        <p class="form-text">Enter OTP : </p>
+                        <input type="number" name="otp_num" class="form-input" id="otpNum" placeholder="Enter OTP">
                         <br><br>
                         <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
                     </form>
                     <hr>
-                    <p>Enter Your Username and Email for get OTP</p>
+                    <p>Enter One Time Password (OTP) that you rescued by email</p>
 
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
