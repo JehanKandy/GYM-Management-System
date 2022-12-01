@@ -63,7 +63,7 @@
                         <input type="submit" value="Request OTP" name="request_otp" class="login-btn">                        
                     </form>
                     <hr>
-                    <p>Enter Your Email for get OTP</p>
+                    <p>Enter Your Username and Email for get OTP</p>
 
 
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
