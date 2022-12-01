@@ -49,7 +49,8 @@
                   <?php 
                     include("../function/function.php");
                     if(isset($_POST['otp_check'])){
-
+                        $reuslt = otp_check($_POST['otp_num']);
+                        echo $reuslt;
                     }
 
                   ?>
