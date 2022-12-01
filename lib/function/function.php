@@ -272,7 +272,17 @@
             }else{
                 $check_otp_data = "SELECT * FROM pass_reset_tbl WHERE pass_username ='$otp_username' && pass_email ='$otp_email'";
                 $check_otp_data_result = mysqli_query($con, $check_otp_data);
-                
+                $check_otp_data_nor = mysqli_num_rows($check_otp_data_result);
+
+                if($check_otp_data_nor > 0){
+                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                <strong>Processing Error : </strong> &nbsp; Cannot Process the task...!
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </div>";
+                }
+
                 header("location:otp_pass.php");
             }
         }else{
