@@ -294,10 +294,19 @@
                     $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$otp_email','$otp_num',NOW())";
                     $inset_otp_data_result = mysqli_query($con, $inset_otp_data);
 
-                    
+                    if(!$inset_otp_data_result){
+                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <strong>Error : </strong> &nbsp; While inserting data.....!
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                    </button>
+                                </div>";
+                    }else{
+                        header("location:otp_pass.php");
+                    }
                 }
 
-                header("location:otp_pass.php");
+
             }
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
