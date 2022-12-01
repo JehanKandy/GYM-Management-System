@@ -223,7 +223,7 @@
     }
 
 
-    function check_otp_email(){
+    function check_otp_email($otp_username, $otp_email){
         $con = Connection();
     }
 ?>
