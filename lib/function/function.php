@@ -270,6 +270,9 @@
                             </button>
                         </div>";
             }else{
+                $check_otp_data = "SELECT * FROM pass_reset_tbl WHERE pass_username ='$otp_username' && pass_email ='$otp_email'";
+                $check_otp_data_result = mysqli_query($con, $check_otp_data);
+                
                 header("location:otp_pass.php");
             }
         }else{
