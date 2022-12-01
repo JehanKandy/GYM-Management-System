@@ -100,7 +100,6 @@ GYM Management System
 1. DEVELOP
  - lib
  - - lib/views
- - - - lib/views/pass_reset_email.php
- 
+ - - - lib/views/pass_reset_email.php 
 2. UPDATE 
  - lib/function/function.php
