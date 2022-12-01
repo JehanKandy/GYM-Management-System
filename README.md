@@ -101,5 +101,6 @@ GYM Management System
  - lib
  - - lib/views
  - - - lib/views/pass_reset_email.php 
+ - - - lib/views/
 2. UPDATE 
  - lib/function/function.php
