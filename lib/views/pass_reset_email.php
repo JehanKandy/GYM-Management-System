@@ -54,6 +54,9 @@
                     }
                   ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
+                        <p class="form-text">Username : </p>
+                        <input type="text" name="login_username" class="form-input" id="usernamelogin" placeholder="Enter Username">
+                        <br><br>
                         <p class="form-text">Enter You Email : </p>
                         <input type="text" name="pass_opt_email" class="form-input" id="otpEmail" placeholder="Enter Email">                                              
                         <br>
