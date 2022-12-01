@@ -343,5 +343,14 @@
         $check_pass_otp_result = mysqli_query($con, $check_pass_otp);
         $check_pass_otp_row = mysqli_fetch_assoc($check_pass_otp_result);
         $check_pass_otp_nor = mysqli_num_rows($check_pass_otp_result);
+
+        if($otp_get != $check_pass_otp_row['otp_no']){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>OTP Error : </strong> &nbsp; OTP Doesn't match.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
     }
 ?>
