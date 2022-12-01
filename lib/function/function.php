@@ -300,7 +300,8 @@
                         echo "not";
                     }
 
-                    $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$otp_email','$otp_num',NOW())";
+                    $hash_otp = md5($otp_num);
+                    $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$hash_otp','$otp_num',NOW())";
                     $inset_otp_data_result = mysqli_query($con, $inset_otp_data);
 
                     if(!$inset_otp_data_result){
@@ -336,5 +337,9 @@
                         </button>
                     </div>";
         }
+        $login_user_otp = strval($_SESSION['getEmail']);
+
+        $check_pass_otp = "SELECT * FROM pass_reset_tbl WHERE pass_email = '$login_user_otp' && otp_no = '$otp_get'";
+        $check_pass_otp_result = mysqli_query($con, $check_pass_otp);
     }
 ?>
