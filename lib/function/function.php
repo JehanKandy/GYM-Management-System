@@ -241,7 +241,7 @@
                     </div>"; 
         }
 
-        $check_otp_user = "SELECT * FROM user_tbl WHERE u_username = '$otp_username' && user_pass = '$otp_email'";
+        $check_otp_user = "SELECT * FROM user_tbl WHERE u_username = '$otp_username' && user_pass = '$otp_email' && user_status = 1 && is_pending = 0";
         $check_otp_user_result = mysqli_query($con, $check_otp_user);
         $check_otp_user_row = mysqli_fetch_assoc($check_otp_user_result);
         $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
@@ -261,6 +261,7 @@
                         </button>
                     </div>";
         }
+
 
     }
 ?>
