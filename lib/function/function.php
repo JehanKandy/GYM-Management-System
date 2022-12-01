@@ -221,4 +221,9 @@
         $login_id_user = strval($_SESSION['getEmail']);
         echo $login_id_user;
     }
+
+
+    function check_otp_email(){
+        $con = Connection();
+    }
 ?>
