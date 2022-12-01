@@ -281,6 +281,8 @@
                                 <span aria-hidden='true'>&times;</span>
                                 </button>
                             </div>";
+                }else{
+                    
                 }
 
                 header("location:otp_pass.php");
