@@ -228,7 +228,7 @@
 
     function check_otp_email($otp_username, $otp_email){
         $con = Connection();
-
+        $_SESSION['EmailGet'] = $otp_email;
         if(empty($otp_username)){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Username Error : </strong> &nbsp; Username Can not be empty
@@ -341,23 +341,33 @@
                         </button>
                     </div>";
         }
-        $login_user_otp = strval($_SESSION['getEmail']);
+        $login_user_otp = strval($_SESSION['EmailGet']);
+        $user_hash_otp = md5($otp_get);
 
-        $check_pass_otp = "SELECT * FROM pass_reset_tbl WHERE pass_email = '$login_user_otp' && otp_no = '$otp_get'";
+        $check_pass_otp = "SELECT * FROM pass_reset_tbl WHERE pass_email = '$login_user_otp' && otp_no = '$user_hash_otp'";
         $check_pass_otp_result = mysqli_query($con, $check_pass_otp);
         $check_pass_otp_row = mysqli_fetch_assoc($check_pass_otp_result);
         $check_pass_otp_nor = mysqli_num_rows($check_pass_otp_result);
 
-        if($otp_get != $check_pass_otp_row['otp_no']){
+        if($check_pass_otp_nor > 0){
+            if($user_hash_otp != $check_pass_otp_row['otp_no']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>OTP Error : </strong> &nbsp; OTP Doesn't match.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }
+            else{
+                header("location:new_pass.php");
+            }
+        }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>OTP Error : </strong> &nbsp; OTP Doesn't match.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        else{
-            header("location:new_pass.php");
+                    <strong>OTP Error : </strong> &nbsp; No recodes found.....!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
         }
     }
 ?>
