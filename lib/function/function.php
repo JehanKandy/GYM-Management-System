@@ -1,372 +1,85 @@
 <?php 
-    include("config.php");
-    use FTP\Connection;
-
-
-    session_start();
-
-    function subsucribe_user($email){
-        $con = Connection();
-
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> &nbsp; Check Again Your Email
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-                </div>";
-        }else{
-            $check_sub_user = "SELECT * FROM geting_touch_tbl WHERE g_email = '$email'";
-            $check_sub_user_result = mysqli_query($con, $check_sub_user);
-            $sub_nor = mysqli_num_rows($check_sub_user_result); 
-
-            if($sub_nor > 0){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error</strong> &nbsp; Email Already Exists...!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-            }
-            else{
-                $insert_email_g = "INSERT INTO geting_touch_tbl(g_email,date_time)VALUES('$email',NOW())";
-                $insert_email_g_result = mysqli_query($con, $insert_email_g);
-
-                if(!$insert_email_g_result){
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Error</strong> &nbsp; While insert data in to Database
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-                }else{
-                    return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                            <strong>Success</strong> &nbsp; Data Insert to DataBase Successfully...!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-                }
-            }
-        }
-    }
-
-
-    function reg_user($username, $email, $pass1, $cpass){
-        $con = Connection();
-
-        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$username' && user_email = '$email'";
-        $check_user_result = mysqli_query($con, $check_user);
-        $check_user_nor = mysqli_num_rows($check_user_result);
-
-        if(empty($username)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(empty($email)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error : </strong> &nbsp; Email Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error</strong> &nbsp; Check Again Your Email
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(empty($pass1)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(empty($cpass)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Password Error : </strong> &nbsp; Email Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if($pass1 != $cpass){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Password Error : </strong> &nbsp; Password and Confarm Password doesn't match.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-
-        if($check_user_nor > 0){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>User Error : </strong> &nbsp; Email Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }else{
-            $insert_user = "INSERT INTO user_tbl(u_username,user_email,user_pass,user_type,join_date,user_status,is_pending)VALUES('$username','$email','$pass1','user',NOW(),0,1)";
-            $insert_user_result = mysqli_query($con, $insert_user);
-
-            if(!$insert_user_result){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Error : </strong> &nbsp; While insert data in to Database.....!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-            }else{
-                return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                            <strong>Success</strong> &nbsp; User Created Syccessflly..! <br>
-                            <a href='../views/login.php'>Login To account</a>
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-            }
-        }
-    }
-
-    function login_user($login_username,$login_pass){
-        $con = Connection();
-
-        if(empty($login_username)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error : </strong> &nbsp; Username Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(empty($login_pass)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Password Error : </strong> &nbsp; Password Cannot be Empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>"; 
-        }
-
-        $check_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass'";
-        $check_user_result = mysqli_query($con, $check_user); 
-        $check_user_row = mysqli_fetch_assoc($check_user_result);
-
-        $_SESSION['getEmail'] = $login_username;
-
-
-        if($login_username != $check_user_row['u_username']){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; User does not exist.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if($login_pass != $check_user_row['user_pass']){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; User does not exist.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-
-        $check_user_is_panding = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass = '$login_pass' && user_status = 0 && is_pending = 1";
-        $check_user_is_panding_result = mysqli_query($con, $check_user_is_panding); 
-        $check_user_is_padding_nor = mysqli_num_rows($check_user_is_panding_result);
-
-        if($check_user_is_padding_nor > 0){
-            header("location:wating.php");
-        }
-
-        $check_login_user = "SELECT * FROM user_tbl WHERE u_username = '$login_username' && user_pass ='$login_pass' && user_status = 1 && is_pending = 0";
-        $check_login_user_result = mysqli_query($con, $check_login_user);
-        $check_login_user_row = mysqli_fetch_assoc($check_login_user_result);
-        $check_login_user_nor = mysqli_num_rows($check_login_user_result);
-        
-        if($check_login_user_nor > 0){
-            if($check_user_row['user_type'] == 'user'){
-                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_login_user_row['email'];
-                header("location:../routes/admin.php");  
-            }
-            if($check_user_row['user_type'] == 'admin'){
-                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_login_user_row['email'];
-                header("location:../routes/admin.php");  
-            }
-        else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; While accessing data in Database.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-            }
-        }
-
-    }
-            
-    function wating_user(){
-        $con = Connection();
-
-        $login_id_user = strval($_SESSION['getEmail']);
-        echo $login_id_user;
-    }
-
-
-    function check_otp_email($otp_username, $otp_email){
-        $con = Connection();
-        $_SESSION['EmailGet'] = $otp_email;
-        if(empty($otp_username)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error : </strong> &nbsp; Username Can not be empty
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        if(empty($otp_email)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Email Error : </strong> &nbsp; Email Can not be empty
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>"; 
-        }
-        if(!filter_var($otp_email, FILTER_VALIDATE_EMAIL)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>Email Error</strong> &nbsp; Check Again Your Email
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-                </div>";
-        }
-
-        $check_otp_user = "SELECT * FROM user_tbl WHERE u_username = '$otp_username' && user_email = '$otp_email' && user_status = 1 && is_pending = 0";
-        $check_otp_user_result = mysqli_query($con, $check_otp_user);
-        $check_otp_user_row = mysqli_fetch_assoc($check_otp_user_result);
-        $check_otp_user_nor = mysqli_num_rows($check_otp_user_result);
-
-        if($check_otp_user_nor > 0){
-            if($otp_username != $check_otp_user_row['u_username']){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Username Error : </strong> &nbsp; Username does not exist...!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>"; 
-            }elseif($otp_email != $check_otp_user_row['user_email']){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>Email Error : </strong> &nbsp; Email does not exist...!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-            }else{
-                $check_otp_data = "SELECT * FROM pass_reset_tbl WHERE pass_username ='$otp_username' && pass_email ='$otp_email'";
-                $check_otp_data_result = mysqli_query($con, $check_otp_data);
-                $check_otp_data_nor = mysqli_num_rows($check_otp_data_result);
-
-                if($check_otp_data_nor > 0){
-                    return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                <strong>Processing Error : </strong> &nbsp; Cannot Process the task...!
-                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                <span aria-hidden='true'>&times;</span>
-                                </button>
-                            </div>";
-                }else{
-                    $otp_num = rand(10000,99999);
-
-                    $receiver = $otp_email;
-                    $subject = "Resent Password..!";
-                    $body = "OTP For Resent Password /n GYM Workout /n/n OTP is ".$otp_num;
-                    $sender = "From:jehankandy@gmail.com";
-
-                    if(mail($receiver,$subject,$body,$sender)){
-                        echo "Send";
-                    }else{
-                        echo "not";
-                    }
-
-                    $inset_otp_data = "INSERT INTO pass_reset_tbl(pass_username,pass_email,otp_no,change_date)VALUES('$otp_username','$otp_email','$otp_num',NOW())";
-                    $inset_otp_data_result = mysqli_query($con, $inset_otp_data);
-
-
-
-                    if(!$inset_otp_data_result){
-                        return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                                    <strong>Error : </strong> &nbsp; While inserting data.....!
-                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                    <span aria-hidden='true'>&times;</span>
-                                    </button>
-                                </div>";
-                    }else{
-                        setcookie('resetPass',$otp_email,time()+5*60,'/');
-                        $_SESSION['passReset'] = $otp_email;
-                        header("location:otp_pass.php");
-                    }
-                }
-            }
-        }else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Error : </strong> &nbsp; While Accessing Data in Database.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-    }
-
-    function otp_check($otp_get){
-        $con = Connection();
-
-        if(empty($otp_get)){
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>OTP Error : </strong> &nbsp; Input Feild Connot be empty.....!
-                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                        <span aria-hidden='true'>&times;</span>
-                        </button>
-                    </div>";
-        }
-        $login_user_otp = strval($_SESSION['EmailGet']);
-
-
-        $check_pass_otp = "SELECT * FROM pass_reset_tbl WHERE pass_email = '$login_user_otp' && otp_no = '$otp_get'";
-        $check_pass_otp_result = mysqli_query($con, $check_pass_otp);
-        $check_pass_otp_row = mysqli_fetch_assoc($check_pass_otp_result);
-        $check_pass_otp_nor = mysqli_num_rows($check_pass_otp_result);
-
-        if($check_pass_otp_nor > 0){
-            if($otp_get != $check_pass_otp_row['otp_no']){
-                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                            <strong>OTP Error : </strong> &nbsp; OTP Doesn't match.....!
-                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                            <span aria-hidden='true'>&times;</span>
-                            </button>
-                        </div>";
-            }
-            else{
-                header("location:new_pass.php");
-            }
-        }else{
-            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                    <strong>OTP Error : </strong> &nbsp; No recodes found.....!
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>&times;</span>
-                    </button>
-                </div>";
-        }
-    }
+    include("../layouts/header.php");
 ?>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">GYM Workout</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../docs/about.php">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../../docs/shop.php">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="login.php">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<div class="register">
+    <div class="container">
+        <div class="login-content">
+            <div class="login-box">
+                <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Register Here</div>
+                <div class="body">
+                    <?php 
+                        include("../function/function.php");
+                        if(isset($_POST['register'])){
+                            $result = reg_user($_POST['reg_username'], $_POST['reg_email'], md5($_POST['reg_pass']), md5($_POST['reg_cpass']));
+                            echo $result;
+                        }
+                    
+                    ?>
+                    <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
+                        <p class="form-text">Username : </p>
+                        <input type="text" name="reg_username" class="form-input" id="usernamereg" placeholder="Enter Username">
+                        <br><br> 
+                        <p class="form-text">Email : </p>
+                        <input type="email" name="reg_email" class="form-input" id="emailreg" placeholder="Enter Email">
+                        <br><br>      
+                        <p class="form-text">New Password : </p>
+                        <input type="password" name="reg_pass" class="form-input" id="passreg" placeholder="New Password">
+                        <br><br>  
+                        <p class="form-text">Confarm New Password : </p>
+                        <input type="password" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Confarm New Password">
+                        <br><br>
+                        <input type="reset" value="Clear" class="clear-btn">&nbsp;&nbsp;<input type="submit" value="Register" name="register" class="register-btn">
+                    </form>
+                    <hr>
+                    <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php 
+    include("../layouts/footer1.php")    
+?>
+
+<script src="../../js/script.js"></script>
