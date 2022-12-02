@@ -112,6 +112,8 @@ GYM Management System
  - lib
  - - lib/views
  - - - lib/views/new_pass.php
+ - - lib/routes
+ 
 2. UPDATE 
  - lib/function/function.php
  - lib/views/otp_pass.php
