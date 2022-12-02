@@ -111,7 +111,7 @@ GYM Management System
 1. DEVELOP
  - lib
  - - lib/views
- - - - lib/views/
+ - - - lib/views/new_pass.php
 2. UPDATE 
  - lib/function/function.php
  - lib/views/otp_pass.php
