@@ -370,7 +370,7 @@
         }
     }
 
-    function update_pass(){
+    function update_pass($update_username,$update_email,$update_pass,$update_cpass){
         $con = Connection();
     }
 ?>
