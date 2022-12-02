@@ -112,3 +112,4 @@ GYM Management System
 
 2. UPDATE 
  - lib/function/function.php
+ - lib/views/
