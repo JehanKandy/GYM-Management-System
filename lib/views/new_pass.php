@@ -1,6 +1,10 @@
 <?php 
     include("../layouts/header.php");
     include("../function/function.php");
+
+    if(empty($_SESSION['passReset'])){
+		header("location:login.php");
+	}
 ?>
 
 <link rel="stylesheet" href="../css/style.css">
