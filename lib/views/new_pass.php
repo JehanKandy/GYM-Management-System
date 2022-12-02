@@ -56,8 +56,7 @@
                             $result = update_pass($_POST['new_username'],$_POST['new_email'],md5($_POST['new_pass']),md5($_POST['new_cpass']));
                             echo $result;
                         }
-
-                    
+                   
                     ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
