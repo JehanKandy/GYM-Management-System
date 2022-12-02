@@ -114,10 +114,12 @@ GYM Management System
  - - - lib/views/new_pass.php
  - - lib/routes
  - - - lib/routes/admin.php
+ - - - lib/routes/members.php
  - - lib/layouts
  - - - lib/layouts/nav_loged.php
  - css
  - - css/dashboard.css
+ 
  
 2. UPDATE 
  - lib/function/function.php
