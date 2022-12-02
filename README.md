@@ -114,4 +114,3 @@ GYM Management System
  - - - lib/views/pass_reset_email.php 
  - - - lib/views/otp_pass.php
 2. UPDATE 
- - lib/function/function.php
