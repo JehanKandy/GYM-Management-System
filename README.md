@@ -109,8 +109,5 @@ GYM Management System
  
  <b>01 December 2022</b>
 1. DEVELOP
- - lib
- - - lib/views
- - - - lib/views/pass_reset_email.php 
- - - - lib/views/otp_pass.php
+
 2. UPDATE 
