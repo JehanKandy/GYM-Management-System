@@ -419,13 +419,23 @@
         $check_reset_pass_row = mysqli_fetch_assoc($check_reset_pass_result);
         $check_reset_pass_nor = mysqli_num_rows($check_reset_pass_result);
 
-        if($update_username != $check_reset_pass_row['u_username']){
+        if($check_reset_pass_nor > 0){
+            if($update_username != $check_reset_pass_row['u_username']){
+                return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                            <strong>Username Error : </strong> &nbsp;Username not match.....!
+                            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>";
+            }
+        }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-                        <strong>Username Error : </strong> &nbsp;Username not match.....!
+                        <strong>Error : </strong> &nbsp;Recodes not Found.....!
                         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
+
         }
 
     }
