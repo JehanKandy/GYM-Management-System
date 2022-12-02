@@ -104,3 +104,14 @@ GYM Management System
  - - - lib/views/otp_pass.php
 2. UPDATE 
  - lib/function/function.php
+ 
+   <hr> 
+ 
+ <b>01 December 2022</b>
+1. DEVELOP
+ - lib
+ - - lib/views
+ - - - lib/views/pass_reset_email.php 
+ - - - lib/views/otp_pass.php
+2. UPDATE 
+ - lib/function/function.php
