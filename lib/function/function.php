@@ -446,6 +446,11 @@
             }else{
                 $update_data_pass = "UPDATE user_tbl SET user_pass = '$update_pass' WHERE user_email = '$update_email' && u_username = '$update_username'";
                 $update_data_pass_result = mysqli_query($con, $update_data_pass);
+              
+                setcookie('resetPass',NULL,time()-5*60,'/');
+                session_unset();
+                session_destroy();
+                header("location:login.php");
             }         
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
