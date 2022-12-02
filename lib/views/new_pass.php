@@ -69,7 +69,7 @@
                         <p class="form-text">Confarm New Password : </p>
                         <input type="password" name="new_cpass" class="form-input" id="cpassnew" placeholder="Confarm New Password">
                         <br><br>
-                        <input type="submit" value="Register" name="register" class="login-btn">
+                        <input type="submit" value="Update Password" name="pass_update" class="login-btn">
                     </form>
                     <hr>
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
