@@ -116,6 +116,8 @@ GYM Management System
  - - - lib/routes/admin.php
  - - lib/layouts
  - - - lib/layouts/nav_loged.php
+ - css
+ - - css/dashboard.css
  
 2. UPDATE 
  - lib/function/function.php
