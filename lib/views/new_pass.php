@@ -1,5 +1,6 @@
 <?php 
     include("../layouts/header.php");
+    include("../function/function.php");
 ?>
 
 <link rel="stylesheet" href="../css/style.css">
@@ -47,11 +48,8 @@
                 <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Register Here</div>
                 <div class="body">
                     <?php 
-                        include("../function/function.php");
-                        if(isset($_POST['register'])){
-                            $result = reg_user($_POST['reg_username'], $_POST['reg_email'], md5($_POST['reg_pass']), md5($_POST['reg_cpass']));
-                            echo $result;
-                        }
+
+
                     
                     ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
