@@ -405,5 +405,13 @@
                         </button>
                     </div>";
         }
+        if($update_pass != $update_cpass){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Password Error : </strong> &nbsp;Passwords not match.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
     }
 ?>
