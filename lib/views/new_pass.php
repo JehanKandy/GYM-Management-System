@@ -65,7 +65,7 @@
                         <p class="form-text">Confarm New Password : </p>
                         <input type="password" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Confarm New Password">
                         <br><br>
-                        <input type="reset" value="Clear" class="clear-btn">&nbsp;&nbsp;<input type="submit" value="Register" name="register" class="register-btn">
+                        <input type="submit" value="Register" name="register" class="login-btn">
                     </form>
                     <hr>
                     <p class="bottom-by"><i class="far fa-copyright"></i>By Maneesha</p>
