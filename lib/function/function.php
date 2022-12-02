@@ -413,5 +413,9 @@
                         </button>
                     </div>";
         }
+
+        $check_reset_pass = "SELECT * FROM user_tbl WHERE u_username = '$update_username' && user_email = '$update_email' user_pass = '$update_pass' && user_status = 1 && is_pending = 0";
+
+
     }
 ?>
