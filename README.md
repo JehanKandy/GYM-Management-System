@@ -114,6 +114,8 @@ GYM Management System
  - - - lib/views/new_pass.php
  - - lib/routes
  - - - lib/routes/admin.php
+ - - lib/layouts
+ - - - lib/layouts/
  
 2. UPDATE 
  - lib/function/function.php
