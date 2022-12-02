@@ -54,6 +54,7 @@
                     <?php 
                         if(isset($_POST['pass_update'])){
                             $result = update_pass($_POST['new_username'],$_POST['new_email'],md5($_POST['new_pass']),md5($_POST['new_cpass']));
+                            echo $result;
                         }
 
                     
