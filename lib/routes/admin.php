@@ -25,7 +25,7 @@
 			<a href="admin/teachers.php" class="menu-item"><i class="fas fa-user-alt"></i>Members &nbsp; <span class="pending">15</span></a>
 			<a href="admin/admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="pending">15</span></a></a>
 			<a href="std_question.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  &nbsp; <span class="pending">15</span></a></a>
-            <a href="std_question.php" class="menu-item"><i class="far fa-comments"></i>Plans  &nbsp; <span class="pending">15</span></a></a>
+            <a href="std_question.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  &nbsp; <span class="pending">15</span></a></a>
 			<a href="admin/my_account_admin.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
 		</nav>
 		
