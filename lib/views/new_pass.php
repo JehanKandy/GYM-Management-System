@@ -49,7 +49,7 @@
     <div class="container">
         <div class="login-content">
             <div class="login-box">
-                <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Register Here</div>
+                <div class="title"><i class="fas fa-user-plus"></i>&nbsp; Update Password</div>
                 <div class="body">
                     <?php 
 
