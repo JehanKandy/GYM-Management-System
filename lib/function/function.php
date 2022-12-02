@@ -428,14 +428,16 @@
                             </button>
                         </div>";
             }
-            if($update_email != $check_reset_pass_row['user_email']){
+            elseif($update_email != $check_reset_pass_row['user_email']){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>Email Error : </strong> &nbsp;Email not match.....!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>";
-            }
+            }else{
+                
+            }         
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Error : </strong> &nbsp;Recodes not Found.....!
