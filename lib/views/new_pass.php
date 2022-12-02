@@ -58,16 +58,16 @@
                     ?>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="post">
                         <p class="form-text">Username : </p>
-                        <input type="text" name="reg_username" class="form-input" id="usernamereg" placeholder="Enter Username">
+                        <input type="text" name="new_username" class="form-input" id="usernamenew" placeholder="Enter Username">
                         <br><br> 
                         <p class="form-text">Email : </p>
-                        <input type="email" name="reg_email" class="form-input" id="emailreg" placeholder="Enter Email">
+                        <input type="email" name="new_email" class="form-input" id="emailnew" placeholder="Enter Email">
                         <br><br>      
                         <p class="form-text">New Password : </p>
-                        <input type="password" name="reg_pass" class="form-input" id="passreg" placeholder="New Password">
+                        <input type="password" name="new_pass" class="form-input" id="passnew" placeholder="New Password">
                         <br><br>  
                         <p class="form-text">Confarm New Password : </p>
-                        <input type="password" name="reg_cpass" class="form-input" id="cpassreg" placeholder="Confarm New Password">
+                        <input type="password" name="new_cpass" class="form-input" id="cpassnew" placeholder="Confarm New Password">
                         <br><br>
                         <input type="submit" value="Register" name="register" class="login-btn">
                     </form>
