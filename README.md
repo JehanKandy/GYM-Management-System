@@ -120,3 +120,4 @@ GYM Management System
 2. UPDATE 
  - lib/function/function.php
  - lib/views/otp_pass.php
+ - js/script.js
