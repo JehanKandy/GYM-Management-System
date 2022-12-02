@@ -294,6 +294,9 @@
                     $body = "OTP For Resent Password /n GYM Workout /n/n OTP is ".$otp_num;
                     $sender = "From:jehankandy@gmail.com";
 
+                    setcookie('resetPass',$otp_email,time()+5*60,'/');
+                    $_SESSION['passReset'] = $otp_email;
+
                     if(mail($receiver,$subject,$body,$sender)){
                         echo "Send";
                     }else{
