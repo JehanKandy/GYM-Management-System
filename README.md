@@ -128,20 +128,7 @@ GYM Management System
  
   <b>02 December 2022</b>
 1. DEVELOP
- - lib
- - - lib/views
- - - - lib/views/new_pass.php
- - - lib/routes
- - - - lib/routes/admin.php
- - - - lib/routes/members.php
- - - lib/layouts
- - - - lib/layouts/nav_loged.php
- - css
- - - css/dashboard.css
- 
- 
+
 2. UPDATE 
- - lib/function/function.php
- - lib/views/otp_pass.php
- - js/script.js
+
 
