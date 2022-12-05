@@ -466,6 +466,8 @@
     function count_members(){
         $con = Connection();
 
-        $member_count = "SELECT * FROM user_tbl WHERE "
+        $member_count = "SELECT * FROM user_tbl WHERE user_type = 'user'";
+        $member_count_result = mysqli_query($con, $member_count);
+        
     }
 ?>
