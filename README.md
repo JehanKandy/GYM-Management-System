@@ -132,6 +132,7 @@ GYM Management System
  - - lib/routes
  - - - lib/routes/admins.php
  - - - lib/routes/products.php
+ - - - lib/routes/plans.php
 
 2. UPDATE 
 
