@@ -42,7 +42,7 @@
 					</div>
 					<hr class="std-hr">
 					<div class="admin-body">
-						15
+						<?php count_members(); ?>
 					</div>
 				</div>
 				<div class="admin-item2">
