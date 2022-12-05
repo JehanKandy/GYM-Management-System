@@ -472,4 +472,14 @@
 
         echo $member_count_nor;
     }
+
+    function count_admins(){
+        $con = Connection();
+
+        $admin_count = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
+        $admin_count_result = mysqli_query($con, $admin_count);
+        $admin_count_nor = mysqli_num_rows($admin_count_result);
+
+        echo $admin_count_nor;
+    }
 ?>
