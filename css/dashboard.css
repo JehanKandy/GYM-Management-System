@@ -1295,6 +1295,13 @@ td {
     margin-bottom: 20px;
 }
 
+.logout-btn-nav {
+    color: white;
+    padding: 5 10 5 10;
+    background-color: red;
+    
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
