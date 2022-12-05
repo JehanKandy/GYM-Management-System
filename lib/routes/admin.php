@@ -51,7 +51,7 @@
 					</div>
 					<hr class="tea-hr">
 					<div class="admin-body">
-						15
+						<?php count_admins(); ?>
 					</div>
 				</div>
 				<div class="admin-item3">
