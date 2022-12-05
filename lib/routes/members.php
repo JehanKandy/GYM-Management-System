@@ -38,29 +38,41 @@
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">First</th>
-					<th scope="col">Last</th>
-					<th scope="col">Handle</th>
+					<th scope="col">Username</th>
+					<th scope="col">Email</th>
+					<th scope="col">First Name</th>
+					<th scope="col">NIC</th>
+					<th scope="col">Status</th>
+					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
+					<td>Jehan</td>
+					<td>jehan"123</td>
+					<td>Jehan</td>
+					<td>20010540602233</td>
+					<td>Active</td>
+					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
+					<th scope="row">1</th>
+					<td>Jehan</td>
+					<td>jehan"123</td>
+					<td>Jehan</td>
+					<td>20010540602233</td>
+					<td>Active</td>
+					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 				<tr>
-					<th scope="row">3</th>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
+					<th scope="row">1</th>
+					<td>Jehan</td>
+					<td>jehan"123</td>
+					<td>Jehan</td>
+					<td>20010540602233</td>
+					<td>Active</td>
+					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 			</tbody>
 		</table>
