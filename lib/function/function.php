@@ -465,5 +465,7 @@
 
     function count_members(){
         $con = Connection();
+
+        $member_count = "SELECT * FROM user_tbl WHERE "
     }
 ?>
