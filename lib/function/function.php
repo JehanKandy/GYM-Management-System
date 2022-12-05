@@ -468,6 +468,8 @@
 
         $member_count = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $member_count_result = mysqli_query($con, $member_count);
-        
+        $member_count_nor = mysqli_num_rows($member_count_result);
+
+        echo $member_count_nor;
     }
 ?>
