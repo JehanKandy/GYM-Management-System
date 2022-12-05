@@ -126,7 +126,7 @@ GYM Management System
  - lib/views/otp_pass.php
  - js/script.js
  
-  <b>02 December 2022</b>
+  <b>05 December 2022</b>
 1. DEVELOP
 
 2. UPDATE 
