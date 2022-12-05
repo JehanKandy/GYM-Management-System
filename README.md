@@ -130,6 +130,7 @@ GYM Management System
 1. DEVELOP
  - lib
  - - lib/routes
+ - - - lib/routes/admins.php
 
 2. UPDATE 
 
