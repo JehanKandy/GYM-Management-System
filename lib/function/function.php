@@ -482,4 +482,8 @@
 
         echo $admin_count_nor;
     }
+
+    function any_user_data(){
+        $con = Connection();
+    }
 ?>
