@@ -490,6 +490,11 @@
 
         $user_data = "SELECT * FROM user_tbl WHERE user_email = '$login_email'";
         $user_data_result = mysqli_query($con, $user_data);
+        $user_data_row = mysqli_fetch_assoc($user_data_result);
+
+        if($user_data_row['user_type'] == 'user'){
+            
+        }
         
     }
 ?>
