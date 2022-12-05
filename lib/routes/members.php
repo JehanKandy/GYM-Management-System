@@ -85,7 +85,3 @@
 
 <script src="../../js/script.js"></script>
 
-<!-- Button trigger modal -->
-
-
-<!-- Modal -->
