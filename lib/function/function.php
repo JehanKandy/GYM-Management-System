@@ -3,7 +3,6 @@
     use FTP\Connection;
 
 
-
     session_start();
 
     function subsucribe_user($email){
@@ -198,13 +197,13 @@
         
         if($check_login_user_nor > 0){
             if($check_user_row['user_type'] == 'user'){
-                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_login_user_row['email'];
-                header("location:../routes/admin.php");  
+                setcookie('login',$check_login_user_row['user_email'],time()+60*60,'/');
+                $_SESSION['LoginSession'] = $check_login_user_row['user_email'];
+                header("location:../routes/user.php");  
             }
             if($check_user_row['user_type'] == 'admin'){
-                setcookie('login',$check_login_user_row['email'],time()+60*60,'/');
-                $_SESSION['LoginSession'] = $check_login_user_row['email'];
+                setcookie('login',$check_login_user_row['user_email'],time()+60*60,'/');
+                $_SESSION['LoginSession'] = $check_login_user_row['user_email'];
                 header("location:../routes/admin.php");  
             }
         else{
@@ -415,7 +414,7 @@
                     </div>";
         }
 
-        $check_reset_pass = "SELECT * FROM user_tbl WHERE u_username = '$update_username' && user_email = '$update_email' user_pass = '$update_pass' && user_status = 1 && is_pending = 0";
+        $check_reset_pass = "SELECT * FROM user_tbl WHERE u_username = '$update_username' && user_email = '$update_email' && user_status = 1 && is_pending = 0";
         $check_reset_pass_result = mysqli_query($con, $check_reset_pass);
         $check_reset_pass_row = mysqli_fetch_assoc($check_reset_pass_result);
         $check_reset_pass_nor = mysqli_num_rows($check_reset_pass_result);
@@ -462,6 +461,9 @@
                     </div>";
 
         }
+    }
 
+    function count_members(){
+        $con = Connection();
     }
 ?>
