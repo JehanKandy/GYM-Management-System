@@ -1296,10 +1296,11 @@ td {
 }
 
 .logout-btn-nav {
-    color: white;
     padding: 5 10 5 10;
     background-color: none;
     border: 1px solid red;
+    color: red;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 1400px) {
