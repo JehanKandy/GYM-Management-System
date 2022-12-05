@@ -53,7 +53,7 @@
 					<td>jehan"123</td>
 					<td>Jehan</td>
 					<td>20010540602233</td>
-					<td>Active</td>
+					<td><h class="badge badge-success">Active</h></td>
 					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 				<tr>
@@ -62,7 +62,7 @@
 					<td>jehan"123</td>
 					<td>Jehan</td>
 					<td>20010540602233</td>
-					<td>Active</td>
+					<td><h class="badge badge-success">Active</h></td>
 					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 				<tr>
@@ -71,7 +71,7 @@
 					<td>jehan"123</td>
 					<td>Jehan</td>
 					<td>20010540602233</td>
-					<td>Active</td>
+					<td><h class="badge badge-success">Active</h></td>
 					<td><button class="btn btn-primary">info</button></td>
 				</tr>
 			</tbody>
