@@ -135,5 +135,6 @@ GYM Management System
  - - - lib/routes/plans.php
 
 2. UPDATE 
+ - css/dashboard.css
 
 
