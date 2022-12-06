@@ -150,4 +150,5 @@ GYM Management System
 2. UPDATE 
   - lib/function/function.php 
   - lib/routes/members.php
+  - lib/layouts/nav_loged.php
 
