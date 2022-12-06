@@ -492,6 +492,7 @@
         $user_data_result = mysqli_query($con, $user_data);
         $user_data_row = mysqli_fetch_assoc($user_data_result);
 
+
         $user_data_view = "
             <th scope='row'>1</th>
 					<td>Jehan</td>
