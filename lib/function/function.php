@@ -463,6 +463,10 @@
         }
     }
 
+    function user_id(){
+        $con = Connection();
+    }
+
     function count_members(){
         $con = Connection();
 
