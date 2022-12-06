@@ -467,7 +467,12 @@
         $con = Connection();
 
         $user_login_id = strval($_SESSION['LoginSession']);
-        echo $user_login_id;
+
+        $user_login_data = "SELECT * FROM user_tbl WHERE user_email = '$user_login_data'";
+        $user_login_data_result = mysqli_query($con, $user_login_data);
+        $user_login_data_row = mysqli_fetch_assoc($user_login_data_result);
+
+        echo $user_login_data_row['u_username'];
     }
 
     function count_members(){
