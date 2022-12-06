@@ -465,6 +465,9 @@
 
     function user_id(){
         $con = Connection();
+
+        $user_login_id = strval($_SESSION['LoginSession']);
+        echo $user_login_id;
     }
 
     function count_members(){
