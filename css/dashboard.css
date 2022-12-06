@@ -1310,6 +1310,11 @@ td {
     cursor: pointer;
 }
 
+.login-id {
+    padding: 0 15 0 5;
+    color: white;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
