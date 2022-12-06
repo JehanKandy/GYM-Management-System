@@ -498,8 +498,6 @@
     function any_user_data(){
         $con = Connection();
 
-        $login_email = strval($_SESSION['LoginSession']);
-
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $user_data_result = mysqli_query($con, $user_data);
   
