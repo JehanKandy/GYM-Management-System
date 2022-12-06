@@ -151,4 +151,5 @@ GYM Management System
   - lib/function/function.php 
   - lib/routes/members.php
   - lib/layouts/nav_loged.php
+  - css/dashboard.css
 
