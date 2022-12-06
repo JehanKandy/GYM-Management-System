@@ -468,7 +468,7 @@
 
         $user_login_id = strval($_SESSION['LoginSession']);
 
-        $user_login_data = "SELECT * FROM user_tbl WHERE user_email = '$user_login_data'";
+        $user_login_data = "SELECT * FROM user_tbl WHERE user_email = '$user_login_id'";
         $user_login_data_result = mysqli_query($con, $user_login_data);
         $user_login_data_row = mysqli_fetch_assoc($user_login_data_result);
 
