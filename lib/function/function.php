@@ -494,11 +494,11 @@
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
             $user_data_view = "
-                <th scope='row'>1</th>
-                        <td>Jehan</td>
-                        <td>jehan@123</td>
-                        <td>Jehan</td>
-                        <td>20010540602233</td>
+                        <th scope='row'>".$user_data_row['id']."</th>
+                        <td>".$user_data_row['u_username']."</td>
+                        <td>".$user_data_row['user_email']."</td>
+                        <td>".$user_data_row['fname']."</td>
+                        <td>".$user_data_row['nic']."</td>
                         <td><h class='badge badge-success'>Active</h></td>
                         <td><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>
                             info
