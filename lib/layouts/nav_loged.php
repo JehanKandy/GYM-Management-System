@@ -16,7 +16,7 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
     </ul>
     <span class="navbar-text">
-        <span> <?php user_id(); ?></span>   
+        <span class="login-id"> <?php user_id(); ?></span>   
         <a href="../views/logout.php"><button class="logout-btn-nav"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</button></a>
     </span>
   </div>
