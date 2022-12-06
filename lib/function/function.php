@@ -488,9 +488,9 @@
 
         $login_email = strval($_SESSION['LoginSession']);
 
-        $user_data = "SELECT * FROM user_tbl WHERE user_email = '$login_email'";
+        $user_data = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $user_data_result = mysqli_query($con, $user_data);
-        $user_data_row = mysqli_fetch_assoc($user_data_result);
+  
 
 
         $user_data_view = "
