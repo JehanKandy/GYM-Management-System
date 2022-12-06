@@ -502,10 +502,13 @@
                         <td>".$user_data_row['nic']."</td>";
 
                     if($user_data_row['user_status'] == 1){
-                        $user_data_view = "<td><h class='badge badge-success'>Active</h></td>";
-                    }                       
+                        $user_data_view .= "<td><h class='badge badge-success'>Active</h></td>";
+                    }
+                    elseif($user_data_row['user_status'] == 0){
+                        $user_data_view .= "<td><h class='badge badge-danger'>Deactive</h></td>";
+                    }                     
 
-            $user_data_view = "
+            $user_data_view .= "
                         <td><button type='button' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'>
                             info
                         </button>
