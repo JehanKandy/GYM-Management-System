@@ -34,7 +34,7 @@
 	<main class="content">
 		<h1>All Members</h1>
 		<hr>
-		<table class="table">
+		<table class="student-tbl">
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">#</th>
@@ -43,7 +43,7 @@
 					<th scope="col">First Name</th>
 					<th scope="col">NIC</th>
 					<th scope="col">Status</th>
-					<th scope="col"></th>
+					<th scope="col">455</th>
 				</tr>
 			</thead>
 			<tbody>
