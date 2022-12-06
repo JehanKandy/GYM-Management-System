@@ -494,6 +494,7 @@
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
             $user_data_view = "
+                <tr>
                         <th scope='row'>".$user_data_row['id']."</th>
                         <td>".$user_data_row['u_username']."</td>
                         <td>".$user_data_row['user_email']."</td>
@@ -523,7 +524,7 @@
                         </div>
                         </div>
                         </td>
-                
+                <tr>
                 ";
                 echo $user_data_view;
         }
