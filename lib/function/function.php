@@ -585,6 +585,7 @@
                                 $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>";
                             }
 
+                            
 
                 $user_data .="
                         </div>
