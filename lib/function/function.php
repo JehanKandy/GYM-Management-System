@@ -517,9 +517,12 @@
                     elseif($user_data_row['user_status'] == 0){
                         $user_data_view .= "<td><h4><span class='badge badge-danger'>Deactive</span></h4></td>";
                     }
-                    if($user_data_row['is_pending'] == 0){
-                        $user_data_view .= "<td><h4><span class='badge badge-danger'>Deactive</span></h4></td>";
-                    }                
+                    if($user_data_row['is_pending'] == 1){
+                        $user_data_view .= "<td><h4><span class='badge badge-info'>Pending User</span></h4></td>";
+                    }
+                    elseif($user_data_row['is_pending'] == 0){
+                        $user_data_view .= "<td><h4><span class='badge badge-success'>Activated User</span></h4></td>";
+                    }                   
 
             $user_data_view .= "
                             <td><a href='user_edit.php?id=".$user_data_row['u_username']."'><button class='btn btn-primary'>Infor</button></a></td>
