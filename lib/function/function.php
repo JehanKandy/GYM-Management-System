@@ -561,7 +561,8 @@
                         </div>
                         <div class='item-user6'>
                             <span class='form-text'>Date Of Birth:
-                            <input type='date' class='form-control' value='".$check_data_row['dob']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['dob']."'></span>
+                            <p style='font-size:15px; padding-top:5px;'>Ex : 1999-12-12</p>
                         </div>
                     </div>
                         
