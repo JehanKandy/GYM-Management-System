@@ -12,7 +12,7 @@
 <div class="container">
     <div class="user-edit-content">
         <div class="title">
-
+            <?php get_user_data_edit(); ?>
         </div>        
     </div>
 </div>
