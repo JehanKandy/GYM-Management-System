@@ -580,7 +580,7 @@
                             ";
 
                             if($check_data_row['user_status'] == 1){
-                                $user_data .="<h3><span class='badge badge-secondary'>New</span></h3>";
+                                $user_data .="<h3><span class='badge badge-success'>Active</span></h3>";
                             }elseif($check_data_row['user_status'] == 0){
 
                             }
