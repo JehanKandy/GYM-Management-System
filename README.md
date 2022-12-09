@@ -161,5 +161,6 @@ GYM Management System
 2. UPDATE 
   - lib/function/function.php 
   - lib/routes/admin.php
+  - lib/routes/admins.php
 
 
