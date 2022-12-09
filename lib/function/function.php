@@ -541,19 +541,19 @@
                     <div class='user-edit-grid'>
                         <div class='item-user1'>
                             <span class='form-text'>Username:
-                            <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['u_username']."' disabled></span>
                         </div>
                         <div class='item-user2'>
                             <span class='form-text'>First Name:
-                            <input type='text' class='form-control' value='".$check_data_row['fname']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['fname']."' disabled></span>
                         </div>
                         <div class='item-user3'>
                             <span class='form-text'>Last Name:
-                            <input type='text' class='form-control' value='".$check_data_row['lname']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['lname']."' disabled></span>
                         </div>
                         <div class='item-user4'>
                             <span class='form-text'>Email:
-                            <input type='text' class='form-control' value='".$check_data_row['user_email']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['user_email']."' disabled></span>
                         </div>
                         <div class='item-user5'>
                             <span class='form-text'>Address:
@@ -569,8 +569,8 @@
                             <input type='text' class='form-control' value='".$check_data_row['nic']."'></span>
                         </div>
                         <div class='item-user8'>
-                            <span class='form-text'>NIC No:
-                            <input type='text' class='form-control' value='".$check_data_row['nic']."'></span>
+                            <span class='form-text'>Mobile Number:
+                            <input type='text' class='form-control' value='".$check_data_row['mobile_no']."'></span>
                         </div>
                     </div>
                         
