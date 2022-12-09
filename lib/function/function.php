@@ -519,12 +519,11 @@
                     }                     
 
             $user_data_view .= "
-                            <td><a href='#'><button class='btn btn-primary'>Infor</button></a></td>
+                            <td><a href='user_edit.php?id=".$user_data_row['user_email']."><button class='btn btn-primary'>Infor</button></a></td>
                         </tr>                      
                 ";
                 echo $user_data_view;
-        }
-            
+        }           
                 
     }
 ?>
