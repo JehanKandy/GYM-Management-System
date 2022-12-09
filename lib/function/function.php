@@ -540,7 +540,9 @@
         if($check_data_nor > 0){
             $user_data = "
                 <form action='' method='POST'>
-
+                    <table border='0'>
+                    
+                    </table>
                 </form>
             ";
 
