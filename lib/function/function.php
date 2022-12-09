@@ -538,7 +538,11 @@
         $check_data_nor = mysqli_num_rows($check_data_result);
 
         if($check_data_nor > 0){
-            $user_data = "";
+            $user_data = "
+                <form action='' method='POST'>
+
+                </form>
+            ";
 
             echo $user_data;
         }
