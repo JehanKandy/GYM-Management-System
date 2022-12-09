@@ -540,12 +540,14 @@
         if($check_data_nor > 0){
             $user_data = "
                 <form action='' method='POST'>
-
-                    <span class='form-text'>Username: </span>
-                    <input type='text' class='form-control' value='".$check_data_row['u_username']."'>
+                    <div class='user-edit-grid'>
+                        <div class='item-user1'>
+                            <span class='form-text'>Username: 
+                            <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
+                        </div>
+                    </div>
                         
-                        
-                    </table>
+                    
                 </form>
             ";
 
