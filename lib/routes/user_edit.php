@@ -7,9 +7,14 @@
         header("location:../views/login.php");
     }
 ?>
+
+<?php 
+    $id = $_GET['id'];
+?>
 <div class="container">
     <div class="user-edit-content">
-
-        
+        <div class="title">
+            <?php echo $id; ?>
+        </div>        
     </div>
 </div>
