@@ -1339,6 +1339,22 @@ td {
     grid-template-areas: "a b c" "d d d" "e e e";
 }
 
+.item-user1 {
+    grid-area: a;
+}
+
+.item-user2 {
+    grid-area: b;
+}
+
+.item-user3 {
+    grid-area: c;
+}
+
+.item-user4 {
+    grid-area: d;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
