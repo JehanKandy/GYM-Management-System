@@ -524,7 +524,10 @@
                         </tr>                      
                 ";
                 echo $user_data_view;
-        }           
-                
+        }       
+    }
+
+    function get_user_data_edit(){
+        $con = Connection();
     }
 ?>
