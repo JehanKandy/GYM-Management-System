@@ -23,7 +23,7 @@
 			<p class="profile-name"><?php //user_id_loged();?></p>
 			<a href="admin.php" class="menu-item"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
 			<a href="members.php" class="menu-item"><i class="fas fa-user-alt"></i>Members &nbsp; <span class="pending">15</span></a>
-			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="pending">15</span></a></a>
+			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="pending"><?php count_admins(); ?></span></a></a>
 			<a href="products.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  &nbsp; <span class="pending">15</span></a></a>
             <a href="plans.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  &nbsp; <span class="pending">15</span></a></a>
 			<a href="my_account.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
@@ -38,25 +38,25 @@
 			<div class="grid">
 				<div class="admin-item1">
 					<div class="admin-title">
-						<i class="fas fa-user-graduate"></i> &nbsp;  Students<br>
+						<i class="fas fa-user-alt"></i> &nbsp;  Members<br>
 					</div>
 					<hr class="std-hr">
 					<div class="admin-body">
-						15
+						<?php count_members(); ?>
 					</div>
 				</div>
 				<div class="admin-item2">
 					<div class="admin-title">
-						<i class="fas fa-chalkboard-teacher"></i> &nbsp;  Teachers<br>
+						<i class="fas fa-user-tie"></i> &nbsp;  Admins<br>
 					</div>
 					<hr class="tea-hr">
 					<div class="admin-body">
-						15
+						<?php count_admins(); ?>
 					</div>
 				</div>
 				<div class="admin-item3">
 					<div class="admin-title">
-						<i class="fas fa-user-tie"></i> &nbsp;  Admins<br>
+						<i class="fas fa-gifts"></i> &nbsp;  Products<br>
 					</div>
 					<hr class="admin-hr">
 					<div class="admin-body">
@@ -65,7 +65,7 @@
 				</div>
 				<div class="admin-item4">
 					<div class="admin-title">
-						<i class="fas fa-question-circle"></i> &nbsp;  Quizzes<br>
+						<i class="fas fa-book-reader"></i> &nbsp;  Plans<br>
 					</div>
 					<hr class="qui-hr">
 					<div class="admin-body">
