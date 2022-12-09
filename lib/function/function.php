@@ -544,12 +544,16 @@
                             <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
                         </div>
                         <div class='item-user2'>
-                            <span class='form-text'>Username:
+                            <span class='form-text'>First Name:
                             <input type='text' class='form-control' value='".$check_data_row['fname']."'></span>
                         </div>
                         <div class='item-user3'>
-                            <span class='form-text'>Username:
+                            <span class='form-text'>Last Name:
                             <input type='text' class='form-control' value='".$check_data_row['lname']."'></span>
+                        </div>
+                        <div class='item-user4'>
+                            <span class='form-text'>Email:
+                            <input type='text' class='form-control' value='".$check_data_row['user_email']."'></span>
                         </div>
                     </div>
                         
