@@ -500,8 +500,7 @@
 
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $user_data_result = mysqli_query($con, $user_data);
-  
-        $login_email = strval($_SESSION['LoginSession']);
+
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
             $user_data_view = "
@@ -520,7 +519,7 @@
                     }                     
 
             $user_data_view .= "
-                            <td><a href='user_edit.php?id=".$user_data_row['user_email']."'><button class='btn btn-primary'>Infor</button></a></td>
+                            <td><a href='user_edit.php?id=".$user_data_row['u_username']."'><button class='btn btn-primary'>Infor</button></a></td>
                         </tr>                      
                 ";
                 echo $user_data_view;
@@ -532,13 +531,12 @@
 
         $id = $_GET['id'];
 
-        $check_data = "SELECT * FROM user_tbl WHERE user_email = '$id'";
+        $check_data = "SELECT * FROM user_tbl WHERE u_username = '$id'";
         $check_data_result = mysqli_query($con, $check_data);
         $check_data_row = mysqli_fetch_assoc($check_data_result);
         $check_data_nor = mysqli_num_rows($check_data_result);
 
-        if($check_data_nor > 0){
-            $user_data = "
+          $user_data = "
                 <form action='' method='POST'>
                     <div class='user-edit-grid'>
                         <div class='item-user1'>
@@ -551,7 +549,7 @@
                         </div>
                         <div class='item-user3'>
                             <span class='form-text'>Username:
-                            <input type='text' class='form-control' value='".$check_data_row['fname']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['lname']."'></span>
                         </div>
                     </div>
                         
@@ -560,7 +558,6 @@
             ";
 
             echo $user_data;
-        }
 
     }
 ?>
