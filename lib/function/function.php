@@ -564,6 +564,14 @@
                             <input type='text' class='form-control' value='".$check_data_row['dob']."'></span>
                             <p style='font-size:15px; padding-top:5px;'>Ex : 1999-12-12</p>
                         </div>
+                        <div class='item-user7'>
+                            <span class='form-text'>NIC No:
+                            <input type='text' class='form-control' value='".$check_data_row['nic']."'></span>
+                        </div>
+                        <div class='item-user8'>
+                            <span class='form-text'>NIC No:
+                            <input type='text' class='form-control' value='".$check_data_row['nic']."'></span>
+                        </div>
                     </div>
                         
                     
