@@ -542,7 +542,11 @@
                 <form action='' method='POST'>
                     <div class='user-edit-grid'>
                         <div class='item-user1'>
-                            <span class='form-text'>Username: 
+                            <span class='form-text'>Username:
+                            <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
+                        </div>
+                        <div class='item-user2'>
+                            <span class='form-text'>Username:
                             <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
                         </div>
                     </div>
