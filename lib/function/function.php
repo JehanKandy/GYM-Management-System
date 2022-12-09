@@ -555,6 +555,10 @@
                             <span class='form-text'>Email:
                             <input type='text' class='form-control' value='".$check_data_row['user_email']."'></span>
                         </div>
+                        <div class='item-user5'>
+                            <span class='form-text'>Address:
+                            <textarea class='form-control'>".$check_data_row['u_username']."</textarea></span>
+                        </div>
                     </div>
                         
                     
