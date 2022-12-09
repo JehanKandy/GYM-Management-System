@@ -1355,6 +1355,10 @@ td {
     grid-area: d;
 }
 
+.item-user5 {
+    grid-area: e;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
