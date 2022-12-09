@@ -578,8 +578,13 @@
                         <div class='item-user10'>
                             <span class='form-text'>User Status:
                             <input type='text' class='form-control' value='".$check_data_row['user_status']."' disabled></span>
-
                             ";
+
+                            if($check_data_row['user_status'] == 1){
+                                $user_data .="<h3>hi</h3>";
+                            }elseif($check_data_row['user_status'] == 0){
+
+                            }
 
 
                 $user_data .="
