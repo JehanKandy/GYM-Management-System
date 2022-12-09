@@ -578,6 +578,11 @@
                         <div class='item-user10'>
                             <span class='form-text'>User Status:
                             <input type='text' class='form-control' value='".$check_data_row['user_status']."' disabled></span>
+
+                            ";
+
+
+                $user_data .="
                         </div>
                     </div>
                         
