@@ -529,5 +529,8 @@
 
     function get_user_data_edit(){
         $con = Connection();
+
+        $id = $_GET['id'];
+        echo $id;
     }
 ?>
