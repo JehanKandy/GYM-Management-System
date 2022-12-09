@@ -43,6 +43,7 @@
 					<th scope="col">First Name</th>
 					<th scope="col">NIC</th>
 					<th scope="col">Status</th>
+					<th scope="col">Is Pedding</th>
 					<th scope="col"></th>
 				</tr>
 			</thead>
