@@ -543,7 +543,7 @@
                     <table border='0'>
                         <tr>
                             <td><span class='form-text'>Username: </span></td>
-                            <td></td>
+                            <td>><input type='text' class='from-control' value='".$check_data_row['u_username']."'></td>
                         </tr>
                         
                         
