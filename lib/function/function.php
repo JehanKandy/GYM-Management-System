@@ -534,5 +534,6 @@
 
         $check_data = "SELECT * FROM user_tbl WHERE user_email = '$id'";
         $check_data_result = mysqli_query($con, $check_data);
+        $check_data_row = mysqli_fetch_assoc($check_data_result);
     }
 ?>
