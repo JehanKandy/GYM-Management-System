@@ -557,20 +557,19 @@
                         </div>
                         <div class='item-user5'>
                             <span class='form-text'>Address:
-                            <textarea class='form-control'>".$check_data_row['user_address']."</textarea></span>
+                            <textarea class='form-control' disabled>".$check_data_row['user_address']."</textarea></span>
                         </div>
                         <div class='item-user6'>
                             <span class='form-text'>Date Of Birth:
-                            <input type='text' class='form-control' value='".$check_data_row['dob']."'></span>
-                            <p style='font-size:15px; padding-top:5px;'>Ex : 1999-12-12</p>
+                            <input type='text' class='form-control' value='".$check_data_row['dob']."' disabled></span>
                         </div>
                         <div class='item-user7'>
                             <span class='form-text'>NIC No:
-                            <input type='text' class='form-control' value='".$check_data_row['nic']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['nic']."' disabled></span>
                         </div>
                         <div class='item-user8'>
                             <span class='form-text'>Mobile Number:
-                            <input type='text' class='form-control' value='".$check_data_row['mobile_no']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['mobile_no']."' disabled></span>
                         </div>
                     </div>
                         
