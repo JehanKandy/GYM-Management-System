@@ -557,7 +557,7 @@
                         </div>
                         <div class='item-user5'>
                             <span class='form-text'>Address:
-                            <textarea class='form-control'>".$check_data_row['u_username']."</textarea></span>
+                            <textarea class='form-control'>".$check_data_row['user_address']."</textarea></span>
                         </div>
                     </div>
                         
