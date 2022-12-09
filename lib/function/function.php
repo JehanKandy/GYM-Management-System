@@ -560,8 +560,8 @@
                             <textarea class='form-control'>".$check_data_row['user_address']."</textarea></span>
                         </div>
                         <div class='item-user6'>
-                            <span class='form-text'>Address:
-                            <input type='date' class='form-control' value=''></span>
+                            <span class='form-text'>Date Of Birth:
+                            <input type='date' class='form-control' value='".$check_data_row['dob']."'></span>
                         </div>
                     </div>
                         
