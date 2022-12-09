@@ -536,5 +536,11 @@
         $check_data_result = mysqli_query($con, $check_data);
         $check_data_row = mysqli_fetch_assoc($check_data_result);
         $check_data_nor = mysqli_num_rows($check_data_result);
+
+        if($check_data_nor > 0){
+
+        }else{
+            header("location:admin.php");
+        }
     }
 ?>
