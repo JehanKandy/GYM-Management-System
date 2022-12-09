@@ -547,7 +547,11 @@
                         </div>
                         <div class='item-user2'>
                             <span class='form-text'>Username:
-                            <input type='text' class='form-control' value='".$check_data_row['u_username']."'></span>
+                            <input type='text' class='form-control' value='".$check_data_row['fname']."'></span>
+                        </div>
+                        <div class='item-user3'>
+                            <span class='form-text'>Username:
+                            <input type='text' class='form-control' value='".$check_data_row['fname']."'></span>
                         </div>
                     </div>
                         
