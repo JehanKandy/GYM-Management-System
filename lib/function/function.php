@@ -520,7 +520,7 @@
                     }                     
 
             $user_data_view .= "
-                            <td><a href='user_edit.php?id=$login_email'><button class='btn btn-primary'>Infor</button></a></td>
+                            <td><a href='user_edit.php?id=".$user_data_row['user_email']."'><button class='btn btn-primary'>Infor</button></a></td>
                         </tr>                      
                 ";
                 echo $user_data_view;
@@ -538,9 +538,8 @@
         $check_data_nor = mysqli_num_rows($check_data_result);
 
         if($check_data_nor > 0){
-            
-        }else{
-            header("location:admin.php");
+            echo "hi";
         }
+
     }
 ?>
