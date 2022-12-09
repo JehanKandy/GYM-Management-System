@@ -163,5 +163,6 @@ GYM Management System
   - lib/routes/admin.php
   - lib/routes/admins.php
   - css/dashboard.css
+  - lib/routes/members.php
 
 
