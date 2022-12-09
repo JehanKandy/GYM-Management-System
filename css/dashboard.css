@@ -1329,6 +1329,16 @@ td {
     padding: 50 0 50 0;
 }
 
+.user-edit-grid {
+    display: grid;
+    min-width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c" "d d d" "e e e";
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
