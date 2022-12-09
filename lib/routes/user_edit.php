@@ -9,5 +9,7 @@
 ?>
 
 <div class="user-edit-content">
-    
+    <div class="container">
+        user
+    </div>
 </div>
