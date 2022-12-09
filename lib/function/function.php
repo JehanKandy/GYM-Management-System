@@ -541,7 +541,8 @@
             $user_data = "
                 <form action='' method='POST'>
                     <table border='0'>
-                    
+                        <span class='form-text'>Username: </span>
+
                     </table>
                 </form>
             ";
