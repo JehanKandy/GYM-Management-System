@@ -1336,7 +1336,7 @@ td {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(50px, auto);
     grid-gap: 1rem;
-    grid-template-areas: "a b c" "d d d" "e e e";
+    grid-template-areas: "a b c" "d d d" "e e e" "f g h";
 }
 
 .item-user1 {
@@ -1357,6 +1357,18 @@ td {
 
 .item-user5 {
     grid-area: e;
+}
+
+.item-user6 {
+    grid-area: f;
+}
+
+.item-user7 {
+    grid-area: g;
+}
+
+.item-user8 {
+    grid-area: h;
 }
 
 @media only screen and (max-width: 1400px) {
