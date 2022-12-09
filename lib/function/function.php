@@ -2,6 +2,7 @@
     include("config.php");
     use FTP\Connection;
 
+
     session_start();
 
     function subsucribe_user($email){
@@ -557,6 +558,10 @@
                         <div class='item-user5'>
                             <span class='form-text'>Address:
                             <textarea class='form-control'>".$check_data_row['user_address']."</textarea></span>
+                        </div>
+                        <div class='item-user6'>
+                            <span class='form-text'>Address:
+                            <textarea class='form-control'>".$check_data_row['dob']."</textarea></span>
                         </div>
                     </div>
                         
