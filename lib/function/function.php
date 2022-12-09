@@ -538,7 +538,7 @@
         $check_data_nor = mysqli_num_rows($check_data_result);
 
         if($check_data_nor > 0){
-
+            
         }else{
             header("location:admin.php");
         }
