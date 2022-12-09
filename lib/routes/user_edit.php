@@ -7,9 +7,9 @@
         header("location:../views/login.php");
     }
 ?>
+<div class="container">
+    <div class="user-edit-content">
 
-<div class="user-edit-content">
-    <div class="container">
-        user
+        
     </div>
 </div>
