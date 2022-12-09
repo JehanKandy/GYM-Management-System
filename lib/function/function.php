@@ -543,7 +543,9 @@
                     <table border='0'>
                         <tr>
                             <td><span class='form-text'>Username: </span></td>
+                            <td></td>
                         </tr>
+                        
                         
                     </table>
                 </form>
