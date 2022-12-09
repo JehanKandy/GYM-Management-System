@@ -1319,6 +1319,12 @@ td {
     display: hidden;
 }
 
+.count {
+    background-color: red;
+    padding: 10;
+    border-radius: 100px;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
