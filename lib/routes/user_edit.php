@@ -8,3 +8,6 @@
     }
 ?>
 
+<div class="user-edit-content">
+    
+</div>
