@@ -532,5 +532,7 @@
 
         $id = $_GET['id'];
 
+        $check_data = "SELECT * FROM user_tbl WHERE user_email = '$id'";
+        $check_data_result = mysqli_query($con, $check_data);
     }
 ?>
