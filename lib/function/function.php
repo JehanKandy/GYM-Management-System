@@ -561,7 +561,7 @@
                         </div>
                         <div class='item-user6'>
                             <span class='form-text'>Address:
-                            <textarea class='form-control'>".$check_data_row['dob']."</textarea></span>
+                            <input type='date' class='form-control' value=''></span>
                         </div>
                     </div>
                         
