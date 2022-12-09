@@ -501,6 +501,7 @@
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'user'";
         $user_data_result = mysqli_query($con, $user_data);
   
+        $login_email = strval($_SESSION['LoginSession']);
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
             $user_data_view = "
@@ -519,7 +520,7 @@
                     }                     
 
             $user_data_view .= "
-                            <td><a href='user_edit.php?id=".$user_data_row['user_email']."><button class='btn btn-primary'>Infor</button></a></td>
+                            <td><a href='user_edit.php?id=$user_data_row['user_email']><button class='btn btn-primary'>Infor</button></a></td>
                         </tr>                      
                 ";
                 echo $user_data_view;
