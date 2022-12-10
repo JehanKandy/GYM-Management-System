@@ -19,7 +19,8 @@
         echo $result;
     }
     elseif(isset($_POST['user_not_to_pending'])){
-
+        $result = not_to_pending($_POST['user_not_to_pending']);
+        echo $result;
     }
     elseif(isset($_POST['user_to_pending'])){
 
