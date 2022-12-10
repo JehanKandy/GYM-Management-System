@@ -7,3 +7,10 @@
         header("location:../views/login.php");
     }
 ?>
+
+
+<div class="container">
+    <div class="add-product-content">
+        
+    </div>
+</div>
