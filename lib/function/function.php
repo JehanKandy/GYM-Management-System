@@ -656,8 +656,11 @@
             header("location:members.php");
         }elseif($after_update_row['user_type'] == 'admin'){
             header("location:admins.php");
-        }
-        
+        }       
 
+    }
+
+    function to_active_user($id){
+        $con = Connection();
     }
 ?>
