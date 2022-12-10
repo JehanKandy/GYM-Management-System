@@ -176,6 +176,7 @@ GYM Management System
  - lib
  - - lib/routes
  - - - lib/routes/add_products.php
+ - - - lib/
 2. UPDATE 
  - lib/function/function.php
  - lib/routes/user_edit.php
