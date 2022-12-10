@@ -543,7 +543,7 @@
         $check_data_nor = mysqli_num_rows($check_data_result);
 
           $user_data = "
-                <form action='' method='POST'>
+
                     <div class='user-edit-grid'>
                         <div class='item-user1'>
                             <span class='form-text'>Username:
@@ -586,7 +586,13 @@
                             ";
 
                             if($check_data_row['user_status'] == 1){
-                                $user_data .="<h3><span class='badge badge-success'>Active</span></h3>";
+                                $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
+                                <form action='' method='POST'>
+                                    <input type='hidden' name='deactive' value='0'>
+                                    <input tppe='submit' name='user_deactive' class='btn btn-primary'>
+                                </form>
+                                
+                                ";
                             }elseif($check_data_row['user_status'] == 0){
                                 $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>";
                             }
@@ -598,7 +604,7 @@
                     </div>
                         
                     
-                </form>
+                
             ";
 
             echo $user_data;
