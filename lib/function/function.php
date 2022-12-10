@@ -783,7 +783,7 @@
                     <td>".$products_row['qty']."</td>";
 
                     if($products_row['is_stock'] > 0){
-                        $products_data .= "";
+                        $products_data .= "<td><b>".$products_row['is_stock']."</b><span style='color:green;'>In Stock</span></td>";
                     }
                     elseif($products_row['is_stock'] == 0){
                         $products_data .= "";
