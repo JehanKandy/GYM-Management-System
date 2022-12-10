@@ -775,7 +775,12 @@
         $products_result = mysqli_query($con, $products);
 
         while($products_row = mysqli_fetch_assoc($products_result)){
-            $products_data = "";
+            $products_data = "
+                <tr>
+                    <th scope='row'>".$products_row['id']."</th>
+                </tr>
+            
+            ";
         }
 
         echo $products_data;
