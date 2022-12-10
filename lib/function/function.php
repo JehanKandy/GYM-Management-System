@@ -643,6 +643,8 @@
 
         $user_update_id = strval($_SESSION['userUpdate']);
 
+        $user_update_status_1 = "UPDATE user_tbl SET user_status = '$id' WHERE u_username = '$user_update_id'";
+        $user_update_status_1_result = mysqli_query($con, $user_update_status_1);     
 
     }
 ?>
