@@ -3,7 +3,6 @@
     use FTP\Connection;
 
 
-
     session_start();
 
     function subsucribe_user($email){
@@ -538,6 +537,8 @@
 
         $id = $_GET['id'];
 
+        $_SESSION['userUpdate'] = $id;
+
         $check_data = "SELECT * FROM user_tbl WHERE u_username = '$id'";
         $check_data_result = mysqli_query($con, $check_data);
         $check_data_row = mysqli_fetch_assoc($check_data_result);
@@ -639,5 +640,9 @@
 
     function to_deactive_user($id){
         $con = Connection();
+
+        $user_update_id = strval($_SESSION['userUpdate']);
+
+
     }
 ?>
