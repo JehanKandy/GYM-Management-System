@@ -795,7 +795,8 @@
                         $products_data .= "<td><h4><span class='badge badge-danger'>Product Deactive</span></h4></td>";
                     }
 
-            $products_data .= "         
+            $products_data .= "
+                    <td>".$products_row['date']."</td>         
                 </tr>
             
             ";
