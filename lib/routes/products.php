@@ -36,7 +36,7 @@
 		<hr>
 		<span>
 			<a href="add_product.php"><button class="btn btn-success"><i class="fas fa-plus"></i>&nbsp;Add Products</button></a>
-			<a href="all_product.php"><button class="btn btn-success"><i class="fas fa-plus"></i>&nbsp;Add Products</button></a>
+			<a href="all_product.php"><button class="btn btn-primary"><i class="fas fa-gifts"></i>&nbsp;All Products</button></a>
 		</span>
 
 	</main>
