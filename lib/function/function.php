@@ -606,7 +606,7 @@
 
                             if($check_data_row['is_pending'] == 1){
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
-                                    <form action='' method='POST'>
+                                <form action='' method='POST'>
                                     <input type='hidden' name='deactive' value='0'>
                                     <input type='submit' value='Deactivate' name='user_not_to_pending' class='btn btn-success'>   
                                 </form>";
@@ -614,9 +614,9 @@
                             if($check_data_row['is_pending'] == 0){
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
                                 <form action='' method='POST'>
-                                <input type='hidden' name='deactive' value='0'>
-                                <input type='submit' value='Deactivate' name='user_to_pending' class='btn btn-success'>   
-                            </form>";
+                                    <input type='hidden' name='deactive' value='0'>
+                                    <input type='submit' value='Deactivate' name='user_to_pending' class='btn btn-success'>   
+                                </form>";
                             }
 
                 $user_data .="                            
