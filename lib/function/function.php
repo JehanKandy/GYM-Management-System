@@ -589,7 +589,7 @@
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='to_deactive' value='0'>
-                                    <input type='submit' value='Deactive' name='user_to_deactive' class='btn btn-danger'>   
+                                    <input type='submit' value='Deactive' name='user_to_deactive' class='btn btn-danger btn-lg btn-block'>   
                                 </form>
                                 
                                 ";
@@ -597,7 +597,7 @@
                                 $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='to_active' value='1'>
-                                    <input type='submit' value='Active' name='user_to_active' class='btn btn-danger'>   
+                                    <input type='submit' value='Active' name='user_to_active' class='btn btn-danger btn-lg btn-block'>   
                                 </form>
                                 ";
                             }
@@ -613,14 +613,14 @@
                                 $user_data .="<h3><span class='badge badge-danger'>Pending</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='to_pending' value='0'>
-                                    <input type='submit' value='Dactive' name='user_not_to_pending' class='btn btn-success'>   
+                                    <input type='submit' value='Dactive' name='user_not_to_pending' class='btn btn-success btn-lg btn-block'>   
                                 </form>";
                             }
                             if($check_data_row['is_pending'] == 0){
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='not_pending' value='1'>
-                                    <input type='submit' value='Deactivate' name='user_to_pending' class='btn btn-danger'>   
+                                    <input type='submit' value='Deactivate' name='user_to_pending' class='btn btn-danger btn-lg btn-block'>   
                                 </form>";
                             }
 
