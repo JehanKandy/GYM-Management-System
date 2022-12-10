@@ -605,7 +605,7 @@
                             <span class='form-text'>Pending Status:";
 
                             if($check_data_row['is_pending'] == 1){
-                                $user_data .="<h3><span class='badge badge-success'>Pending</span></h3>
+                                $user_data .="<h3><span class='badge badge-danger'>Pending</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='to_pending' value='0'>
                                     <input type='submit' value='Dactive' name='user_not_to_pending' class='btn btn-success'>   
