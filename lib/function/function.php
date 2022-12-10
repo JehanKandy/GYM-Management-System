@@ -877,7 +877,13 @@
         $con = Connection();
 
         $id = $_GET['id'];
-        
+
+        $check_product = "SELECT * FROM shop WHERE id = '$id'";
+        $check_product_result = mysqli_query($con, $check_prodcuts);
+        $check_product_row = mysqli_fetch_field($check_prodcuts_result);
+        $check_product_nor = mysqli_num_rows($check_prodcuts_result);
+
+
     }
 ?>
 
