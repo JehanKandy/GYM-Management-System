@@ -13,7 +13,10 @@
     <div class="add-product-content">
         <div class="title">Add Product</div>
         <div class="body">
-            Hi
+            <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+        
+        
+            </form>
         </div>
     </div>
 </div>
