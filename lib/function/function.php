@@ -815,4 +815,8 @@
 
         echo $count_products_nor;
     }
+
+    function add_product(){
+        $con = Connection();
+    }
 ?>
