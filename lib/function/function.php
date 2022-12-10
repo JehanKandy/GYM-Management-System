@@ -788,6 +788,12 @@
                     elseif($products_row['is_stock'] == 0){
                         $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:red;'>(Out of Stock)</span></td>";
                     }
+                    if($products_row['status'] == 1){
+                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:green;'>(In Stock)</span></td>";
+                    }
+                    elseif($products_row['status'] == 0){
+
+                    }
 
             $products_data .= "         
                 </tr>
