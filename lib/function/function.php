@@ -778,7 +778,7 @@
             $products_data = "";
         }
 
-       
+        echo $products_data;
 
 
 
