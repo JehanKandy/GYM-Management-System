@@ -178,7 +178,7 @@ GYM Management System
  - lib/function/function.php
  - lib/routes/user_edit.php
  - lib/routes/admins.php
- - lib/routes/
+ - lib/routes/products.php
 
 
 
