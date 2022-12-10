@@ -169,7 +169,7 @@ GYM Management System
   - css/dashboard.css
   - lib/routes/members.php
   
-        <hr> 
+   <hr> 
 
   <b>10 December 2022</b>
 1. DEVELOP
