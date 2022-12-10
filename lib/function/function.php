@@ -808,5 +808,11 @@
 
     function count_products(){
         $con = Connection();
+
+        $count_products = "SELECT * FROM shop";
+        $count_products_result = mysqli_query($con, $count_products);
+        $count_products_nor = mysqli_num_rows($count_products_result);
+
+        echo $count_products_nor;
     }
 ?>
