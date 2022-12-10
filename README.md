@@ -181,6 +181,7 @@ GYM Management System
  - lib/routes/user_edit.php
  - lib/routes/admins.php
  - lib/routes/products.php
+ - css/dashboard.css
 
 
 
