@@ -886,7 +886,11 @@
         if($check_product_nor > 0){
             $product_data = "
                 <form action='' method='POST'>
-                
+                    <div class='product-add-grid'>
+                        <div class='item-add1'>
+
+                        </div>
+                    </div>
                 
                 </form>
             ";
