@@ -615,7 +615,7 @@
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
                                 <form action='' method='POST'>
                                 <input type='hidden' name='deactive' value='0'>
-                                <input type='submit' value='Deactivate' name='user_not_pending' class='btn btn-success'>   
+                                <input type='submit' value='Deactivate' name='user_to_pending' class='btn btn-success'>   
                             </form>";
                             }
 
