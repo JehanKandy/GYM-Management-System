@@ -9,6 +9,7 @@
 ?>
 
 
+
 <div class="app">
 	<div class="menu-toggle">
 		<div class="hamburger">
@@ -33,6 +34,7 @@
 	<main class="content">
 		<h1>Products</h1>
 		<hr>
+		<a href="ad_product.php"><button class="btn btn-success"><i class="fas fa-plus"></i> Add Products</button></a>
 
 	</main>
 </div>
