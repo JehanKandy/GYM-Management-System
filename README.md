@@ -153,7 +153,7 @@ GYM Management System
   - lib/layouts/nav_loged.php
   - css/dashboard.css
   
-     <hr> 
+   <hr> 
 
   <b>09 December 2022</b>
 1. DEVELOP
