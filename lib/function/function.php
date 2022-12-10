@@ -780,7 +780,16 @@
                     <th scope='row'>".$products_row['id']."</th>
                     <td>".$products_row['p_name']."</td>
                     <td>".$products_row['p_price']."</td>
-                    <td>".$products_row['qty']."</td>
+                    <td>".$products_row['qty']."</td>";
+
+                    if($products_row['is_stock'] > 0){
+                        $products_data .= "";
+                    }
+                    elseif($products_row['is_stock'] == 0){
+                        $products_data .= "";
+                    }
+
+            $products_data .= "         
                 </tr>
             
             ";
