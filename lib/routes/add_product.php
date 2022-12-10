@@ -39,9 +39,12 @@
                             <input type="text" name="product_stock" id="productStock" class="form-control">
                         </span>
                     </div>
-                </div>
-        
+                    <div class="item-add5">
+                        <input type="submit" value="Add Prodcuct" name='add_prodcut' class="btn btn-success">
+                    </div>
+                </div>        
             </form>
+            <a href="products.php"><button class="btn btn-primary">Back</button></a>
         </div>
     </div>
 </div>
