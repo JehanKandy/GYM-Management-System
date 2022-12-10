@@ -888,7 +888,10 @@
                 <form action='' method='POST'>
                     <div class='product-add-grid'>
                         <div class='item-add1'>
-
+                            <span>
+                                Product Name :
+                                <input type='text' name='update_pname' value='".$check_product_row['p_name']."' class='form-control'>
+                            </span>
                         </div>
                     </div>
                 
