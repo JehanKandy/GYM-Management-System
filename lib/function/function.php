@@ -539,10 +539,12 @@
 
         $_SESSION['userUpdate'] = $id;
 
+
         $check_data = "SELECT * FROM user_tbl WHERE u_username = '$id'";
         $check_data_result = mysqli_query($con, $check_data);
         $check_data_row = mysqli_fetch_assoc($check_data_result);
         $check_data_nor = mysqli_num_rows($check_data_result);
+
 
           $user_data = "
 
