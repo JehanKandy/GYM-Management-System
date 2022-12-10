@@ -869,8 +869,11 @@
             $insert_product_result = mysqli_query($con, $insert_product);
 
             header("location:products.php");
-        }
-        
+        }        
+    }
+
+    function update_product(){
+        $con = Connection();
     }
 ?>
 
