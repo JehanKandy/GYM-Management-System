@@ -23,7 +23,8 @@
         echo $result;
     }
     elseif(isset($_POST['user_to_pending'])){
-
+        $result = to_pending($_POST['not_pending']);
+        echo $result;
     }
 
 ?>
