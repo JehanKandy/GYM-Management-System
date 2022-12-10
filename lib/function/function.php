@@ -662,5 +662,7 @@
 
     function to_active_user($id){
         $con = Connection();
+
+        $user_update_id = strval($_SESSION['userUpdate']);
     }
 ?>
