@@ -781,9 +781,11 @@
                 </tr>
             
             ";
+
+            echo $products_data;
         }
 
-        echo $products_data;
+
 
 
 
