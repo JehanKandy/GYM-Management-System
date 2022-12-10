@@ -10,6 +10,6 @@
 
 <div class="container">
     <div class="edit-product">
-        
+        <?php update_product(); ?>
     </div>
 </div>
