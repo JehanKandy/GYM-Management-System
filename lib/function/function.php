@@ -778,6 +778,9 @@
             $products_data = "
                 <tr>
                     <th scope='row'>".$products_row['id']."</th>
+                    <td>".$products_row['p_name']."</td>
+                    <td>".$products_row['p_price']."</td>
+                    <td>".$products_row['qty']."</td>
                 </tr>
             
             ";
