@@ -16,6 +16,12 @@
     elseif(isset($_POST['user_to_active'])){
 
     }
+    elseif(isset($_POST['user_not_to_pending'])){
+
+    }
+    elseif(isset($_POST['user_to_pending'])){
+
+    }
 
 ?>
 
