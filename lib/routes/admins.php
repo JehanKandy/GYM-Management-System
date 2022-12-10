@@ -23,7 +23,7 @@
 			<p class="profile-name"><?php //user_id_loged();?></p>
 			<a href="admin.php" class="menu-item"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
 			<a href="members.php" class="menu-item"><i class="fas fa-user-alt"></i>Members &nbsp; <span class="pending">15</span></a>
-			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="pending"><?php count_admins(); ?></span></a></a>
+			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="pending">15</span></a></a>
 			<a href="products.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  &nbsp; <span class="pending">15</span></a></a>
             <a href="plans.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  &nbsp; <span class="pending">15</span></a></a>
 			<a href="my_account.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
@@ -32,49 +32,27 @@
 	</aside>
 
 	<main class="content">
-		<h1>Welcome, To Admin Dashboard</h1>
+		<h1>All Admin</h1>
 		<hr>
-		<div class="admin-content">
-			<div class="grid">
-				<div class="admin-item1">
-					<div class="admin-title">
-						<i class="fas fa-user-alt"></i> &nbsp;  Members<br>
-					</div>
-					<hr class="std-hr">
-					<div class="admin-body">
-						<?php count_members(); ?>
-					</div>
-				</div>
-				<div class="admin-item2">
-					<div class="admin-title">
-						<i class="fas fa-user-tie"></i> &nbsp;  Admins<br>
-					</div>
-					<hr class="tea-hr">
-					<div class="admin-body">
-						<?php count_admins(); ?>
-					</div>
-				</div>
-				<div class="admin-item3">
-					<div class="admin-title">
-						<i class="fas fa-gifts"></i> &nbsp;  Products<br>
-					</div>
-					<hr class="admin-hr">
-					<div class="admin-body">
-						15
-					</div>
-				</div>
-				<div class="admin-item4">
-					<div class="admin-title">
-						<i class="fas fa-book-reader"></i> &nbsp;  Plans<br>
-					</div>
-					<hr class="qui-hr">
-					<div class="admin-body">
-						15
-					</div>
-				</div>
-			</div>
-		</div>
+		<table class="student-tbl">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Username</th>
+					<th scope="col">Email</th>
+					<th scope="col">First Name</th>
+					<th scope="col">NIC</th>
+					<th scope="col">Status</th>
+					<th scope="col">Is Pending</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php any_user_data(); ?>
+			</tbody>
+		</table>
 	</main>
 </div>
 
 <script src="../../js/script.js"></script>
+
