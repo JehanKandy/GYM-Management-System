@@ -884,7 +884,14 @@
         $check_product_nor = mysqli_num_rows($check_product_result);
 
         if($check_product_nor > 0){
+            $product_data = "
+                <form action='' method='POST'>
+                
+                
+                </form>
+            ";
 
+            echo $product_data;
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Error : </strong> &nbsp; Data Not Found.....!
