@@ -1379,6 +1379,10 @@ td {
     font-size: 30px;
 }
 
+.add-product-content .body {
+    padding: 40 0 40 0;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
