@@ -1398,19 +1398,19 @@ td {
 }
 
 .item-add2 {
-    grid-area: a;
+    grid-area: b;
 }
 
 .item-add3 {
-    grid-area: a;
+    grid-area: c;
 }
 
 .item-add4 {
-    grid-area: a;
+    grid-area: d;
 }
 
 .item-add5 {
-    grid-area: a;
+    grid-area: e;
 }
 
 @media only screen and (max-width: 1400px) {
