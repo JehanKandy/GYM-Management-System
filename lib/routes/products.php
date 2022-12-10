@@ -38,6 +38,23 @@
 			<a href="add_product.php"><button class="btn btn-success"><i class="fas fa-plus"></i>&nbsp;Add Products</button></a>
 			<a href="all_product.php"><button class="btn btn-primary"><i class="fas fa-gifts"></i>&nbsp;All Products</button></a>
 		</span>
+		<table class="student-tbl">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Product</th>
+					<th scope="col">Price</th>
+					<th scope="col">Qty</th>
+					<th scope="col">In Stock</th>
+					<th scope="col">Status</th>
+					<th scope="col">Add Date</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php any_admin_data(); ?>
+			</tbody>
+		</table>
 
 	</main>
 </div>
