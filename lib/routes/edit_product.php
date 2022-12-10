@@ -8,3 +8,8 @@
     }
 ?>
 
+<div class="container">
+    <div class="edit-product">
+        
+    </div>
+</div>
