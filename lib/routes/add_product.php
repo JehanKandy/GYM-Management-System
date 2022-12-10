@@ -40,11 +40,11 @@
                         </span>
                     </div>
                     <div class="item-add5">
-                        <input type="submit" value="Add Prodcuct" name='add_prodcut' class="btn btn-success">
+                        <input type="submit" value="Add Prodcuct" name='add_prodcut' class="btn btn-success btn-lg btn-block">
                     </div>
                 </div>        
             </form>
-            <a href="products.php"><button class="btn btn-primary">Back</button></a>
+            <a href="products.php"><button class="btn btn-primary btn-lg btn-block">Back</button></a>
         </div>
     </div>
 </div>
