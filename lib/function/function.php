@@ -767,55 +767,6 @@
                 echo $user_data_view;
         }
     }
-
-    function all_products(){
-        $con = Connection();
-
-        $products = "SELECT * FROM shop";
-        $products_result = mysqli_query($con, $products);
-
-        while($products_row = mysqli_fetch_assoc($products_result)){
-            $products_data = "
-                <tr>
-                    <th scope='row'>".$products_row['id']."</th>
-                    <td>".$products_row['p_name']."</td>
-                    <td>".$products_row['p_price']."</td>
-                    <td>".$products_row['qty']."</td>";
-
-                    if($products_row['is_stock'] > 0){
-                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:green;'>(In Stock)</span></td>";
-                    }
-                    elseif($products_row['is_stock'] == 0){
-                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:red;'>(Out of Stock)</span></td>";
-                    }
-                    if($products_row['status'] == 1){
-                        $products_data .= "<td><h4><span class='badge badge-success'>Product Active</span></h4></td>";
-                    }
-                    elseif($products_row['status'] == 0){
-                        $products_data .= "<td><h4><span class='badge badge-danger'>Product Deactive</span></h4></td>";
-                    }
-
-            $products_data .= "
-                    <td>".$products_row['date']."</td>
-                    <td><a href='edit_product.php?id=".$products_row['id']."'><button class='btn btn-primary'>Info</button></td>         
-                </tr>
-            
-            ";
-
-            echo $products_data;
-        }
-    }
-
-    function count_products(){
-        $con = Connection();
-
-        $count_products = "SELECT * FROM shop";
-        $count_products_result = mysqli_query($con, $count_products);
-        $count_products_nor = mysqli_num_rows($count_products_result);
-
-        echo $count_products_nor;
-    }
-
     function add_product($p_name, $p_price, $p_qty, $p_stock){
         $con = Connection();
         
@@ -871,6 +822,56 @@
             header("location:products.php");
         }        
     }
+
+    function all_products(){
+        $con = Connection();
+
+        $products = "SELECT * FROM shop";
+        $products_result = mysqli_query($con, $products);
+
+        while($products_row = mysqli_fetch_assoc($products_result)){
+            $products_data = "
+                <tr>
+                    <th scope='row'>".$products_row['id']."</th>
+                    <td>".$products_row['p_name']."</td>
+                    <td>".$products_row['p_price']."</td>
+                    <td>".$products_row['qty']."</td>";
+
+                    if($products_row['is_stock'] > 0){
+                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:green;'>(In Stock)</span></td>";
+                    }
+                    elseif($products_row['is_stock'] == 0){
+                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:red;'>(Out of Stock)</span></td>";
+                    }
+                    if($products_row['status'] == 1){
+                        $products_data .= "<td><h4><span class='badge badge-success'>Product Active</span></h4></td>";
+                    }
+                    elseif($products_row['status'] == 0){
+                        $products_data .= "<td><h4><span class='badge badge-danger'>Product Deactive</span></h4></td>";
+                    }
+
+            $products_data .= "
+                    <td>".$products_row['date']."</td>
+                    <td><a href='edit_product.php?id=".$products_row['id']."'><button class='btn btn-primary'>Info</button></td>         
+                </tr>
+            
+            ";
+
+            echo $products_data;
+        }
+    }
+
+    function count_products(){
+        $con = Connection();
+
+        $count_products = "SELECT * FROM shop";
+        $count_products_result = mysqli_query($con, $count_products);
+        $count_products_nor = mysqli_num_rows($count_products_result);
+
+        echo $count_products_nor;
+    }
+
+
 
     function update_product(){
         $con = Connection();
