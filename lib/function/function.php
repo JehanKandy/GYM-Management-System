@@ -599,7 +599,7 @@
                                 $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='to_active' value='1'>
-                                    <input type='submit' value='Active' name='user_to_active' class='btn btn-danger btn-lg btn-block'>   
+                                    <input type='submit' value='Active' name='user_to_active' class='btn btn-success btn-lg btn-block'>   
                                 </form>
                                 ";
                             }
@@ -629,6 +629,8 @@
                 $user_data .="                            
                         </div>
                     </div>
+
+                    <a href='admin.php'><button class='btn btn-primary'>Back</button></a>
                         
                     
                 
