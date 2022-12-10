@@ -789,7 +789,7 @@
                         $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:red;'>(Out of Stock)</span></td>";
                     }
                     if($products_row['status'] == 1){
-                        $products_data .= "<td><b>".$products_row['is_stock']."</b>&nbsp;<span style='color:green;'>(In Stock)</span></td>";
+                        $products_data .= "<td><h4><span class='badge badge-success'>Product Active</span></h4></td>";
                     }
                     elseif($products_row['status'] == 0){
 
