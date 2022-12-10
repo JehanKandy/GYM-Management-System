@@ -770,5 +770,9 @@
 
     function all_products(){
         $con = Connection();
+
+        $products = "SELECT * FROM shop";
+        $products_result = mysqli_query($con, $products);
+        
     }
 ?>
