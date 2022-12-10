@@ -678,4 +678,8 @@
             header("location:admins.php");
         }  
     }
+
+    function not_to_pending($id){
+        $con = Connection();
+    }
 ?>
