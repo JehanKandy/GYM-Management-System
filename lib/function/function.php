@@ -725,6 +725,10 @@
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
         $user_data_result = mysqli_query($con, $user_data);
 
+        $login_user_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $login_user_data_result = mysqli_query($con, $login_user_data);
+        $login_user_data_row = mysqli_fetch_assoc($login_user_data_result);
+
 
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
@@ -748,6 +752,8 @@
                     elseif($user_data_row['is_pending'] == 0){
                         $user_data_view .= "<td><h4><span class='badge badge-success'>Activated User</span></h4></td>";
                     }                   
+
+                    if($login_user_data_row['u_username'] == $user_data_row['u_username'])
 
             $user_data_view .= "
                             <td><a href='user_edit.php?id=".$user_data_row['u_username']."'><button class='btn btn-primary'>Infor</button></a></td>
