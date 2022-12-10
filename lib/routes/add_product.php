@@ -11,6 +11,9 @@
 
 <div class="container">
     <div class="add-product-content">
-        
+        <div class="title">Add Product</div>
+        <div class="body">
+            Hi
+        </div>
     </div>
 </div>
