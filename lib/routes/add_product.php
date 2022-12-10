@@ -14,7 +14,32 @@
         <div class="title">Add Product</div>
         <div class="body">
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
-        
+                <div class="product-add-grid">
+                    <div class="item-add1">
+                        <span>
+                            Product Name : 
+                            <input type="text" name="product_name" id="productName" class="form-control">
+                        </span>
+                    </div>
+                    <div class="item-add2">
+                        <span>
+                            Product Name : 
+                            <input type="text" name="product_name" id="productName" class="form-control">
+                        </span>
+                    </div>
+                    <div class="item-add3">
+                        <span>
+                            Product Name : 
+                            <input type="text" name="product_name" id="productName" class="form-control">
+                        </span>
+                    </div>
+                    <div class="item-add4">
+                        <span>
+                            Product Name : 
+                            <input type="text" name="product_name" id="productName" class="form-control">
+                        </span>
+                    </div>
+                </div>
         
             </form>
         </div>
