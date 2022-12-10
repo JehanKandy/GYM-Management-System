@@ -594,7 +594,12 @@
                                 
                                 ";
                             }elseif($check_data_row['user_status'] == 0){
-                                $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>";
+                                $user_data .="<h3><span class='badge badge-danger'>Deactive</span></h3>
+                                <form action='' method='POST'>
+                                    <input type='hidden' name='deactive' value='0'>
+                                    <input type='submit' value='Deactivate' name='user_deactive' class='btn btn-danger'>   
+                                </form>
+                                ";
                             }
 
                             
