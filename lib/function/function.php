@@ -816,7 +816,9 @@
         echo $count_products_nor;
     }
 
-    function add_product(){
+    function add_product($p_name, $p_price, $p_qty, $p_stock){
         $con = Connection();
+
+        
     }
 ?>
