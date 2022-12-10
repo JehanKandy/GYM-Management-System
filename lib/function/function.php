@@ -654,6 +654,8 @@
 
         if($after_update_row['user_type'] == 'user'){
             header("location:members.php");
+        }elseif($after_update_row['user_type'] == 'admin'){
+            header("location:admins.php");
         }
         
 
