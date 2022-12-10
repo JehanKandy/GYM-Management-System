@@ -635,4 +635,8 @@
             echo $user_data;
 
     }
+
+    function to_deactive_user($id){
+        $con = Connection();
+    }
 ?>
