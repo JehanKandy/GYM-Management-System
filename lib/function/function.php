@@ -886,6 +886,8 @@
         if($check_product_nor > 0){
             $product_data = "
             <div style='padding-top:50px;'>
+            <img src='../../upload/".$check_product_row['product_img']."'>
+
                 <form action='' method='POST'>
                     <div class='product-add-grid'>
                         <div class='item-add1'>
