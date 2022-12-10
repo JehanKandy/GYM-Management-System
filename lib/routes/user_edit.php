@@ -15,7 +15,8 @@
         echo $result;
     }
     elseif(isset($_POST['user_to_active'])){
-
+        $result = to_active_user($_POST['to_active']);
+        echo $result;
     }
     elseif(isset($_POST['user_not_to_pending'])){
 
