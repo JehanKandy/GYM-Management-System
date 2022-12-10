@@ -721,6 +721,7 @@
 
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
         $user_data_result = mysqli_query($con, $user_data);
+        $user_data_check_admin = mysqli_fetch_assoc($user_data_result);
 
         while($user_data_row = mysqli_fetch_assoc($user_data_result)){
 
