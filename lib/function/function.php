@@ -714,4 +714,8 @@
             header("location:admins.php");
         }  
     }
+
+    function any_admin_data(){
+        $con = Connection();
+    }
 ?>
