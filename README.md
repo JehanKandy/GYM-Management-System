@@ -168,5 +168,21 @@ GYM Management System
   - lib/routes/admins.php
   - css/dashboard.css
   - lib/routes/members.php
+  
+        <hr> 
+
+  <b>09 December 2022</b>
+1. DEVELOP
+  - lib
+  - - lib/routes
+  - - - lib/routes/user_edit.php
+  - - lib/layouts
+  - - - lib/layouts/nav_loged_user.php
+2. UPDATE 
+  - lib/function/function.php 
+  - lib/routes/admin.php
+  - lib/routes/admins.php
+  - css/dashboard.css
+  - lib/routes/members.php
 
 
