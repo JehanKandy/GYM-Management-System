@@ -589,7 +589,7 @@
                                 $user_data .="<h3><span class='badge badge-success'>Active</span></h3>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='deactive' value='0'>
-                                    <input tppe='submit' name='user_deactive' class='btn btn-primary'>
+                                    <input type='submit' value='Login' name='login' class='login-btn'>
                                 </form>
                                 
                                 ";
