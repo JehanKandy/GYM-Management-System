@@ -753,12 +753,17 @@
                         $user_data_view .= "<td><h4><span class='badge badge-success'>Activated User</span></h4></td>";
                     }                   
 
-                    if($login_user_data_row['u_username'] == $user_data_row['u_username'])
+                    if($login_user_data_row['u_username'] == $user_data_row['u_username']){
+                        $user_data_view .= "
+                        <td><span style='color:red;'>Loged Admin</span></td>
+                    </tr>";
+                    }else{
 
             $user_data_view .= "
                             <td><a href='user_edit.php?id=".$user_data_row['u_username']."'><button class='btn btn-primary'>Infor</button></a></td>
                         </tr>                      
                 ";
+            }
                 echo $user_data_view;
         }
     }
