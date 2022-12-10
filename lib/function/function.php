@@ -696,4 +696,8 @@
             header("location:admins.php");
         }  
     }
+
+    function to_pending($id){
+        $con = Connection();
+    }
 ?>
