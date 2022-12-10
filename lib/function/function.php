@@ -681,5 +681,19 @@
 
     function not_to_pending($id){
         $con = Connection();
+        $user_update_id = strval($_SESSION['userUpdate']);
+
+        $user_update_status_2 = "UPDATE user_tbl SET is_pending = '$id' WHERE u_username = '$user_update_id'";
+        $user_update_status_2_result = mysqli_query($con, $user_update_status_2);
+
+        $after_update = "SELECT * FROM user_tbl WHERE u_username = '$user_update_id'";
+        $after_update_result = mysqli_query($con, $after_update);
+        $after_update_row = mysqli_fetch_assoc($after_update_result);
+
+        if($after_update_row['user_type'] == 'user'){
+            header("location:members.php");
+        }elseif($after_update_row['user_type'] == 'admin'){
+            header("location:admins.php");
+        }  
     }
 ?>
