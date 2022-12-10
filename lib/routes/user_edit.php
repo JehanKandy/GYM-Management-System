@@ -10,7 +10,12 @@
 
 
 <?php 
+    if(isset($_POST['user_to_deactive'])){
 
+    }
+    elseif(isset($_POST['user_to_active'])){
+
+    }
 
 ?>
 
