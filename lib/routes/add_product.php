@@ -23,20 +23,20 @@
                     </div>
                     <div class="item-add2">
                         <span>
-                            Product Name : 
-                            <input type="text" name="product_name" id="productName" class="form-control">
+                            Product Price : 
+                            <input type="number" name="product_price" id="productPrice" class="form-control">
                         </span>
                     </div>
                     <div class="item-add3">
                         <span>
-                            Product Name : 
-                            <input type="text" name="product_name" id="productName" class="form-control">
+                            Product Qty : 
+                            <input type="text" name="product_qty" id="productQty" class="form-control">
                         </span>
                     </div>
                     <div class="item-add4">
                         <span>
-                            Product Name : 
-                            <input type="text" name="product_name" id="productName" class="form-control">
+                            Product Stock : 
+                            <input type="text" name="product_stock" id="productStock" class="form-control">
                         </span>
                     </div>
                 </div>
