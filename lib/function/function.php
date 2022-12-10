@@ -651,6 +651,10 @@
         $after_update = "SELECT * FROM user_tbl WHERE u_username = '$user_update_id'";
         $after_update_result = mysqli_query($con, $after_update);
         $after_update_row = mysqli_fetch_assoc($after_update_result);
+
+        if($after_update_row['user_type'] == 'user'){
+            header("location:members.php");
+        }
         
 
     }
