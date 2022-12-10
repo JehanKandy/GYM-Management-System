@@ -13,6 +13,12 @@
     <div class="add-product-content">
         <div class="title">Add Product</div>
         <div class="body">
+            <?php 
+                if(isset($_POST['add_prodcut'])){
+                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock']);
+                    echo $result;
+                }            
+            ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="product-add-grid">
                     <div class="item-add1">
@@ -44,7 +50,7 @@
                     </div>
                 </div>        
             </form>
-            <a href="products.php"><button class="btn btn-primary btn-lg btn-block">Back</button></a>
+            <a href="products.php"><button class="btn btn-primary btn-lg btn-block" style="margin-top: 20px;">Back</button></a>
         </div>
     </div>
 </div>
