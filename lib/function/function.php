@@ -775,5 +775,9 @@
         $products_result = mysqli_query($con, $products);
         $products_row = mysqli_fetch_assoc($products_result);
 
+        $products_data = "";
+
+        echo $products_data;
+
     }
 ?>
