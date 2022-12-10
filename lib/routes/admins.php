@@ -48,7 +48,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php any_user_data(); ?>
+				<?php any_admin_data(); ?>
 			</tbody>
 		</table>
 	</main>
