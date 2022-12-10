@@ -874,6 +874,9 @@
 
     function update_product(){
         $con = Connection();
+
+        $id = $_GET['id'];
+        echo $id;
     }
 ?>
 
