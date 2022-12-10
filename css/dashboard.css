@@ -1393,6 +1393,26 @@ td {
     grid-template-areas: "a b" "c d" "e e";
 }
 
+.item-add1 {
+    grid-area: a;
+}
+
+.item-add2 {
+    grid-area: a;
+}
+
+.item-add3 {
+    grid-area: a;
+}
+
+.item-add4 {
+    grid-area: a;
+}
+
+.item-add5 {
+    grid-area: a;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
