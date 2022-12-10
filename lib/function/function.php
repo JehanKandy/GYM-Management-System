@@ -818,7 +818,40 @@
 
     function add_product($p_name, $p_price, $p_qty, $p_stock){
         $con = Connection();
+        
+        if(empty($p_name)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Product Name Cannot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
 
+        }if(empty($p_price)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Product Price Cannot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+
+        }if(empty($p_qty)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Product QTY Cannot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($p_stock)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Product Stock Cannot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        
         
     }
 ?>
