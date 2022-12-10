@@ -32,7 +32,7 @@
 	</aside>
 
 	<main class="content">
-		<h1>Welcome, To Admin Dashboard</h1>
+		<h1>Products</h1>
 		<hr>
 
 	</main>
