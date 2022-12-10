@@ -767,4 +767,8 @@
                 echo $user_data_view;
         }
     }
+
+    function all_products(){
+        $con = Connection();
+    }
 ?>
