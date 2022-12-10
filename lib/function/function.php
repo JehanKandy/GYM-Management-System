@@ -717,5 +717,39 @@
 
     function any_admin_data(){
         $con = Connection();
+
+
+        $user_data = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
+        $user_data_result = mysqli_query($con, $user_data);
+
+        while($user_data_row = mysqli_fetch_assoc($user_data_result)){
+
+            $user_data_view = "
+                <tr>
+                        <th scope='row'>".$user_data_row['id']."</th>
+                        <td>".$user_data_row['u_username']."</td>
+                        <td>".$user_data_row['user_email']."</td>
+                        <td>".$user_data_row['fname']."</td>
+                        <td>".$user_data_row['nic']."</td>";
+
+                    if($user_data_row['user_status'] == 1){
+                        $user_data_view .= "<td><h4><span class='badge badge-success'>Active</span></h4></td>";
+                    }
+                    elseif($user_data_row['user_status'] == 0){
+                        $user_data_view .= "<td><h4><span class='badge badge-danger'>Deactive</span></h4></td>";
+                    }
+                    if($user_data_row['is_pending'] == 1){
+                        $user_data_view .= "<td><h4><span class='badge badge-info'>Pending User</span></h4></td>";
+                    }
+                    elseif($user_data_row['is_pending'] == 0){
+                        $user_data_view .= "<td><h4><span class='badge badge-success'>Activated User</span></h4></td>";
+                    }                   
+
+            $user_data_view .= "
+                            <td><a href='user_edit.php?id=".$user_data_row['u_username']."'><button class='btn btn-primary'>Infor</button></a></td>
+                        </tr>                      
+                ";
+                echo $user_data_view;
+        }
     }
 ?>
