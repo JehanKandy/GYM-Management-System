@@ -804,10 +804,9 @@
 
             echo $products_data;
         }
+    }
 
-
-
-
-
+    function count_products(){
+        $con = Connection();
     }
 ?>
