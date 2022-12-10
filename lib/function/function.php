@@ -857,7 +857,7 @@
         $check_prodcuts_nor = mysqli_num_rows($check_prodcuts_result);
 
         if($check_prodcuts_nor > 0){
-            
+            $insert_product = "INSERT INTO shop(p_name,p_price,qty,is_stock,status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,)"
         }else{
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                     <strong>Error : </strong> &nbsp; Product Already in the Database.....!
