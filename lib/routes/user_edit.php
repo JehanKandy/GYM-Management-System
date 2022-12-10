@@ -11,7 +11,8 @@
 
 <?php 
     if(isset($_POST['user_to_deactive'])){
-
+        $result = to_deactive_user($_POST['to_deactive']);
+        echo $result;
     }
     elseif(isset($_POST['user_to_active'])){
 
