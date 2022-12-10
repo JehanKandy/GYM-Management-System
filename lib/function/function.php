@@ -852,6 +852,20 @@
                     </div>";
         }
         
+        $check_prodcuts = "SELECT * FROM shop WHERE p_name = '$p_name'";
+        $check_prodcuts_result = mysqli_query($con, $check_prodcuts);
+        $check_prodcuts_nor = mysqli_num_rows($check_prodcuts_result);
+
+        if($check_prodcuts_nor > 0){
+            
+        }else{
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                    <strong>Error : </strong> &nbsp; Product Already in the Database.....!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
+        }
         
     }
 ?>
