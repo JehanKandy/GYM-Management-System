@@ -720,7 +720,7 @@
     function any_admin_data(){
         $con = Connection();
 
-
+        $login_user = strval($_SESSION['LoginSession']);
 
         $user_data = "SELECT * FROM user_tbl WHERE user_type = 'admin'";
         $user_data_result = mysqli_query($con, $user_data);
