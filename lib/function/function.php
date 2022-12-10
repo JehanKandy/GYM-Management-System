@@ -900,6 +900,18 @@
                                 <input type='number' name='update_pprice' value='".$check_product_row['p_price']."' class='form-control'>
                             </span>
                         </div>
+                        <div class='item-add3'>
+                            <span>
+                                Product QTY :
+                                <input type='number' name='update_pprice' value='".$check_product_row['qty']."' class='form-control'>
+                            </span>
+                        </div>
+                        <div class='item-add4'>
+                            <span>
+                                Product Stock :
+                                <input type='number' name='update_pprice' value='".$check_product_row['is_stock']."' class='form-control'>
+                            </span>
+                    </div>
                     </div>
                 
                 </form>
