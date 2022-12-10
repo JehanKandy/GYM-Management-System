@@ -885,6 +885,7 @@
 
         if($check_product_nor > 0){
             $product_data = "
+            <div style='padding-top:50px;'>
                 <form action='' method='POST'>
                     <div class='product-add-grid'>
                         <div class='item-add1'>
@@ -893,9 +894,16 @@
                                 <input type='text' name='update_pname' value='".$check_product_row['p_name']."' class='form-control'>
                             </span>
                         </div>
+                        <div class='item-add2'>
+                            <span>
+                                Product Price :
+                                <input type='number' name='update_pprice' value='".$check_product_row['p_price']."' class='form-control'>
+                            </span>
+                        </div>
                     </div>
                 
                 </form>
+            </div>
             ";
 
             echo $product_data;
