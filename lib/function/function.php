@@ -792,7 +792,7 @@
                         $products_data .= "<td><h4><span class='badge badge-success'>Product Active</span></h4></td>";
                     }
                     elseif($products_row['status'] == 0){
-
+                        $products_data .= "<td><h4><span class='badge badge-danger'>Product Deactive</span></h4></td>";
                     }
 
             $products_data .= "         
