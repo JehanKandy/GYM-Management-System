@@ -934,8 +934,11 @@
                             </form>";
                     }elseif($check_product_row['status'] == 0){
                         $product_data .="
+                            Product Status : 
+                            <h3><span class='badge badge-danger'>Deactive</span></h3>
                             <form action='' method='POST'>
-                                <input type='hidden' name='product_active'>
+                                <input type='hidden' name='product_active' value='0'>
+                                <input type='submit' name='product_status_active' value='Deactive' class='btn btn-success'>
                             </form>";
                     }
 
