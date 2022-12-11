@@ -923,10 +923,22 @@
                     </form>                   
                 </div>
 
-                <div style='padding-top:30px'>
-                    <form action='' method='POST'>
-                    
-                    </form>
+                <div style='padding-top:30px'>";
+                    if($check_product_row['status'] == 1){
+                        $product_data ="
+                            <form action='' method='POST'>
+                                <input type='hidden' name='product_active'>
+                            </form>";
+                    }elseif($check_product_row['status'] == 0){
+                        $product_data ="
+                            <form action='' method='POST'>
+                                <input type='hidden' name='product_active'>
+                            </form>";
+                    }
+
+
+
+            $product_data ="
                 </div>
             ";
 
