@@ -826,7 +826,7 @@
         }else{
             if(in_array($filetype, $image_types)){
                 if(move_uploaded_file($_FILES["file"]["tmp_name"], $image_target_path)){
-                    $insert_product = "INSERT INTO shop(p_name,p_price,qty,is_stock,status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,NOW())";
+                    $insert_product = "INSERT INTO shop(product_img,p_name,p_price,qty,is_stock,status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,NOW())";
                     $insert_product_result = mysqli_query($con, $insert_product);
                     header("location:products.php");
                 }
