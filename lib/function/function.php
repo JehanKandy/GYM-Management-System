@@ -982,5 +982,16 @@
         $update_product_status_1_result = mysqli_query($con, $update_product_status_1);
         header("location:products.php");
     }
+
+    
+    function product_active($id){
+        $con = Connection();
+
+        $product_id = strval($_SESSION['productId']);
+
+        $update_product_status_1 = "UPDATE shop SET status = '$id' WHERE id = '$product_id'";
+        $update_product_status_1_result = mysqli_query($con, $update_product_status_1);
+        header("location:products.php");
+    }
 ?>
 
