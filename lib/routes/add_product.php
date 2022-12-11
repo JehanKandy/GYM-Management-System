@@ -15,13 +15,11 @@
         <div class="body">
             <?php 
                 if(isset($_POST['add_prodcut'])){
-                    $result = add_product($_FILES['file']['name'], $_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock']);
+                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock']);
                     echo $result;
                 }            
             ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
-            Product Image:
-                <input type='file' name='file' accept='image/*' class="form-control" style="margin-bottom: 20px;">
                 <div class="product-add-grid">                    
                     <div class="item-add1">                        
                         <span>
