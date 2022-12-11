@@ -8,6 +8,19 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST['update_product_info'])){
+
+    }
+    if(isset($_POST['product_status_deactive'])){
+
+    }
+    if(isset($_POST['product_status_active'])){
+        
+    }
+
+?>
+
 <div class="container">
     <div class="edit-product">
         <?php update_product(); ?>
