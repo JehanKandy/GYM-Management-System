@@ -18,7 +18,8 @@
         echo $result;
     }
     if(isset($_POST['product_status_active'])){
-
+        $result = product_active($_POST['product_active']);
+        echo $result;
     }
 
 ?>
