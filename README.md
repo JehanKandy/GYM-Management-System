@@ -183,6 +183,7 @@ GYM Management System
  - lib/routes/admins.php
  - lib/routes/products.php
  - css/dashboard.css
+ - lib/routes/admin.php
 
   
    <hr> 
