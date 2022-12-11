@@ -10,13 +10,14 @@
 
 <?php 
     if(isset($_POST['update_product_info'])){
-
+        $result = update_product_data($_POST['update_pname'], $_POST['update_pprice'], $_POST['update_pqty'], $_POST['update_pstock']);
+        echo $result;
     }
     if(isset($_POST['product_status_deactive'])){
 
     }
     if(isset($_POST['product_status_active'])){
-        
+
     }
 
 ?>
