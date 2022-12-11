@@ -966,7 +966,9 @@
         $product_id = strval($_SESSION['productId']);
 
         $update_product = "UPDATE shop SET p_name = '$pname', p_price = '$pprice', qty = '$pqty', is_stock = '$pstock' WHERE id = '$product_id'";
-        
+        $update_product_result = mysqli_query($con, $update_product);
+
+        header("location:products.php");
         
     }
 ?>
