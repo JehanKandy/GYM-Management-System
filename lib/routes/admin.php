@@ -60,7 +60,7 @@
 					</div>
 					<hr class="admin-hr">
 					<div class="admin-body">
-						15
+						<?php count_products(); ?>
 					</div>
 				</div>
 				<div class="admin-item4">
