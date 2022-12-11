@@ -803,6 +803,14 @@
                     </div>";
         }
         
+        $image_dir = "../../upload/";
+
+        $filename = basename($_FILES["file"]["name"]);
+        $image_target_path = $image_dir . $filename;
+        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
+
+        $image_types = array('jpg','png','jpeg','gif','PNG');
+
         $check_prodcuts = "SELECT * FROM shop WHERE p_name = '$p_name'";
         $check_prodcuts_result = mysqli_query($con, $check_prodcuts);
         $check_prodcuts_nor = mysqli_num_rows($check_prodcuts_result);
@@ -816,10 +824,13 @@
                 </div>";
 
         }else{
-            $insert_product = "INSERT INTO shop(p_name,p_price,qty,is_stock,status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,NOW())";
-            $insert_product_result = mysqli_query($con, $insert_product);
-
-            header("location:products.php");
+            if(in_array($filetype, $image_types)){
+                if(move_uploaded_file($_FILES["file"]["tmp_name"], $image_target_path)){
+                    $insert_product = "INSERT INTO shop(p_name,p_price,qty,is_stock,status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,NOW())";
+                    $insert_product_result = mysqli_query($con, $insert_product);
+                    header("location:products.php");
+                }
+            }
         }        
     }
 
@@ -994,5 +1005,4 @@
         header("location:products.php");
     }
 ?>
-
 
