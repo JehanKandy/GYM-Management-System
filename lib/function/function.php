@@ -974,6 +974,8 @@
 
     function product_deactive(){
         $con = Connection();
+
+        $product_id = strval($_SESSION['productId']);
     }
 ?>
 
