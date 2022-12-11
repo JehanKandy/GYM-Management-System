@@ -925,12 +925,15 @@
 
                 <div style='padding-top:30px'>";
                     if($check_product_row['status'] == 1){
-                        $product_data ="
+                        $product_data .="
+                            Product Status : 
+                            <h3><span class='badge badge-success'>Active</span></h3>
                             <form action='' method='POST'>
                                 <input type='hidden' name='product_deactive' value='0'>
+                                <input type='submit' name='product_status_deactive' value='Deactive' class='btn btn-danger'>
                             </form>";
                     }elseif($check_product_row['status'] == 0){
-                        $product_data ="
+                        $product_data .="
                             <form action='' method='POST'>
                                 <input type='hidden' name='product_active'>
                             </form>";
@@ -938,7 +941,7 @@
 
 
 
-            $product_data ="
+            $product_data .="
                 </div>
             ";
 
