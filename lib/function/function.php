@@ -957,8 +957,10 @@
                         </button>
                     </div>";
         }
+    }
 
-
+    function update_product_data(){
+        $con = Connection();
     }
 ?>
 
