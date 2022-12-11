@@ -938,7 +938,7 @@
                             Product Status : 
                             <h3><span class='badge badge-danger'>Deactive</span></h3>
                             <form action='' method='POST'>
-                                <input type='hidden' name='product_active' value='0'>
+                                <input type='hidden' name='product_active' value='1'>
                                 <input type='submit' name='product_status_active' value='Deactive' class='btn btn-success'>
                             </form>";
                     }
