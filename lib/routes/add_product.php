@@ -20,8 +20,10 @@
                 }            
             ?>
             <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
-                <div class="product-add-grid">
-                    <div class="item-add1">
+            Product Image:
+            <input type='file' name='file' accept='image/*' class="form-control" style="margin-bottom: 20px;">
+                <div class="product-add-grid">                    
+                    <div class="item-add1">                        
                         <span>
                             Product Name : 
                             <input type="text" name="product_name" id="productName" class="form-control">
