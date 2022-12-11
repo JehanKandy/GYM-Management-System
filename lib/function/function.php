@@ -971,5 +971,9 @@
         header("location:products.php");
         
     }
+
+    function product_deactive(){
+        $con = Connection();
+    }
 ?>
 
