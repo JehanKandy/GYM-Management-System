@@ -924,7 +924,9 @@
                 </div>
 
                 <div style='padding-top:30px'>
-                
+                    <form action='' method='POST'>
+                    
+                    </form>
                 </div>
             ";
 
