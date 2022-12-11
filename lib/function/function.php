@@ -979,6 +979,7 @@
 
         $update_product_status_1 = "UPDATE shop SET status = '$id' WHERE id = '$product_id'";
         $update_product_status_1_result = mysqli_query($con, $update_product_status_1);
+        header("location:products.php");
     }
 ?>
 
