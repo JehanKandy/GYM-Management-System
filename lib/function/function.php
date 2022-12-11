@@ -920,9 +920,12 @@
                             </span>
                         </div>    
                         </div>                 
-                    </form>
+                    </form>                   
+                </div>
 
-            </div>
+                <div style='padding-top:30px'>
+                
+                </div>
             ";
 
             echo $product_data;
