@@ -946,7 +946,7 @@
 
 
             $product_data .="<br><br>
-                    <a href='product.php'><button class='btn btn-primary'>Back</button></a>
+                    <a href='products.php'><button class='btn btn-primary'>Back</button></a>
                 </div>
             ";
 
