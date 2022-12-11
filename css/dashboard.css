@@ -1413,6 +1413,11 @@ td {
     grid-area: e;
 }
 
+.product-image {
+    width: 100px;
+    height: 100px;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
