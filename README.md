@@ -195,3 +195,4 @@ GYM Management System
   - lib/function/function.php
   - css/dashboard.css
   - lib/routes/edit_product.php
+  - lib/routes/admin.php
