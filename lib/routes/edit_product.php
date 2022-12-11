@@ -14,7 +14,8 @@
         echo $result;
     }
     if(isset($_POST['product_status_deactive'])){
-
+        $result = product_deactive($_POST['product_deactive']);
+        echo $result;
     }
     if(isset($_POST['product_status_active'])){
 
