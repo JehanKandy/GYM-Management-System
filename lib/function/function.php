@@ -877,6 +877,7 @@
         $con = Connection();
 
         $id = $_GET['id'];
+        $_SESSION['productId'] = $id;
 
         $check_product = "SELECT * FROM shop WHERE id = '$id'";
         $check_product_result = mysqli_query($con, $check_product);
@@ -905,13 +906,13 @@
                         <div class='item-add3'>
                             <span>
                                 Product QTY :
-                                <input type='number' name='update_pprice' value='".$check_product_row['qty']."' class='form-control'>
+                                <input type='number' name='update_pqty' value='".$check_product_row['qty']."' class='form-control'>
                             </span>
                         </div>
                         <div class='item-add4'>
                             <span>
                                 Product Stock :
-                                <input type='number' name='update_pprice' value='".$check_product_row['is_stock']."' class='form-control'>
+                                <input type='number' name='update_pstock' value='".$check_product_row['is_stock']."' class='form-control'>
                             </span>
                         </div>
                         <div class='item-add5'>
@@ -959,8 +960,13 @@
         }
     }
 
-    function update_product_data(){
+    function update_product_data($pname, $pprice, $pqty, $pstock){
         $con = Connection();
+
+        $product_id = strval($_SESSION['productId']);
+
+        $update_product = "";
+        
     }
 ?>
 
