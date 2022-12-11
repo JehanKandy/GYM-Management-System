@@ -888,8 +888,8 @@
             <div style='padding-top:50px;'>
             <img src='../../upload/".$check_product_row['product_img']."' class='product-image' alt='p_img'>
 
-                <form action='' method='POST'>
-                    <div class='product-add-grid'>
+                <form action='' method='POST'>     
+                <div class='product-add-grid'>               
                         <div class='item-add1'>
                             <span>
                                 Product Name :
@@ -913,10 +913,15 @@
                                 Product Stock :
                                 <input type='number' name='update_pprice' value='".$check_product_row['is_stock']."' class='form-control'>
                             </span>
-                    </div>
-                    </div>
-                
-                </form>
+                        </div>
+                        <div class='item-add5'>
+                            <span>
+                                <input type='submit' name='update_product_info' value='Update Product Info' class='btn btn-success btn-lg btn-block'>
+                            </span>
+                        </div>    
+                        </div>                 
+                    </form>
+
             </div>
             ";
 
