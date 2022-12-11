@@ -972,10 +972,12 @@
         
     }
 
-    function product_deactive(){
+    function product_deactive($id){
         $con = Connection();
 
         $product_id = strval($_SESSION['productId']);
+
+        $update_product_status_1 = "UPDATE shop SET status = '$'"
     }
 ?>
 
