@@ -200,7 +200,7 @@ GYM Management System
   
      <hr> 
 
-  <b>11 December 2022</b>
+  <b>12 December 2022</b>
 1. DEVELOP
 
 2. UPDATE 
