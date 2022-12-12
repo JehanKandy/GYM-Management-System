@@ -1054,6 +1054,7 @@
         $con = Connection();
 
         $select_all_products = "SELECT * FROM shop";
+        $select_all_products_result = mysqli_query($con, $select_all_products);
     }
 
 
