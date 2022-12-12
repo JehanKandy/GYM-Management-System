@@ -1021,7 +1021,7 @@
             </form>
 
 
-            <a href='products.php'><button class='btn btn-primary'>Back</button></a>
+            <a href='products.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>
         ";
 
         echo $view_img;
