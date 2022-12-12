@@ -1019,6 +1019,9 @@
                 <input type='file' name='file' class='form-control' style='margin-bottom:20px;'>
                 <input type='submit' name='product_img' value='Update Prodcut Image' class='btn btn-primary btn-lg btn-block'>      
             </form>
+
+
+            <a href='products.php'><button class='btn btn-primary'>Back</button></a>
         ";
 
         echo $view_img;
