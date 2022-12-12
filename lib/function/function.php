@@ -852,10 +852,10 @@
                         $products_data .= "<td><h4><span class='badge badge-danger'>Product Deactive</span></h4></td>";
                     }
                     if($products_row['img_status'] == 1){
-                        $products_data .= "<td><span class='color:green';>Image Set</span></td>";
+                        $products_data .= "<td><span style='color:green';>Image Set</span></td>";
                     }
                     elseif($products_row['img_status'] == 0){
-                        $products_data .= "<td><span class='color:red';>Image Not Set</span></td>";
+                        $products_data .= "<td><span style='color:red';>Image Not Set</span></td>";
                     }
 
             $products_data .= "
