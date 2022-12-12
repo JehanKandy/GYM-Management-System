@@ -1017,7 +1017,7 @@
         
             <form action='' method='POST'>
                 <input type='file' name='file' class='form-control' style='margin-bottom:20px;'>
-                <input type='submit' name='product_img' value='Update Prodcut Image' class='btn btn-success btn-lg btn-block'>      
+                <input type='submit' name='product_img_update' value='Update Prodcut Image' class='btn btn-success btn-lg btn-block'>      
             </form>
 
 
