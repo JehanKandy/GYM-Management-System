@@ -8,6 +8,13 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST['product_img_update'])){
+
+    }
+
+?>
+
 
 <div class="container">
     <div class="update-img-product">
