@@ -1016,7 +1016,8 @@
             <img src='../../upload/".$check_img_row['product_img']."' alt='Profile Image' class='product-image'>
         
             <form action='' method='POST'>
-            
+                <input type='file' name='file' class='form-control'>
+
             
             </form>
         ";
