@@ -1013,7 +1013,7 @@
         
 
         $view_img = "
-            <img src='../../upload/".$check_img_row['product_img']."' alt='Profile Image' class='profile-img-std'>
+            <img src='../../upload/".$check_img_row['product_img']."' alt='Profile Image' class='product-image'>
         
         ";
 
