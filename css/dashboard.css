@@ -1416,6 +1416,7 @@ td {
 .product-image {
     width: 200px;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 .update-img-product {
