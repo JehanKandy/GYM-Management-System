@@ -1030,6 +1030,21 @@
 
     function update_product_image($img){
         $con = Connection();
+        $product_id = strval($_SESSION['productId']);
+        $image_dir = "../../upload/";
+        
+        $filename = basename($_FILES["file"]["name"]);
+        $image_target_path = $image_dir . $filename;
+        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
+
+        $image_types = array('jpg','png','jpeg','gif','PNG');
+
+        if(in_array($filetype, $image_types)){
+            if(move_uploaded_file($_FILES["file"]["tmp_name"], $image_target_path)){
+                $update_img = "UPDATE user_tbl SET profile_img = '$filename' WHERE email = '$email'";
+                $update_img_result = mysqli_query($con, $update_img); 
+            }
+        }
     }
 ?>
 
