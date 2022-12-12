@@ -32,27 +32,33 @@
 	</aside>
 
 	<main class="content">
-		<h1>All Members</h1>
+		<h1>Products</h1>
 		<hr>
+		<span>
+			<a href="add_product.php"><button class="btn btn-success"><i class="fas fa-plus"></i>&nbsp;Add Products</button></a>
+			<a href="all_product.php"><button class="btn btn-primary"><i class="fas fa-gifts"></i>&nbsp;All Products</button></a>
+		</span>
 		<table class="student-tbl">
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">Username</th>
-					<th scope="col">Email</th>
-					<th scope="col">First Name</th>
-					<th scope="col">NIC</th>
+					<th scope="col">Product</th>
+					<th scope="col">Price</th>
+					<th scope="col">Qty</th>
+					<th scope="col">In Stock</th>
 					<th scope="col">Status</th>
-					<th scope="col">Is Pending</th>
+					<th scope="col">Image Status</th>
+					<th scope="col">Add Date</th>
+					<th scope="col"></th>
 					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php any_user_data(); ?>
+				<?php all_products(); ?>
 			</tbody>
 		</table>
+
 	</main>
 </div>
 
 <script src="../../js/script.js"></script>
-
