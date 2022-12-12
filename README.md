@@ -210,3 +210,4 @@ GYM Management System
   - lib/function/function.php
   - lib/routes/add_product.php
   - lib/routes/products.php
+  - css/dashboard.css
