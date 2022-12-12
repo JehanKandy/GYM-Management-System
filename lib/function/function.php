@@ -860,6 +860,7 @@
 
             $products_data .= "
                     <td>".$products_row['date']."</td>
+                    <td><a href='edit_product.php?id=".$products_row['id']."'><button class='btn btn-primary'>Info</button></td>  
                     <td><a href='edit_product.php?id=".$products_row['id']."'><button class='btn btn-primary'>Info</button></td>         
                 </tr>
             
