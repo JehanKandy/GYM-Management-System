@@ -1052,6 +1052,8 @@
 
     function all_products_view(){
         $con = Connection();
+
+        $select_all_products = "SELECT * FROM shop";
     }
 
 
