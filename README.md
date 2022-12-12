@@ -204,8 +204,4 @@ GYM Management System
 1. DEVELOP
 
 2. UPDATE 
-  - lib/function/function.php
-  - css/dashboard.css
-  - lib/routes/edit_product.php
-  - lib/routes/admin.php
-  - lib/routes/add_product.php
+
