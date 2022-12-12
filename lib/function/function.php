@@ -1005,6 +1005,10 @@
 
     function update_product_img($p_img){
         $con = Connection();
+
+        $id = $_GET['id'];
+        $check_img = "SELECT * FROM shop WHERE id = '$id'";
+        
     }
 ?>
 
