@@ -870,6 +870,26 @@
         }
     }
 
+    function update_product_image($img){
+        $con = Connection();
+
+        $product_id = $_GET['id'];
+        $image_dir = "../../upload/";
+        
+        $filename = basename($_FILES["images"]["name"]);
+        $image_target_path = $image_dir . $filename;
+        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
+
+        $image_types = array('jpg','png','jpeg','gif','PNG');
+
+        if(in_array($filetype, $image_types)){
+            if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
+                $update_img = "UPDATE shop SET product_img = '$filename',img_status = 1 WHERE id = '$product_id'";
+                $update_img_result = mysqli_query($con, $update_img); 
+            }
+        }
+    }
+
     function count_products(){
         $con = Connection();
 
@@ -1028,23 +1048,6 @@
         
     }
 
-    function update_product_image($img){
-        $con = Connection();
-        $product_id = strval($_SESSION['productId']);
-        $image_dir = "../../upload/";
-        
-        $filename = basename($_FILES["images"]["name"]);
-        $image_target_path = $image_dir . $filename;
-        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
 
-        $image_types = array('jpg','png','jpeg','gif','PNG');
-
-        if(in_array($filetype, $image_types)){
-            if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
-                $update_img = "UPDATE shop SET product_img = '$filename' && img_status = 1 WHERE id = '$product_id'";
-                $update_img_result = mysqli_query($con, $update_img); 
-            }
-        }
-    }
 ?>
 
