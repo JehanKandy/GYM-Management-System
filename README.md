@@ -205,7 +205,7 @@ GYM Management System
   - lib
   - - lib/routes
   - - - lib/routes/edit_product_img.php
-  - - - lib/routes/edit_product_img.php
+  - - - lib/routes/all_product.php
 
 2. UPDATE 
   - lib/function/function.php
