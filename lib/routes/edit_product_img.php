@@ -10,7 +10,7 @@
 
 <?php 
     if(isset($_POST['product_img_update'])){
-        $result = update_product_image($_FILES['file']['name']);
+        $result = update_product_image($_FILES['images']['name']);
         echo $result;
     }
 ?>
