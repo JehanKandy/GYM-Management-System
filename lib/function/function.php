@@ -1008,6 +1008,7 @@
 
         $id = $_GET['id'];
         $check_img = "SELECT * FROM shop WHERE id = '$id'";
+        $check_img_result = mysqli_query($con, $check_img);
         
     }
 ?>
