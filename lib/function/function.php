@@ -1002,5 +1002,9 @@
         $update_product_status_1_result = mysqli_query($con, $update_product_status_1);
         header("location:products.php");
     }
+
+    function update_product_img($p_img){
+        $con = Connection();
+    }
 ?>
 
