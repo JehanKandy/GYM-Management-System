@@ -7,3 +7,10 @@
         header("location:../views/login.php");
     }
 ?>
+
+
+<div class="container">
+    <div class="update-img-product">
+        <?php update_product_img(); ?>
+    </div>
+</div>
