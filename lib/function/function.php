@@ -1055,6 +1055,12 @@
 
         $select_all_products = "SELECT * FROM shop";
         $select_all_products_result = mysqli_query($con, $select_all_products);
+        
+        while($product_row = mysqli_fetch_assoc($select_all_products_result)){
+            $product_row_view ="";
+
+            echo $product_row_view;
+        }
     }
 
 
