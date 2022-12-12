@@ -1015,8 +1015,8 @@
         $view_img = "
             <img src='../../upload/".$check_img_row['product_img']."' alt='Profile Image' class='product-image'>
         
-            <form action='' method='POST'>
-                <input type='file' name='file' class='form-control' style='margin-bottom:20px;'>
+            <form action='' method='POST' enctype='multipart/form-data'>
+                <input type='file' name='images' class='form-control' style='margin-bottom:20px;'>
                 <input type='submit' name='product_img_update' value='Update Prodcut Image' class='btn btn-success btn-lg btn-block'>      
             </form>
 
@@ -1033,15 +1033,15 @@
         $product_id = strval($_SESSION['productId']);
         $image_dir = "../../upload/";
         
-        $filename = basename($_FILES["file"]["name"]);
+        $filename = basename($_FILES["images"]["name"]);
         $image_target_path = $image_dir . $filename;
         $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
 
         $image_types = array('jpg','png','jpeg','gif','PNG');
 
         if(in_array($filetype, $image_types)){
-            if(move_uploaded_file($_FILES["file"]["tmp_name"], $image_target_path)){
-                $update_img = "UPDATE shop SET product_img = '$filename' WHERE id = '$product_id'";
+            if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
+                $update_img = "UPDATE shop SET profile_img = '$filename' WHERE email = '$product_id'";
                 $update_img_result = mysqli_query($con, $update_img); 
             }
         }
