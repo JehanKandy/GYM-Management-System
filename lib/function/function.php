@@ -1041,7 +1041,7 @@
 
         if(in_array($filetype, $image_types)){
             if(move_uploaded_file($_FILES["file"]["tmp_name"], $image_target_path)){
-                $update_img = "UPDATE user_tbl SET profile_img = '$filename' WHERE email = '$email'";
+                $update_img = "UPDATE shop SET product_img = '$filename' WHERE id = '$product_id'";
                 $update_img_result = mysqli_query($con, $update_img); 
             }
         }
