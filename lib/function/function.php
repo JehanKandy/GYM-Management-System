@@ -1011,6 +1011,11 @@
         $check_img_result = mysqli_query($con, $check_img);
         $check_img_row = mysqli_fetch_assoc($check_img_result);
         
+
+        $view_img = "";
+
+        echo $view_img;
+        
     }
 ?>
 
