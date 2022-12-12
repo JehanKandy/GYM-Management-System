@@ -1027,5 +1027,9 @@
         echo $view_img;
         
     }
+
+    function update_product_image($img){
+        $con = Connection();
+    }
 ?>
 
