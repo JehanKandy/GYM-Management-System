@@ -1050,6 +1050,10 @@
         
     }
 
+    function all_products_view(){
+        $con = Connection();
+    }
+
 
 ?>
 
