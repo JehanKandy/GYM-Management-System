@@ -1110,6 +1110,8 @@
 
                     if($all_plans_row['plan_status'] == 1){
                         $all_planes_view .= "<td><h4><span class='badge badge-success'>Plan Active</span></h4></td>";
+                    }elseif($all_plans_row['plan_status'] == 0){
+                        $all_planes_view .= "<td><h4><span class='badge badge-danger'>Plan Deactive</span></h4></td>";
                     }
 
             $all_planes_view ="
