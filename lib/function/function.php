@@ -767,7 +767,7 @@
                 echo $user_data_view;
         }
     }
-    function add_product($p_name, $p_price, $p_qty, $p_stock){
+    function add_product($p_name, $p_price, $p_qty, $p_stock, $p_desc){
         $con = Connection();
         
         if(empty($p_name)){
@@ -1057,7 +1057,10 @@
         $select_all_products_result = mysqli_query($con, $select_all_products);
         
         while($product_row = mysqli_fetch_assoc($select_all_products_result)){
-            $product_row_view ="";
+            $product_row_view ="
+            
+            
+            ";
 
             echo $product_row_view;
         }
