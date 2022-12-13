@@ -1146,7 +1146,7 @@
                 <input type='submit' name='update_plan_data' value='Update Plane' class='btn btn-success btn-lg btn-block'>                
             </form>
 
-
+            <br><br>
             Plan Status : ";
 
             if($check_plan_row['plan_status'] == 1){
