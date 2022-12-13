@@ -15,7 +15,7 @@
         <div class="body">
             <?php 
                 if(isset($_POST['add_prodcut'])){
-                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock'], $_POST['p_desc']);
+                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock']);
                     echo $result;
                 }            
             ?>
