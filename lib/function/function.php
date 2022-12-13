@@ -1132,7 +1132,13 @@
         $check_plan_result = mysqli_query($con, $check_plan);
         $check_plan_row = mysqli_fetch_assoc($check_plan_result);
 
-        $plan_data = "";
+        $plan_data = "
+            <form action='' method='POST'>
+                Plan Name : 
+                <input type='text' name='update_plan_name' class='form-control' value='".$check_plan_row['plan_name']."'>
+            </form>
+        
+        ";
 
         echo $plan_data;
     }
