@@ -21,7 +21,6 @@
         $result = product_active($_POST['product_active']);
         echo $result;
     }
-
 ?>
 
 <div class="container">
