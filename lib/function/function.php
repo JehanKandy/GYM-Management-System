@@ -1147,7 +1147,7 @@
             </form>
 
             <br><br>
-            Plan Status : ".$check_plan_row['plan_status']."";
+            Plan Status : ";
 
             if($check_plan_row['plan_status'] == 1){
                 $plan_data .="
