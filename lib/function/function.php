@@ -957,7 +957,7 @@
                         <div class='item-add5'>
                         <span>
                                 Product Stock :
-                                <input type='number' name='update_pstock' value='".$check_product_row['is_stock']."' class='form-control'>
+                                <input type='number' name='update_pstock' value='".$check_product_row['p_desc']."' class='form-control'>
                             </span>
                         </div>
                         <div class='item-add6'>
