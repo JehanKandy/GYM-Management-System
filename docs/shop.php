@@ -56,7 +56,7 @@
     </div>
     <center><a href="#"><button class="product-btn">More Products</button></a></center>
 
-
+</div>
 
 
 <?php
