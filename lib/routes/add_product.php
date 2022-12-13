@@ -15,7 +15,7 @@
         <div class="body">
             <?php 
                 if(isset($_POST['add_prodcut'])){
-                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock']);
+                    $result = add_product($_POST['product_name'], $_POST['product_price'], $_POST['product_qty'], $_POST['product_stock'], $_POST['p_desc']);
                     echo $result;
                 }            
             ?>
@@ -48,7 +48,7 @@
                     <div class="item-add5">
                         <span>
                             Product Description : 
-                            
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="p_desc"></textarea>
                         </span>
                     </div>
                     <div class="item-add6">
