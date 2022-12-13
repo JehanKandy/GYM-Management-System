@@ -1143,8 +1143,10 @@
                 Completed Users :
                 <input type='number' class='form-control' value='".$check_plan_row['completed_users']."' disabled>
                 <br>
-                Plan Status : 
+                <input type='submit' name='update_plan_data' value='Update Plane' class='btn btn-success btn-lg btn-block'>
+                
             </form>
+            Plan Status : 
         
         ";
 
