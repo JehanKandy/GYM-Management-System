@@ -56,51 +56,7 @@
     </div>
     <center><a href="#"><button class="product-btn">More Products</button></a></center>
 
-    <hr>
-    <div class="product-title">GYM Equipment</div>
-    <div class="product-content">
-        <div class="p-grid">
-            <div class="p-item1">
-                <center><img src="../images/supp1.jfif" alt="" class="supp-img"></center>
-                <div class="p-infor">
-                    <div class="p-name">ABC Prodcuts</div>
-                    <div class="qty">1</div>
-                    <div class="p-price">Rs 15,000.00</div>
-                    <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
-                </div>
-            </div>
-            
-            <div class="p-item2">
-                <center><img src="../images/supp1.jfif" alt="" class="supp-img"></center>
-                <div class="p-infor">
-                        <div class="p-name">ABC Prodcuts</div>
-                        <div class="qty">1</div>
-                        <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
-                </div>
-            </div>
-            <div class="p-item3">
-                <center><img src="../images/supp1.jfif" alt="" class="supp-img"></center>
-                <div class="p-infor">
-                        <div class="p-name">ABC Prodcuts</div>
-                        <div class="qty">1</div>
-                        <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
-                </div>
-            </div>
-            <div class="p-item4">
-                <center><img src="../images/supp1.jfif" alt="" class="supp-img"></center>
-                <div class="p-infor">
-                        <div class="p-name">ABC Prodcuts</div>
-                        <div class="qty">1</div>
-                        <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
-                </div>
-            </div>
-        </div>
-        <center><a href="#"><button class="product-btn">More Products</button></a></center>
-    </div>
-</div>
+
 
 
 <?php
