@@ -11,6 +11,6 @@
 
 <div class="container">
     <div class="edit-plan">
-        hi
+        <?php edit_plan(); ?>
     </div>
 </div>
