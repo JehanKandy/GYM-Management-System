@@ -9,13 +9,13 @@
 ?>
 
 <?php 
-    if(isset($_POST[''])){
+    if(isset($_POST['update_plan_data'])){
 
     }
-    if(isset($_POST[''])){
+    if(isset($_POST['deactive_place_data'])){
         
     }
-    if(isset($_POST[''])){
+    if(isset($_POST['active_place_data'])){
         
     }
 
