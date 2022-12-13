@@ -1065,7 +1065,7 @@
                     </div>
                 </div>
                 
-                <div class='p-item1'>
+                <div class='p-item2'>
                     <center><img src='../images/supp1.jfif' class='supp-img'></center>
                     <div class='p-infor'>
                         <div class='p-name'>".$product_row['p_name']."</div>
@@ -1073,7 +1073,7 @@
                         <div class='p-price'>".$product_row['p_price']."</div>
                     </div>
                 </div>
-                <div class='p-item1'>
+                <div class='p-item3'>
                     <center><img src='../images/supp1.jfif' class='supp-img'></center>
                     <div class='p-infor'>
                         <div class='p-name'>".$product_row['p_name']."</div>
@@ -1081,7 +1081,7 @@
                         <div class='p-price'>".$product_row['p_price']."</div>
                     </div>
                 </div>
-                <div class='p-item1'>
+                <div class='p-item4'>
                     <center><img src='../images/supp1.jfif' class='supp-img'></center>
                     <div class='p-infor'>
                         <div class='p-name'>".$product_row['p_name']."</div>
