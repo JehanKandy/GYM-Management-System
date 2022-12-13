@@ -956,8 +956,8 @@
                         </div>
                         <div class='item-add5'>
                         <span>
-                                Product Stock :
-                                <input type='number' name='update_pstock' value='".$check_product_row['p_desc']."' class='form-control'>
+                                Product Description : 
+                                <textarea class='form-control' id='exampleFormControlTextarea1' rows='3' name='p_desc'></textarea>
                             </span>
                         </div>
                         <div class='item-add6'>
@@ -1079,7 +1079,6 @@
             echo $product_row_view;
         }
     }
-
 
 
 ?>
