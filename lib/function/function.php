@@ -1150,7 +1150,13 @@
             Plan Status : ";
 
             if($check_plan_row['plan_status'] == 1){
-                $plan_data .="";
+                $plan_data .="
+                    <form action='' method='POST'>
+                        <input type='hidden' name='deactive_plane' value='0'>
+                        <input type='submit' name='deactive_place_data' value='Deactive Plan' class='btn btn-danger'>
+                    </form>
+                
+                ";
             }elseif($check_plan_row['plan_status'] == 0){
                 $plan_data .="";
             }      
