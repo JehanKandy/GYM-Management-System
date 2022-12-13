@@ -1095,6 +1095,9 @@
 
     function all_plans(){
         $con = Connection();
+
+        $all_plans = "SELECT * FROM plan_tbl";
+        $all_plans_result = mysqli_query($con, $all_plans); 
     }
 
 ?>
