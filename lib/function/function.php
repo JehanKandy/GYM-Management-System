@@ -1098,6 +1098,11 @@
 
         $all_plans = "SELECT * FROM plan_tbl";
         $all_plans_result = mysqli_query($con, $all_plans); 
+        
+
+        while($all_plans_row = mysqli_fetch_assoc($all_plans_result)){
+            
+        }
     }
 
 ?>
