@@ -1108,6 +1108,14 @@
                     <td>".$all_plans_row['enroll_users']."</td>
                     <td>".$all_plans_row['completed_users']."</td>"; 
 
+                    if($all_plans_row['plan_status'] == 1){
+                        $all_planes_view .= "<td><h4><span class='badge badge-success'>Plan Active</span></h4></td>";
+                    }
+
+            $all_planes_view ="
+                </tr>
+            ";
+
             echo $all_planes_view;
         }
     }
