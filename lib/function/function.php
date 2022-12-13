@@ -1101,7 +1101,9 @@
         
 
         while($all_plans_row = mysqli_fetch_assoc($all_plans_result)){
-            
+            $all_planes_view = ""; 
+
+            echo $all_planes_view;
         }
     }
 
