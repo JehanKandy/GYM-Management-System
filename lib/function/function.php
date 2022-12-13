@@ -1163,7 +1163,7 @@
                     <h3><span class='badge badge-success'>Plane Deative</span></h3>
                     <form action='' method='POST'>
                         <input type='hidden' name='active_plane' value='1'>
-                        <input type='submit' name='active_place_data' value='Deactive Plan' class='btn btn-danger'>
+                        <input type='submit' name='active_place_data' value='Deactive Plan' class='btn btn-success'>
                     </form>
                 ";
             }      
