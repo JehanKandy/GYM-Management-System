@@ -223,7 +223,4 @@ GYM Management System
   - - - lib/routes/all_product.php
 
 2. UPDATE 
-  - lib/function/function.php
-  - lib/routes/add_product.php
-  - lib/routes/products.php
-  - css/dashboard.css
+
