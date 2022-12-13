@@ -957,7 +957,7 @@
                         <div class='item-add5'>
                         <span>
                                 Product Description : 
-                                <textarea class='form-control' id='exampleFormControlTextarea1' rows='3' name='update_pdesc' value='".$check_product_row['']."'></textarea>
+                                <textarea class='form-control' id='exampleFormControlTextarea1' rows='3' name='update_pdesc' value='".$check_product_row['p_desc']."'></textarea>
                             </span>
                         </div>
                         <div class='item-add6'>
