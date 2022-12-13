@@ -1114,7 +1114,7 @@
                         $all_planes_view .= "<td><h4><span class='badge badge-danger'>Plan Deactive</span></h4></td>";
                     }
 
-            $all_planes_view ="
+            $all_planes_view .="
                 </tr>
             ";
 
