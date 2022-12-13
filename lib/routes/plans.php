@@ -50,7 +50,7 @@
 				</tr>
 			</thead>
 			<tbody>
-
+				<?php all_plans(); ?>
 			</tbody>
 		</table>
 
