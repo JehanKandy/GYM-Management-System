@@ -222,3 +222,4 @@ GYM Management System
   - lib/routes/add_product.php
   - lib/function/function.php
   - css/dashboard.css
+  - lib/routes/edit_product.php
