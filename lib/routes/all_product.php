@@ -10,7 +10,6 @@
 ?>
 
 <div class="shop-content">
-    <div class="product-title">Supplements</div>
     <div class="product-content">
         <div class="p-grid">
             <div class="p-item1">
@@ -19,7 +18,6 @@
                     <div class="p-name">ABC Prodcuts</div>
                     <div class="qty">1</div>
                     <div class="p-price">Rs 15,000.00</div>
-                    <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
                 </div>
             </div>
             
@@ -29,7 +27,6 @@
                         <div class="p-name">ABC Prodcuts</div>
                         <div class="qty">1</div>
                         <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
                 </div>
             </div>
             <div class="p-item3">
@@ -38,7 +35,6 @@
                         <div class="p-name">ABC Prodcuts</div>
                         <div class="qty">1</div>
                         <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
                 </div>
             </div>
             <div class="p-item4">
@@ -47,8 +43,7 @@
                         <div class="p-name">ABC Prodcuts</div>
                         <div class="qty">1</div>
                         <div class="p-price">Rs 15,000.00</div>
-                        <div class="p-infor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex dolorum officiis doloremque. Temporibus quo ipsum unde, rem aperiam beatae nesciunt architecto nulla quasi esse omnis, amet, deserunt tenetur accusamus.</div>
-                </div>
+                 </div>
             </div>
         </div>
     </div>
