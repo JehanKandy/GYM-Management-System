@@ -54,7 +54,7 @@
             <?php all_products_view(); ?>
         </div>
     </div>
-    <center><a href="#"><button class="product-btn">More Products</button></a></center>
+    <center><a href="../lib/views/login.php"><button class="product-btn">More Products</button></a></center>
 
 </div>
 
