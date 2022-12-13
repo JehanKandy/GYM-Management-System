@@ -42,19 +42,14 @@
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">Product</th>
-					<th scope="col">Price</th>
-					<th scope="col">Qty</th>
-					<th scope="col">In Stock</th>
+					<th scope="col">Plan</th>
 					<th scope="col">Status</th>
-					<th scope="col">Image Status</th>
 					<th scope="col">Add Date</th>
-					<th scope="col"></th>
 					<th scope="col"></th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php all_products(); ?>
+
 			</tbody>
 		</table>
 
