@@ -1125,6 +1125,8 @@
 
     function edit_plan(){
         $con = Connection();
+
+        $id = $_GET['id'];
     }
 
 ?>
