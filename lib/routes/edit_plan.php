@@ -8,6 +8,19 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST[''])){
+
+    }
+    if(isset($_POST[''])){
+        
+    }
+    if(isset($_POST[''])){
+        
+    }
+
+?>
+
 
 <div class="container">
     <div class="edit-plan">
