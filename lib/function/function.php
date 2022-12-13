@@ -767,7 +767,7 @@
                 echo $user_data_view;
         }
     }
-    function add_product($p_name, $p_price, $p_qty, $p_stock, $p_desc){
+    function add_product($p_name, $p_price, $p_qty, $p_stock){
         $con = Connection();
         
         if(empty($p_name)){
