@@ -826,7 +826,7 @@
                 </div>";
 
         }else{
-            $insert_product = "INSERT INTO shop(p_name,p_price,qty,is_stock,status,img_status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,0,NOW())";
+            $insert_product = "INSERT INTO shop(p_name,p_desc,p_price,qty,is_stock,status,img_status,date)VALUES('$p_name','$p_price','$p_qty','$p_stock',1,0,NOW())";
             $insert_product_result = mysqli_query($con, $insert_product);
             header("location:products.php");
             
