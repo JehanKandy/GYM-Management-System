@@ -1136,6 +1136,14 @@
             <form action='' method='POST'>
                 Plan Name : 
                 <input type='text' name='update_plan_name' class='form-control' value='".$check_plan_row['plan_name']."'>
+                <br>
+                Enroll Users :
+                <input type='number' class='form-control' value='".$check_plan_row['plan_name']."' disabled>
+                <br>
+                Completed Users :
+                <input type='number' class='form-control' value='".$check_plan_row['plan_name']."' disabled>
+                <br>
+                Plan Status : 
             </form>
         
         ";
