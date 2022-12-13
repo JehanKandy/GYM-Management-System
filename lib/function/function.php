@@ -1138,10 +1138,10 @@
                 <input type='text' name='update_plan_name' class='form-control' value='".$check_plan_row['plan_name']."'>
                 <br>
                 Enroll Users :
-                <input type='number' class='form-control' value='".$check_plan_row['plan_name']."' disabled>
+                <input type='number' class='form-control' value='".$check_plan_row['enroll_users']."' disabled>
                 <br>
                 Completed Users :
-                <input type='number' class='form-control' value='".$check_plan_row['plan_name']."' disabled>
+                <input type='number' class='form-control' value='".$check_plan_row['completed_users']."' disabled>
                 <br>
                 Plan Status : 
             </form>
