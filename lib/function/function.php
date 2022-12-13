@@ -1159,7 +1159,13 @@
                 
                 ";
             }elseif($check_plan_row['plan_status'] == 0){
-                $plan_data .="";
+                $plan_data .="
+                    <h3><span class='badge badge-success'>Plane Deative</span></h3>
+                    <form action='' method='POST'>
+                        <input type='hidden' name='deactive_plane' value='1'>
+                        <input type='submit' name='deactive_place_data' value='Deactive Plan' class='btn btn-danger'>
+                    </form>
+                ";
             }      
 
 
