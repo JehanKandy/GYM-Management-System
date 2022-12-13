@@ -51,7 +51,7 @@
     <div class="product-title">Supplements</div>
     <div class="product-content">
         <div class="p-grid">
-            <?php all_products_view(); ?>
+            <?php all_products_view_login(); ?>
         </div>
     </div>
     <center><a href="../lib/views/login.php"><button class="product-btn">More Products</button></a></center>
