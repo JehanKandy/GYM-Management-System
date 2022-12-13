@@ -45,7 +45,7 @@
                             <input type="text" name="product_stock" id="productStock" class="form-control">
                         </span>
                     </div>
-                    <div class="item-add4">
+                    <div class="item-add5">
                         <span>
                             Product Description : 
                             
