@@ -225,4 +225,4 @@ GYM Management System
   - lib/routes/edit_product.php  
   - lib/routes/all_product.php
   - docs/shop.php
-  - lib/routes/
+  - lib/routes/plans.php
