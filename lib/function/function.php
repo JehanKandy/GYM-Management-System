@@ -1066,7 +1066,39 @@
         
         while($product_row = mysqli_fetch_assoc($select_all_products_result)){
             $product_row_view ="
-            
+                    <div class='p-item1'>
+                    <center><img src='../images/supp1.jfif' class='supp-img'></center>
+                    <div class='p-infor'>
+                        <div class='p-name'>ABC Prodcuts</div>
+                        <div class='qty'>1</div>
+                        <div class='p-price'>Rs 15,000.00</div>
+                    </div>
+                </div>
+                
+                <div class='p-item2'>
+                    <center><img src='../images/supp1.jfif' class='supp-img'></center>
+                    <div class='p-infor'>
+                            <div class='p-name'>ABC Prodcuts</div>
+                            <div class='qty'>1</div>
+                            <div class='p-price'>Rs 15,000.00</div>
+                    </div>
+                </div>
+                <div class='p-item3'>
+                    <center><img src='../images/supp1.jfif' class='supp-img'></center>
+                    <div class='p-infor'>
+                            <div class='p-name'>ABC Prodcuts</div>
+                            <div class='qty'>1</div>
+                            <div class='p-price'>Rs 15,000.00</div>
+                    </div>
+                </div>
+                <div class='p-item4'>
+                    <center><img src='../images/supp1.jfif' class='supp-img'></center>
+                    <div class='p-infor'>
+                            <div class='p-name'>ABC Prodcuts</div>
+                            <div class='qty'>1</div>
+                            <div class='p-price'>Rs 15,000.00</div>
+                    </div>
+                </div>
             
             ";
 
