@@ -42,6 +42,8 @@
 				<tr>
 					<th scope="col">#</th>
 					<th scope="col">Plan</th>
+					<th scope="col">Enroll Users</th>
+					<th scope="col">Completed Users</th>
 					<th scope="col">Status</th>
 					<th scope="col">Add Date</th>
 					<th scope="col"></th>
