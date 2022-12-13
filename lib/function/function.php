@@ -1151,6 +1151,7 @@
 
             if($check_plan_row['plan_status'] == 1){
                 $plan_data .="
+                    <h3><span class='badge badge-success'>Plane Active</span></h3>
                     <form action='' method='POST'>
                         <input type='hidden' name='deactive_plane' value='0'>
                         <input type='submit' name='deactive_place_data' value='Deactive Plan' class='btn btn-danger'>
