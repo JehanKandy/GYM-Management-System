@@ -1127,6 +1127,10 @@
         $con = Connection();
 
         $id = $_GET['id'];
+
+        $check_plan = "SELECT * FROM plan_tbl WHERE id= '$id'";
+        $check_plan_result = mysqli_query($con, $check_plan)
+        $check_plan_row = mysqli_fetch_assoc($check_data_result);
     }
 
 ?>
