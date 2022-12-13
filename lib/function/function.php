@@ -1060,8 +1060,8 @@
                     <center><img src='../images/supp1.jfif' class='supp-img'></center>
                     <div class='p-infor'>
                         <div class='p-name'>".$product_row['p_name']."</div>
-                        <div class='qty'>1</div>
-                        <div class='p-price'>Rs 15,000.00</div>
+                        <div class='qty'>".$product_row['p_name']."</div>
+                        <div class='p-price'>".$product_row['p_name']."</div>
                     </div>
                 </div>
                 
