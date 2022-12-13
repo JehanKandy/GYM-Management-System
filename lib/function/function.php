@@ -1123,5 +1123,9 @@
         }
     }
 
+    function edit_plan(){
+        $con = Connection();
+    }
+
 ?>
 
