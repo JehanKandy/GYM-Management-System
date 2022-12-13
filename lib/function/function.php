@@ -955,6 +955,12 @@
                             </span>
                         </div>
                         <div class='item-add5'>
+                        <span>
+                                Product Stock :
+                                <input type='number' name='update_pstock' value='".$check_product_row['is_stock']."' class='form-control'>
+                            </span>
+                        </div>
+                        <div class='item-add6'>
                             <span>
                                 <input type='submit' name='update_product_info' value='Update Product Info' class='btn btn-success btn-lg btn-block'>
                             </span>
