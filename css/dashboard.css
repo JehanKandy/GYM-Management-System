@@ -1390,7 +1390,7 @@ td {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(50px, auto);
     grid-gap: 1rem;
-    grid-template-areas: "a b" "c d" "e e";
+    grid-template-areas: "a b" "c d" "e e" "f f";
 }
 
 .item-add1 {
@@ -1411,6 +1411,10 @@ td {
 
 .item-add5 {
     grid-area: e;
+}
+
+.item-add6 {
+    grid-area: f;
 }
 
 .product-image {
