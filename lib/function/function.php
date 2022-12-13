@@ -1104,9 +1104,9 @@
             $all_planes_view = "
                 <tr>
                     <th scope='row'>".$all_plans_row['id']."</th>
-                    <td>".$all_plans_row['p_name']."</td>
-                    <td>".$all_plans_row['p_price']."</td>
-                    <td>".$all_plans_row['qty']."</td>";
+                    <td>".$all_plans_row['plan_name']."</td>
+                    <td>".$all_plans_row['enroll_users']."</td>
+                    <td>".$all_plans_row['completed_users']."</td>
             
             "; 
 
