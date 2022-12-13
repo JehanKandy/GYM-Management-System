@@ -219,6 +219,7 @@ GYM Management System
 1. DEVELOP
   - lib
   - - lib/routes
+  - - - lib/routes/edit_plan.php
 2. UPDATE 
   - lib/routes/add_product.php
   - lib/function/function.php
