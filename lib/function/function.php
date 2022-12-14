@@ -1188,13 +1188,16 @@
         $con = Connection();
         $plan_id = strval($_SESSION['planId']);
 
-        $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$peo'";
+        $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$plan_id'";
         $update_plan_result = mysqli_query($con, $update_plan);
     }
 
     function plan_active($id){
         $con = Connection();
         $plan_id = strval($_SESSION['planId']);
+
+        $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$plan_id'";
+        $update_plan_result = mysqli_query($con, $update_plan);
     }
 
 
