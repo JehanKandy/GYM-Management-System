@@ -1186,10 +1186,12 @@
 
     function plan_deactive($id){
         $con = Connection();
+        $product_id = strval($_SESSION['planId']);
     }
 
     function plan_active($id){
         $con = Connection();
+        $product_id = strval($_SESSION['planId']);
     }
 
 
