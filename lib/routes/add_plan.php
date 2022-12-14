@@ -8,16 +8,17 @@
     }
 ?>
 
-<?php 
-    if(isset($_POST['add_plan'])){
-        $result = add_plan($_POST['plan_name']);
-        echo $result;
-    }
 
-?>
 
 <div class="container">
     <div class="add-plan">
+        <?php 
+            if(isset($_POST['add_plan'])){
+                $result = add_plan($_POST['plan_name']);
+                echo $result;
+            }
+
+        ?>
         <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
             <span>
                 Plan Name : 
