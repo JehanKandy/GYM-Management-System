@@ -1184,11 +1184,11 @@
         header("location:plans.php");
     }
 
-    function plan_deactive(){
+    function plan_deactive($id){
         $con = Connection();
     }
 
-    function plan_active(){
+    function plan_active($id){
         $con = Connection();
     }
 
