@@ -233,7 +233,8 @@ GYM Management System
 
   <b>14 December 2022</b>
 1. DEVELOP
-
+  - lib
+  
 2. UPDATE 
   - lib/function/function.php
   - lib/routes/edit_plan.php
