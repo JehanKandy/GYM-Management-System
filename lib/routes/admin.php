@@ -69,7 +69,7 @@
 					</div>
 					<hr class="qui-hr">
 					<div class="admin-body">
-						15
+					<?php count_plans(); ?>
 					</div>
 				</div>
 			</div>
