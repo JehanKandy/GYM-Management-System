@@ -1115,6 +1115,7 @@
                     }
 
             $all_planes_view .="
+                    <td>".$all_plans_row['add_date']."</td>
                     <td><a href='edit_plan.php?id=".$all_plans_row['id']."'><button class='btn btn-primary'>Info</button></td>
                 </tr>
             ";
