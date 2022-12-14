@@ -1243,6 +1243,9 @@
 
     function count_plans(){
         $con = Connection();
+
+        $count_plans = "SELECT * FROM plan_tbl";
+        $count_plans_result = mysqli_query($con, $count_plans);
     }
 ?>
 
