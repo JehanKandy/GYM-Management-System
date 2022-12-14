@@ -11,6 +11,8 @@
 
 <div class="shop-content">
     <div class="product-content">
+
+        <a href="products.php"><button class="btn btn-primary">Back</button></a>
         <div class="p-grid">
             <?php all_products_view(); ?>
         </div>
