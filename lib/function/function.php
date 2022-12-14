@@ -1176,9 +1176,9 @@
     function update_plan_infor($plan_name){
         $con = Connection();
 
-        $product_id = strval($_SESSION['planId']);
+        $plan_id = strval($_SESSION['planId']);
 
-        $update_plan_info = "UPDATE plan_tbl SET plan_name ='$plan_name' WHERE id = '$product_id'";
+        $update_plan_info = "UPDATE plan_tbl SET plan_name ='$plan_name' WHERE id = '$plan_id'";
         $update_plan_info_result = mysqli_query($con, $update_plan_info);
 
         header("location:plans.php");
@@ -1186,12 +1186,15 @@
 
     function plan_deactive($id){
         $con = Connection();
-        $product_id = strval($_SESSION['planId']);
+        $plan_id = strval($_SESSION['planId']);
+
+        $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$peo'";
+        $update_plan_result = mysqli_query($con, $update_plan);
     }
 
     function plan_active($id){
         $con = Connection();
-        $product_id = strval($_SESSION['planId']);
+        $plan_id = strval($_SESSION['planId']);
     }
 
 
