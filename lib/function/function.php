@@ -1193,6 +1193,8 @@
 
         $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$plan_id'";
         $update_plan_result = mysqli_query($con, $update_plan);
+
+        header("location:plans.php");
     }
 
     function plan_active($id){
@@ -1201,6 +1203,7 @@
 
         $update_plan = "UPDATE plan_tbl SET plan_status = '$id' WHERE id = '$plan_id'";
         $update_plan_result = mysqli_query($con, $update_plan);
+        header("location:plans.php");
     }
 
 
