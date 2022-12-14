@@ -10,6 +10,11 @@
 
 <div class="container">
     <div class="add-plan">
-        <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST"></form>
+        <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
+            <span>
+                Plan Name : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name">
+            </span>
+        </form>
     </div>
 </div>
