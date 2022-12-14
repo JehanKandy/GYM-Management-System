@@ -1431,6 +1431,10 @@ td {
     padding: 50 0 50 0;
 }
 
+.add-plan {
+    padding: 50 0 50 0;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
