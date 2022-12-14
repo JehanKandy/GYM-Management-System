@@ -1233,7 +1233,7 @@
             }
             else{
                 $plan_insert = "INSERT INTO plan_tbl(plan_name,plan_status,add_date)VALUES('$plan_name',1,NOW())";
-                
+                $plan_insert_result = mysqli_query($con, $plan_insert);
             }
         }
         
