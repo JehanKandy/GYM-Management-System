@@ -1266,5 +1266,9 @@
 
         echo $profile_img_view;
     }
+
+    function user_id_loged(){
+        $con = Connection();
+    }
 ?>
 
