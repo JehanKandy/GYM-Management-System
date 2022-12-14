@@ -1259,6 +1259,12 @@
         $view_profile_img = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $view_profile_img_result = mysqli_query($con, $view_profile_img);
         $view_profile_img_row = mysqli_fetch_assoc($view_profile_img_result);
+
+        $profile_img_view ="
+        <img src='../../upload/".$view_profile_img_row['profile_img']."' alt='Profile Image' class='profile-img'>
+        ";
+
+        echo $profile_img_view;
     }
 ?>
 
