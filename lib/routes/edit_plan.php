@@ -10,7 +10,8 @@
 
 <?php 
     if(isset($_POST['update_plan_data'])){
-
+        $result = update_plan_infor($_POST['update_plan_name']);
+        echo $result;
     }
     if(isset($_POST['deactive_place_data'])){
         
