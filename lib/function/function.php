@@ -1238,8 +1238,11 @@
 
                 header("location:plans.php");
             }
-        }
-        
+        }        
+    }
+
+    function count_plans(){
+        $con = Connection();
     }
 ?>
 
