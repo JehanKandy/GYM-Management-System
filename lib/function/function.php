@@ -1182,7 +1182,10 @@
         $update_plan_info_result = mysqli_query($con, $update_plan_info);
 
         header("location:plans.php");
+    }
 
+    function plan_deactive(){
+        $con = Connection();
     }
 
 ?>
