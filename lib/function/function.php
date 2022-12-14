@@ -1178,6 +1178,11 @@
 
         $product_id = strval($_SESSION['planId']);
 
+        $update_plan_info = "UPDATE plan_tbl SET plan_name ='$plan_name' WHERE id = '$product_id'";
+        $update_plan_info_result = mysqli_query($con, $update_plan_info);
+
+        header("location:plans.php");
+
     }
 
 ?>
