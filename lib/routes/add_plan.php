@@ -8,6 +8,13 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST['add_plan'])){
+        $result = 
+    }
+
+?>
+
 <div class="container">
     <div class="add-plan">
         <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
