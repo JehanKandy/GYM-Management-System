@@ -19,7 +19,7 @@
 
 	<aside class="sidebar">
 		<nav class="menu">
-			<?php //profile_img();?>
+			<?php profile_img();?>
 			<p class="profile-name"><?php //user_id_loged();?></p>
 			<a href="admin.php" class="menu-item"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
 			<a href="members.php" class="menu-item"><i class="fas fa-user-alt"></i>Members &nbsp; <span class="count"><?php count_members(); ?></span></a>
