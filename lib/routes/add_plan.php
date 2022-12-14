@@ -19,5 +19,7 @@
                 <input type="submit" value="Add Plan" name="add_plan" class="btn btn-success">
             </span>
         </form>
+        <br><br><br>
+        <a href="plans.php"><button class="btn btn-primary">Back</button></a>
     </div>
 </div>
