@@ -1172,5 +1172,9 @@
         echo $plan_data;
     }
 
+    function update_plan_infor(){
+        $con = Connection();
+    }
+
 ?>
 
