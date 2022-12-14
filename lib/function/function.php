@@ -1188,5 +1188,10 @@
         $con = Connection();
     }
 
+    function plan_active(){
+        $con = Connection();
+    }
+
+
 ?>
 
