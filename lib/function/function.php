@@ -1269,6 +1269,15 @@
 
     function user_id_loged(){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
+        $select_usern = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_usern_result = mysqli_query($con, $select_usern);
+        $select_usern_row = mysqli_fetch_assoc($select_usern_result);
+
+        echo $select_usern_row['u_username'];
+
     }
 ?>
 
