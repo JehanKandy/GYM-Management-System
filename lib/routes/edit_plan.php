@@ -14,10 +14,12 @@
         echo $result;
     }
     if(isset($_POST['deactive_place_data'])){
-        
+        $result = plan_deactive($_POST['deactive_plane']);
+        echo $result;
     }
     if(isset($_POST['active_place_data'])){
-        
+        $result = plan_active($_POST['active_plane']);
+        echo $result;
     }
 
 ?>
