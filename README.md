@@ -240,3 +240,4 @@ GYM Management System
   - lib/function/function.php
   - lib/routes/edit_plan.php
   - lib/routes/all_product.php
+  - lib/routes/admin.php
