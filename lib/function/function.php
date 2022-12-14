@@ -1127,6 +1127,7 @@
         $con = Connection();
 
         $id = $_GET['id'];
+        $_SESSION['planId'] = $id;
 
         $check_plan = "SELECT * FROM plan_tbl WHERE id= '$id'";
         $check_plan_result = mysqli_query($con, $check_plan);
@@ -1172,8 +1173,11 @@
         echo $plan_data;
     }
 
-    function update_plan_infor(){
+    function update_plan_infor($plan_name){
         $con = Connection();
+
+        $product_id = strval($_SESSION['planId']);
+
     }
 
 ?>
