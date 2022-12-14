@@ -236,6 +236,7 @@ GYM Management System
   - lib
   - - lib/routes
   - - - lib/routes/add_plan.php
+  - - - 
 2. UPDATE 
   - lib/function/function.php
   - lib/routes/edit_plan.php
