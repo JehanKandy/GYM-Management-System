@@ -242,4 +242,5 @@ GYM Management System
   - lib/routes/all_product.php
   - lib/routes/admin.php
   - lib/routes/admins.php
+  - lib/routes/members.php
   
