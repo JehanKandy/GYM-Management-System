@@ -1250,5 +1250,9 @@
 
         echo $count_plans_nor;
     }
+
+    function profile_img(){
+        $con = Connection();
+    }
 ?>
 
