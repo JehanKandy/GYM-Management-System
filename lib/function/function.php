@@ -1246,6 +1246,9 @@
 
         $count_plans = "SELECT * FROM plan_tbl";
         $count_plans_result = mysqli_query($con, $count_plans);
+        $count_plans_nor = mysqli_num_rows($count_plans_result);
+
+        echo $count_plans_nor;
     }
 ?>
 
