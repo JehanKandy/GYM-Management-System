@@ -228,3 +228,19 @@ GYM Management System
   - lib/routes/all_product.php
   - docs/shop.php
   - lib/routes/plans.php
+  
+     <hr> 
+
+  <b>13 December 2022</b>
+1. DEVELOP
+  - lib
+  - - lib/routes
+  - - - lib/routes/edit_plan.php
+2. UPDATE 
+  - lib/routes/add_product.php
+  - lib/function/function.php
+  - css/dashboard.css
+  - lib/routes/edit_product.php  
+  - lib/routes/all_product.php
+  - docs/shop.php
+  - lib/routes/plans.php
