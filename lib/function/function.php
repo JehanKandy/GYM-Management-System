@@ -1167,7 +1167,10 @@
                         <input type='submit' name='active_place_data' value='Deactive Plan' class='btn btn-success'>
                     </form>
                 ";
-            }      
+            }  
+            $plan_data .="
+                <a href='plans.php'><button class='btn btn-primary'>Back</button></a>
+            ";    
 
 
         echo $plan_data;
