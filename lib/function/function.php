@@ -1209,6 +1209,19 @@
 
     function add_plan($plan_name){
         $con = Connection();
+
+        if(empty($plan_name)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; Plan Name Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        else{
+            $check_plan = "SELECT * FROM plan_tbl WHERE "
+        }
+        
     }
 ?>
 
