@@ -1169,6 +1169,7 @@
                 ";
             }  
             $plan_data .="
+            <br><br><br><br>
                 <a href='plans.php'><button class='btn btn-primary'>Back</button></a>
             ";    
 
@@ -1206,6 +1207,8 @@
         header("location:plans.php");
     }
 
-
+    function add_plan($plan_name){
+        $con = Connection();
+    }
 ?>
 
