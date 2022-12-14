@@ -10,7 +10,8 @@
 
 <?php 
     if(isset($_POST['add_plan'])){
-        $result = 
+        $result = add_plan($_POST['plan_name']);
+        echo $result;
     }
 
 ?>
