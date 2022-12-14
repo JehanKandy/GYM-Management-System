@@ -1223,7 +1223,7 @@
             $check_plan_result = mysqli_query($con, $check_plan);
             $check_plan_nor = mysqli_num_rows($check_plan_result);
 
-            if($check_plan_nor == 0){
+            if($check_plan_nor > 0){
                 return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                             <strong>Error : </strong> &nbsp; Plan already exists.....!
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
