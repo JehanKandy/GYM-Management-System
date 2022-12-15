@@ -1433,6 +1433,10 @@
         $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_query($con, $select_data);
+
+        $update_data = "";
+
+        echo $update_data;
     }
 ?>
 
