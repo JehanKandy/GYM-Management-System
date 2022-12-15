@@ -1450,6 +1450,14 @@
                             Last Name : 
                             <input type='text' value='".$select_data_row['lname']."' name='update_lname' class='form-control' disabled>
                         </div>
+                        <div class='p-item4'>
+                            User Email : 
+                            <input type='text' value='".$select_data_row['user_email']."' class='form-control' disabled>
+                        </div>
+                        <div class='p-item5'>
+                            User Address : 
+                            <textarea class='form-control' rows='5' style='resize:none;' name='update_address'>".$select_data_row['user_address']."</textarea>
+                        </div>
                     </div>
                 </div>
             </form>        
