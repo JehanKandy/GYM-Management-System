@@ -1313,7 +1313,7 @@
                     </div>
                     <div class='p-item5'>
                         User Address : 
-                        <textarea class='form-control' rows='5' style='resize:none;'></textarea>
+                        <textarea class='form-control' rows='5' style='resize:none;' value='".$select_loged_user_data_row['user_address']."'></textarea>
                     </div>
                 </div>
             </div>
