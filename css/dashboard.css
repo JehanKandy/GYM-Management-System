@@ -1439,6 +1439,7 @@ td {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 1400px) {
