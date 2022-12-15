@@ -1389,7 +1389,6 @@
                 $view_form .="<a href='my_account_user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
             }          
         
-
         echo $view_form;
         
     }
