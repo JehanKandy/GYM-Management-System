@@ -1292,6 +1292,12 @@
             <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
             <a href='update-pimg.php?id=".$login_user."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
             <hr>
+
+            <div class='update-profile-info'>
+                <div class='profile-infor-grid'>
+                    hi
+                </div>
+            </div>
         ";
 
         echo $login_user_data;
