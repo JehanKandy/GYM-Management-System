@@ -10,6 +10,6 @@
 
 <div class="container">
     <div class="update-user-profile-img">
-        hi
+        <?php update_profile_img(); ?>
     </div>
 </div>
