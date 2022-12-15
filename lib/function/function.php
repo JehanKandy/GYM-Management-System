@@ -1369,6 +1369,11 @@
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
+
+        $select_profile = "SELECT* FROM user_tbl WHERE user_email = '$login_user'";
+        $select_profile_result = mysqli_query($con, $select_profile);
+        
+        
     }
 ?>
 
