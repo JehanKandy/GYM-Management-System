@@ -1481,7 +1481,21 @@
                         }
                         
                 $update_data  .="</div>
-                    </div>
+                <div class='p-item10'>
+                    Join Date : 
+                    <input type='text' value='".$select_data_row['join_date']."' class='form-control' disabled>
+                </div>
+                <div class='p-item11'>
+                    Account Status : ";
+
+                    if($select_data_row['user_status'] == 1){
+                        $update_data  .="<span><h3><span class='badge badge-success'>Active Account</span></h3></span>";
+                    }
+                    elseif($select_data_row['user_status'] == 0){
+                        $update_data  .="<span><h3><span class='badge badge-info'>Deactive Account</span></h3></span>";
+                    }
+
+            $update_data  .="</div>
                 </div>
             </form>        
         ";
