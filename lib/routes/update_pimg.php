@@ -8,6 +8,14 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST['profile_img_update'])){
+        $result = update_product_image($_FILES['images']['name']);
+        echo $result;
+    }
+?>
+
+
 <div class="container">
     <div class="update-user-profile-img">
         <?php update_profile_img(); ?>
