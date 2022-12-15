@@ -1311,6 +1311,10 @@
                         User Email : 
                         <input type='text' value='".$select_loged_user_data_row['user_email']."' class='form-control' disabled>
                     </div>
+                    <div class='p-item4'>
+                        User Address : 
+                        <textarea class='form-control' rows='3'></textarea>
+                    </div>
                 </div>
             </div>
         ";
