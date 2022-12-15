@@ -1290,7 +1290,7 @@
     
         $login_user_data = "
             <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
-            <a href='updat_pimg.php?id=".$login_user."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
+            <a href='update_pimg.php?id=".$login_user."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
             <hr>
 
             <div class='update-profile-info'>
@@ -1363,6 +1363,10 @@
         ";
 
         echo $login_user_data;
+    }
+
+    function update_profile_img(){
+        $con = Connection();
     }
 ?>
 
