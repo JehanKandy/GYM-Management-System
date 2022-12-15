@@ -1317,15 +1317,15 @@
                     </div>
                     <div class='p-item6'>
                         Date of Birth : 
-                        <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control' disabled>
+                        <input type='text' value='".$select_loged_user_data_row['dob']."' class='form-control' disabled>
                     </div>
                     <div class='p-item7'>
                         NIC/Passport No : 
-                        <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control' disabled>
+                        <input type='text' value='".$select_loged_user_data_row['nic']."' class='form-control' disabled>
                     </div>
                     <div class='p-item8'>
                         Mobile Number : 
-                        <input type='text' value='".$select_loged_user_data_row['lname']."' class='form-control' disabled>
+                        <input type='text' value='".$select_loged_user_data_row['mobile_no']."' class='form-control' disabled>
                     </div>
                 </div>
             </div>
