@@ -1299,6 +1299,10 @@
                         Username : 
                         <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control'>
                     </div>
+                    <div class='profile-item2'>
+                        Username : 
+                        <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control'>
+                    </div>
                 </div>
             </div>
         ";
