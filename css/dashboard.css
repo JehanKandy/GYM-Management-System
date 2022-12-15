@@ -1442,6 +1442,10 @@ td {
     margin-bottom: 30px;
 }
 
+.update-profile-info {
+    padding: 20 0 20 0;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
