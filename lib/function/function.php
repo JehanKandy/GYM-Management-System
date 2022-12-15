@@ -1308,7 +1308,7 @@
                         <input type='text' value='".$select_loged_user_data_row['lname']."' class='form-control' disabled>
                     </div>
                     <div class='p-item4'>
-                        User Emil : 
+                        User Email : 
                         <input type='text' value='".$select_loged_user_data_row['user_email']."' class='form-control' disabled>
                     </div>
                 </div>
