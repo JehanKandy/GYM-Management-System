@@ -1424,5 +1424,9 @@
             }
         }
     }
+
+    function update_profile_data(){
+        $con = Connection();
+    }
 ?>
 
