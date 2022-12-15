@@ -1460,15 +1460,15 @@
                         </div>
                         <div class='p-item6'>
                             Date of Birth : 
-                            <input type='text' value='".$select_data_row['dob']."' name='update_dob' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['dob']."' name='update_dob' class='form-control' >
                         </div>
                         <div class='p-item7'>
                             NIC/Passport No : 
-                            <input type='text' value='".$select_data_row['nic']."' name='update_nic' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['nic']."' name='update_nic' class='form-control' >
                         </div>
                         <div class='p-item8'>
                             Mobile Number : 
-                            <input type='text' value='".$select_data_row['mobile_no']."' name='update_mobile' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['mobile_no']."' name='update_mobile' class='form-control' >
                         </div>
                     </div>
                 </div>
