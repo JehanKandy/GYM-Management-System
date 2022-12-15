@@ -1381,10 +1381,11 @@
                 New Profile Image
                 <input type='file' name='images' class='form-control' style='margin-bottom:20px;'>
                 <input type='submit' name='profile_img_update' value='Update Profile Image' class='btn btn-success btn-lg btn-block'>      
-            </form>
+            </form>";
 
+            if($select_profile_row[''])
 
-            <a href='products.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>
+            <a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>
         ";
 
         echo $view_form;
