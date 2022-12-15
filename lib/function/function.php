@@ -1338,9 +1338,9 @@
                         }
                         
                 $login_user_data  .="</div>
-                    <div class='p-item8'>
-                        Mobile Number : 
-                        <input type='text' value='".$select_loged_user_data_row['mobile_no']."' class='form-control' disabled>
+                    <div class='p-item10'>
+                        Join Date : 
+                        <input type='text' value='".$select_loged_user_data_row['join_date']."' class='form-control' disabled>
                     </div>
 
 
