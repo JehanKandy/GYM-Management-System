@@ -1289,7 +1289,8 @@
         $select_loged_user_data_row = mysqli_fetch_assoc($select_loged_user_data_result);
     
         $login_user_data = "
-            <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'>
+            <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
+            <a href='update-pimg.php?id=".$login_user."'><button class='btn btn-primary'>Update Profile Image</button></a>
         ";
 
         echo $login_user_data;
