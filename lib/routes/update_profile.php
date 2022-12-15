@@ -10,6 +10,6 @@
 
 <div class="container">
     <div class="update-profile-info">
-        
+        <?php update_profile_data(); ?>
     </div>
 </div>
