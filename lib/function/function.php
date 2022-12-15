@@ -1324,7 +1324,7 @@
                         <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control' disabled>
                     </div>
                     <div class='p-item8'>
-                        Last Name : 
+                        Mobile Number : 
                         <input type='text' value='".$select_loged_user_data_row['lname']."' class='form-control' disabled>
                     </div>
                 </div>
