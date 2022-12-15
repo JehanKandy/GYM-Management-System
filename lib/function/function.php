@@ -1313,7 +1313,7 @@
                     </div>
                     <div class='p-item5'>
                         User Address : 
-                        <textarea class='form-control' rows='3'></textarea>
+                        <textarea class='form-control' rows='5' style='resize:none;'></textarea>
                     </div>
                 </div>
             </div>
