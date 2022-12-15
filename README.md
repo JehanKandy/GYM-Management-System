@@ -252,5 +252,6 @@ GYM Management System
   <b>15 December 2022</b>
 1. DEVELOP
 
-2. UPDATE 
+2. UPDATE
+  - lib/function/function.php 
 
