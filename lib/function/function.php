@@ -1514,6 +1514,9 @@
 
     function data_update_profile($update_username, $update_fname, $update_lname, $update_email, $update_address, $update_dob, $update_nic, $update_mobile){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
     }
 ?>
 
