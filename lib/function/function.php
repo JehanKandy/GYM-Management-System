@@ -1434,7 +1434,12 @@
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_query($con, $select_data);
 
-        $update_data = "";
+        $update_data = "
+            <form action='' method='POST'>
+            
+            </form>
+        
+        ";
 
         echo $update_data;
     }
