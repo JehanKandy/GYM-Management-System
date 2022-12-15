@@ -1435,6 +1435,12 @@ td {
     padding: 50 0 50 0;
 }
 
+.profile-edit-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
