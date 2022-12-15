@@ -1392,5 +1392,35 @@
         echo $view_form;
         
     }
+
+    function update_profile_image($img){
+        $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
+        $product_id = $_GET['id'];
+        $image_dir = "../../upload/";
+        
+        $filename = basename($_FILES["images"]["name"]);
+        $image_target_path = $image_dir . $filename;
+        $filetype = pathinfo($image_target_path, PATHINFO_EXTENSION);
+
+        $image_types = array('jpg','png','jpeg','gif','PNG');
+
+        if(in_array($filetype, $image_types)){
+            if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
+                $update_img = "UPDATE user_tbl SET profile_img = '$filename'WHERE user_email  = '$product_id'";
+                $update_img_result = mysqli_query($con, $update_img); 
+
+                if($select_profile_row['user_type'] == 'admin'){
+                    
+                }
+
+                header("location:products.php");
+
+
+            }
+        }
+    }
 ?>
 
