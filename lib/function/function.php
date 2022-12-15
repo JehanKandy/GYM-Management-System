@@ -1283,6 +1283,8 @@
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
+
+        $select_loged_user_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
     }
 ?>
 
