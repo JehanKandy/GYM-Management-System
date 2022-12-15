@@ -1460,7 +1460,7 @@
                         </div>
                         <div class='p-item6'>
                             Date of Birth : 
-                            <input type='text' value='".$select_data_row['dob']."' name='update_dob' class='form-control' >
+                            <input type='date' value='".$select_data_row['dob']."' name='update_dob' class='form-control' >
                         </div>
                         <div class='p-item7'>
                             NIC/Passport No : 
@@ -1510,6 +1510,10 @@
             }   
 
         echo $update_data;
+    }
+
+    function data_update_profile(){
+        $con = Connection();
     }
 ?>
 
