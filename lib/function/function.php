@@ -1331,7 +1331,10 @@
                         User Type : ";
 
                         if($select_loged_user_data_row['user_type'] == 'admin'){
-                            $login_user_data  .="<span><h3><span class='badge badge-warning'><i class='fas fa-user-tie'></i>&nbsp;Admin</span></h3></span";
+                            $login_user_data  .="<span><h3><span class='badge badge-warning'><i class='fas fa-user-tie'></i>&nbsp;Admin Account</span></h3></span";
+                        }
+                        elseif($select_loged_user_data_row['user_type'] == 'user'){
+                            $login_user_data  .="<span><h3><span class='badge badge-info'><i class='fas fa-user-tie'></i>&nbsp;User Account</span></h3></span";
                         }
                         
                 $login_user_data  .="</div>
