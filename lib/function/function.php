@@ -1497,8 +1497,7 @@
 
             $update_data  .="</div>
                 </div>
-            </form>        
-        ";
+            </form>";
 
         echo $update_data;
     }
