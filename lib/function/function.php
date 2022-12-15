@@ -1497,7 +1497,15 @@
 
             $update_data  .="</div>
                 </div>
-            </form>";
+            </form>
+            <br><br>
+            ";
+
+            if($select_data_row['user_type'] == 'admin'){
+                $update_data .= "<a href='my_account_admin.php'><button class='btn btn-primary>Back</button></a>";
+            }elseif($select_data_row['user_type'] == 'user'){
+                $update_data .= "<a href=''><button class='btn btn-primary>Back</button></a>";
+            }
 
         echo $update_data;
     }
