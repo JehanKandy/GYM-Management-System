@@ -1372,7 +1372,8 @@
 
         $select_profile = "SELECT* FROM user_tbl WHERE user_email = '$login_user'";
         $select_profile_result = mysqli_query($con, $select_profile);
-        
+        $select_profile_row = mysqli_fetch_assoc($select_profile_result);
+
         
     }
 ?>
