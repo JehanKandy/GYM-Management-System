@@ -1452,7 +1452,7 @@
                         </div>
                         <div class='p-item4'>
                             User Email : 
-                            <input type='text' value='".$select_data_row['user_email']."' name='update_email' class='form-control' >
+                            <input type='text' value='".$select_data_row['user_email']."' class='form-control' disabled>
                         </div>
                         <div class='p-item5'>
                             User Address : 
@@ -1512,7 +1512,7 @@
         echo $update_data;
     }
 
-    function data_update_profile($update_username, $update_fname, $update_lname, $update_email, $update_address, $update_dob, $update_nic, $update_mobile){
+    function data_update_profile($update_username, $update_fname, $update_lname, $update_address, $update_dob, $update_nic, $update_mobile){
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
