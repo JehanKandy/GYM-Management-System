@@ -1402,7 +1402,7 @@
         $check_user_result = mysqli_query($con, $check_user);
         $check_user_row = mysqli_fetch_assoc($check_user_result);
 
-        $product_id = $_GET['id'];
+
         $image_dir = "../../upload/";
         
         $filename = basename($_FILES["images"]["name"]);
@@ -1413,7 +1413,7 @@
 
         if(in_array($filetype, $image_types)){
             if(move_uploaded_file($_FILES["images"]["tmp_name"], $image_target_path)){
-                $update_img = "UPDATE user_tbl SET profile_img = '$filename'WHERE user_email  = '$product_id'";
+                $update_img = "UPDATE user_tbl SET profile_img = '$filename' WHERE user_email = '$login_user'";
                 $update_img_result = mysqli_query($con, $update_img); 
 
                 if($check_user_row['user_type'] == 'admin'){
@@ -1424,6 +1424,5 @@
             }
         }
     }
-
 ?>
 
