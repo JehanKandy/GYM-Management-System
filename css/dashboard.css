@@ -1453,7 +1453,7 @@ td {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(10px, auto);
     grid-gap: 1rem;
-    grid-template-areas: "a b c" "d d d";
+    grid-template-areas: "a b c" "d d d" "e e e";
 }
 
 .p-item1 {
@@ -1470,6 +1470,10 @@ td {
 
 .p-item4 {
     grid-area: d;
+}
+
+.p-item5 {
+    grid-area: e;
 }
 
 @media only screen and (max-width: 1400px) {
