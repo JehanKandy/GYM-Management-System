@@ -8,6 +8,14 @@
     }
 ?>
 
+<?php 
+    if(isset($_POST['update_profile_info'])){
+        $result = data_update_profile();
+        echo $result;
+    }
+
+?>
+
 <div class="container">
     <div class="update-profile-info">
         <?php update_profile_data(); ?>
