@@ -1300,12 +1300,16 @@
                         <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control' disabled>
                     </div>
                     <div class='p-item2'>
-                        Username : 
+                        First Name : 
                         <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control' disabled>
                     </div>
                     <div class='p-item3'>
-                        Username : 
+                        Last Name : 
                         <input type='text' value='".$select_loged_user_data_row['lname']."' class='form-control' disabled>
+                    </div>
+                    <div class='p-item3'>
+                        User Emil : 
+                        <input type='text' value='".$select_loged_user_data_row['user_email']."' class='form-control' disabled>
                     </div>
                 </div>
             </div>
