@@ -34,3 +34,5 @@
 	<main class="content">
 		<h1>My Information</h1>
 		<hr>
+	</main>
+</div>
