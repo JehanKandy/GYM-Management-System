@@ -1383,10 +1383,12 @@
                 <input type='submit' name='profile_img_update' value='Update Profile Image' class='btn btn-success btn-lg btn-block'>      
             </form>";
 
-            if($select_profile_row[''])
-
-            <a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>
-        ";
+            if($select_profile_row['user_type'] == 'admin'){
+                $view_form .="<a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+            }elseif($select_profile_row['user_type'] == 'user'){
+                $view_form .="<a href='my_account_user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+            }          
+        
 
         echo $view_form;
         
