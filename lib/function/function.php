@@ -1374,6 +1374,9 @@
         $select_profile_result = mysqli_query($con, $select_profile);
         $select_profile_row = mysqli_fetch_assoc($select_profile_result);
 
+        $view_form = "";
+
+        echo $view_form;
         
     }
 ?>
