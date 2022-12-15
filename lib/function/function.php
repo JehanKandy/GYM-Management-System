@@ -1375,11 +1375,16 @@
         $select_profile_row = mysqli_fetch_assoc($select_profile_result);
 
         $view_form = "
-            <img src='../../upload/".$select_profile_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
-
-            <form action='' method='POST'>
+            <img src='../../upload/".$select_profile_row['product_img']."' alt='Profile Image' class='product-image'>
             
+            <form action='' method='POST' enctype='multipart/form-data'>
+                New Profile Image
+                <input type='file' name='images' class='form-control' style='margin-bottom:20px;'>
+                <input type='submit' name='product_img_update' value='Update Prodcut Image' class='btn btn-success btn-lg btn-block'>      
             </form>
+
+
+            <a href='products.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>
         ";
 
         echo $view_form;
