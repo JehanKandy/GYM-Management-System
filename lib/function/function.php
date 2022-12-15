@@ -1343,12 +1343,18 @@
                         <input type='text' value='".$select_loged_user_data_row['join_date']."' class='form-control' disabled>
                     </div>
                     <div class='p-item11'>
-                        Join Date : 
-                        <input type='text' value='".$select_loged_user_data_row['join_date']."' class='form-control' disabled>
+                        Account Status : ";
+
+                        if($select_loged_user_data_row['user_status'] == 1){
+                            $login_user_data  .="<span><h3><span class='badge badge-success'>Active Account</span></h3></span>";
+                        }
+                        elseif($select_loged_user_data_row['user_status'] == 0){
+                            $login_user_data  .="<span><h3><span class='badge badge-info'>Deactive Account</span></h3></span>";
+                        }
+
+                        
+            $login_user_data  .="         
                     </div>
-
-
-
                 </div>
             </div>
         ";
