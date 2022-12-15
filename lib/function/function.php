@@ -1285,6 +1285,8 @@
         $login_user = strval($_SESSION['LoginSession']);
 
         $select_loged_user_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_loged_user_data_result = mysqli_query($con, $select_loged_user_data);
+        $select_loged_user_data_row = mysqli_fetch_assoc($select_loged_user_data_result);
     }
 ?>
 
