@@ -1338,6 +1338,12 @@
                         }
                         
                 $login_user_data  .="</div>
+                    <div class='p-item8'>
+                        Mobile Number : 
+                        <input type='text' value='".$select_loged_user_data_row['mobile_no']."' class='form-control' disabled>
+                    </div>
+
+
                 </div>
             </div>
         ";
