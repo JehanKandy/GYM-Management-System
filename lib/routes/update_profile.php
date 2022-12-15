@@ -7,3 +7,9 @@
         header("location:../views/login.php");
     }
 ?>
+
+<div class="container">
+    <div class="update-profile-info">
+        hi
+    </div>
+</div>
