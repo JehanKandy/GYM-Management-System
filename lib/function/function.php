@@ -1290,7 +1290,7 @@
     
         $login_user_data = "
             <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
-            <a href='update-pimg.php?id=".$login_user."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
+            <a href='updat_pimg.php?id=".$login_user."'><button class='btn btn-primary' style='margin-bottom:20px;'>Update Profile Image</button></a>
             <hr>
 
             <div class='update-profile-info'>
@@ -1356,7 +1356,7 @@
             $login_user_data  .="         
                     </div>
                     <div class='p-item12'>
-                        <a href='update-profile.php?id=".$login_user."'><button class='btn btn-primary btn-lg btn-block' style='margin-bottom:20px;'>Update Profile </button></a>
+                        <a href='update-profile.php?id=".$login_user."'><button class='btn btn-primary btn-lg btn-block' style='margin-bottom:20px; text-decoration:none;'>Update Profile</button></a>
                     </div>
                 </div>
             </div>
