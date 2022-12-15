@@ -1442,6 +1442,14 @@
                             Username : 
                             <input type='text' value='".$select_data_row['u_username']."' class='form-control' disabled>
                         </div>
+                        <div class='p-item2'>
+                            First Name : 
+                            <input type='text' value='".$select_data_row['fname']."' class='form-control' disabled>
+                        </div>
+                        <div class='p-item3'>
+                            Last Name : 
+                            <input type='text' value='".$select_data_row['lname']."' class='form-control' disabled>
+                        </div>
                     </div>
                 </div>
             </form>        
