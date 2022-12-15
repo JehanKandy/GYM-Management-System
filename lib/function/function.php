@@ -1374,7 +1374,13 @@
         $select_profile_result = mysqli_query($con, $select_profile);
         $select_profile_row = mysqli_fetch_assoc($select_profile_result);
 
-        $view_form = "";
+        $view_form = "
+            <img src='../../upload/".$select_profile_row['profile_img']."' alt='Profile Image' class='profile-edit-img'><br>
+
+            <form action='' method='POST'>
+            
+            </form>
+        ";
 
         echo $view_form;
         
