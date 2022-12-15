@@ -1427,6 +1427,12 @@
 
     function update_profile_data(){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
+        $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_data_result = mysqli_query($con, $select_data);
+        $select_data_row = mysqli_query($con, $select_data);
     }
 ?>
 
