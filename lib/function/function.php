@@ -1438,7 +1438,10 @@
             <form action='' method='POST'>
                 <div class='update-profile-info'>
                     <div class='profile-infor-grid'>
-                    
+                        <div class='p-item1'>
+                            Username : 
+                            <input type='text' value='".$select_data_row['u_username']."' class='form-control' disabled>
+                        </div>
                     </div>
                 </div>
             </form>        
