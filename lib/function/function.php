@@ -1436,9 +1436,12 @@
 
         $update_data = "
             <form action='' method='POST'>
-            
-            </form>
-        
+                <div class='update-profile-info'>
+                    <div class='profile-infor-grid'>
+                    
+                    </div>
+                </div>
+            </form>        
         ";
 
         echo $update_data;
