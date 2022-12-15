@@ -1446,6 +1446,16 @@ td {
     padding: 20 0 20 0;
 }
 
+.profile-infor-grid {
+    display: grid;
+    min-width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1rem;
+    grid-template-areas: "a b c" "c d e" "e e f" "f f f";
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
