@@ -1295,13 +1295,17 @@
 
             <div class='update-profile-info'>
                 <div class='profile-infor-grid'>
-                    <div class='profile-item1'>
+                    <div class='p-item1'>
                         Username : 
                         <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control'>
                     </div>
-                    <div class='profile-item2'>
+                    <div class='p-item2'>
                         Username : 
-                        <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control'>
+                        <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control'>
+                    </div>
+                    <div class='p-item3'>
+                        Username : 
+                        <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control'>
                     </div>
                 </div>
             </div>
