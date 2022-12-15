@@ -1440,19 +1440,19 @@
                     <div class='profile-infor-grid'>
                         <div class='p-item1'>
                             Username : 
-                            <input type='text' value='".$select_data_row['u_username']."' name='update_username' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['u_username']."' name='update_username' class='form-control' >
                         </div>
                         <div class='p-item2'>
                             First Name : 
-                            <input type='text' value='".$select_data_row['fname']."' name='update_fname' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['fname']."' name='update_fname' class='form-control' >
                         </div>
                         <div class='p-item3'>
                             Last Name : 
-                            <input type='text' value='".$select_data_row['lname']."' name='update_lname' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['lname']."' name='update_lname' class='form-control' >
                         </div>
                         <div class='p-item4'>
                             User Email : 
-                            <input type='text' value='".$select_data_row['user_email']."' class='form-control' disabled>
+                            <input type='text' value='".$select_data_row['user_email']."' name='update_email' class='form-control' >
                         </div>
                         <div class='p-item5'>
                             User Address : 
