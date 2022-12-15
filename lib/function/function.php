@@ -1289,7 +1289,7 @@
         $select_loged_user_data_row = mysqli_fetch_assoc($select_loged_user_data_result);
     
         $login_user_data = "
-            <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-img'>
+            <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-edit-img'>
         ";
 
         echo $login_user_data;
