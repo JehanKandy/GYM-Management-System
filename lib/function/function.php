@@ -3,7 +3,6 @@
     use FTP\Connection;
 
 
-
     session_start();
 
     function subsucribe_user($email){
@@ -1317,11 +1316,11 @@
                         <textarea class='form-control' rows='5' style='resize:none;' disabled>".$select_loged_user_data_row['user_address']."</textarea>
                     </div>
                     <div class='p-item6'>
-                        Username : 
+                        Date of Birth : 
                         <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control' disabled>
                     </div>
                     <div class='p-item7'>
-                        First Name : 
+                        NIC/Passport No : 
                         <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control' disabled>
                     </div>
                     <div class='p-item8'>
