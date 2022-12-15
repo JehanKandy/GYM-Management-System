@@ -1315,6 +1315,18 @@
                         User Address : 
                         <textarea class='form-control' rows='5' style='resize:none;' disabled>".$select_loged_user_data_row['user_address']."</textarea>
                     </div>
+                    <div class='p-item6'>
+                        Username : 
+                        <input type='text' value='".$select_loged_user_data_row['u_username']."' class='form-control' disabled>
+                    </div>
+                    <div class='p-item7'>
+                        First Name : 
+                        <input type='text' value='".$select_loged_user_data_row['fname']."' class='form-control' disabled>
+                    </div>
+                    <div class='p-item8'>
+                        Last Name : 
+                        <input type='text' value='".$select_loged_user_data_row['lname']."' class='form-control' disabled>
+                    </div>
                 </div>
             </div>
         ";
