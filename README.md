@@ -251,7 +251,8 @@ GYM Management System
 
   <b>15 December 2022</b>
 1. DEVELOP
-
+  - lib
+  
 2. UPDATE
   - lib/function/function.php 
   - lib/routes/my_account.php
