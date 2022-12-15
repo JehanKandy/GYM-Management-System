@@ -1277,7 +1277,12 @@
         $select_usern_row = mysqli_fetch_assoc($select_usern_result);
 
         echo $select_usern_row['u_username'];
+    }
 
+    function profile_info(){
+        $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
     }
 ?>
 
