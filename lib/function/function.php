@@ -1398,6 +1398,10 @@
 
         $login_user = strval($_SESSION['LoginSession']);
 
+        $check_user = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $check_user_result = mysqli_query($con, $check_user);
+        $check_user_row = mysqli_fetch_assoc($check_user_result);
+
         $product_id = $_GET['id'];
         $image_dir = "../../upload/";
         
@@ -1412,14 +1416,11 @@
                 $update_img = "UPDATE user_tbl SET profile_img = '$filename'WHERE user_email  = '$product_id'";
                 $update_img_result = mysqli_query($con, $update_img); 
 
-                if($select_profile_row['user_type'] == 'admin'){
-                    
-                }
-
-                header("location:products.php");
-
-
-                
+                if($check_user_row['user_type'] == 'admin'){
+                    header("location:my_account_admin.php");
+                }elseif($check_user_row['user_type'] == 'user'){
+                    header("location:my_account_user.php");
+                }             
             }
         }
     }
