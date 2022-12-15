@@ -1432,7 +1432,7 @@
 
         $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $select_data_result = mysqli_query($con, $select_data);
-        $select_data_row = mysqli_query($con, $select_data);
+        $select_data_row = mysqli_fetch_assoc($select_data_result);
 
         $update_data = "
             <form action='' method='POST'>
