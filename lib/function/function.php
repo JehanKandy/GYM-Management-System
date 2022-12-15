@@ -1288,10 +1288,11 @@
         $select_loged_user_data_result = mysqli_query($con, $select_loged_user_data);
         $select_loged_user_data_row = mysqli_fetch_assoc($select_loged_user_data_result);
     
-        $login_user_data = "";
+        $login_user_data = "
+            <img src='../../upload/".$select_loged_user_data_row['profile_img']."' alt='Profile Image' class='profile-img'>
+        ";
 
         echo $login_user_data;
     }
 ?>
-
 
