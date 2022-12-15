@@ -1367,6 +1367,8 @@
 
     function update_profile_img(){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
     }
 ?>
 
