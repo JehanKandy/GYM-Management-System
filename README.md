@@ -4,6 +4,8 @@ GYM Management System
 <br> so, all files, I will upload after complete the project
 <br> Sorry For That...! :(
 
+<img src="https://wakatime.com/badge/github/JehanKandy/GYM-Management-System.svg">
+
 <br>
 
 # DEVELOPMENT HISTORY
