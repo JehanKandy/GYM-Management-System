@@ -249,7 +249,7 @@ GYM Management System
   
        <hr> 
 
-  <b>14 December 2022</b>
+  <b>15 December 2022</b>
 1. DEVELOP
 
 2. UPDATE 
