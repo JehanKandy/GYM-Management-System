@@ -1517,6 +1517,9 @@
 
         $login_user = strval($_SESSION['LoginSession']);
 
+        $update_user = "UPDATE user_tbl SET u_username = '$update_username', fname = '$update_fname', lname = '$update_lname', user_email = '$update_email', user_address = '$update_address', dob = '$update_dob', nic = '$update_nic', mobile_no = '$update_mobile' WHERE user_pass = '$login_user'";
+        $update_user_result = mysqli_query($con, $update_user);
+
     }
 ?>
 
