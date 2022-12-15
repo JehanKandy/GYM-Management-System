@@ -1456,6 +1456,10 @@ td {
     grid-template-areas: "a b c" "c d e" "e e f" "f f f";
 }
 
+.profile-item1 {
+    grid-area: a;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
