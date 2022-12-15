@@ -1497,6 +1497,9 @@
 
             $update_data  .="</div>
                 </div>
+                <div class='p-item12'>
+                    <input type='submit' name='update_profile_info' value='Update Profile Data' class='btn btn-success btn-lg btn-block'>
+                </div>
                 </div>
             </form>";
 
