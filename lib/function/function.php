@@ -1624,6 +1624,8 @@
         $con = Connection();
         $login_user = strval($_SESSION['LoginSession']);
 
+        $_SESSION['PlanName'] = $pname;
+
         $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user' && plan_name='$pname'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
@@ -1670,6 +1672,7 @@
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
+        $pname = strval($_SESSION['PlanName']);
 
         $plan_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $plan_data_result = mysqli_query($con, $plan_data);
@@ -1681,7 +1684,7 @@
 
         $plan_view = "
             <div class='my-plan'>
-                <div class='title'>My Plan</div>
+                <div class='title'>".$pname."</div>
                 <hr>";
 
             if($plan_data_tbl_row['20p']){
@@ -1739,11 +1742,15 @@
         $con = Connection();
         $login_user = strval($_SESSION['LoginSession']);        
 
-        $select_my_activities = "SELECT * FROM user_plan_tbl WHERE user_email = '$login_user'";
+        $select_my_activities = "SELECT * FROM plan_tbl WHERE user_email = '$login_user'";
         $select_my_activities_result = mysqli_query($con, $select_my_activities);
         $select_my_activities_row = mysqli_fetch_assoc($select_my_activities_result);
 
-        $my_activities = "";
+        $my_activities = "
+            <div>
+                Activity : ".$select_my_activities_row['']."
+            </div>
+        ";
 
         echo $my_activities;
     }
