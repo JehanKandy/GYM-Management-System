@@ -1679,7 +1679,11 @@
         $plan_data_tbl_result = mysqli_query($con, $plan_data);
         $plan_data_tbl_row = mysqli_fetch_assoc($plan_data_tbl_result);
 
-        $plan_view = "";
+        $plan_view = "
+            <div class='my-plan'>
+                hi
+            </div>
+        ";
 
         echo $plan_view;
     }
