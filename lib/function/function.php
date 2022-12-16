@@ -1522,5 +1522,15 @@
 
         header("location:../views/logout.php");
     }
+
+    function all_product_back_btn(){
+        $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
+
+        $select_user = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_user_result = mysqli_query($con, $select_user);
+        $select_user_row = mysqli_fetch_assoc($select_user_result);
+    }
 ?>
 
