@@ -1639,6 +1639,9 @@
         }else{
             $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
             $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+
+            $insert_plan_active = "INSERT INTO user_plan_tbl(user_email,plan_name,active_date,last_update_date,is_completed)VALUES('$login_user','$pname',NOW(),NOW(),0)";
+            $insert_plan_active_result = mysqli_query($con, $insert_plan_active);
             
             $select_data_back = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
             $select_data_back_result = mysqli_query($con, $select_data_back);
