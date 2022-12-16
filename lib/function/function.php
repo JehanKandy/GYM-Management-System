@@ -1670,6 +1670,9 @@
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
+
+        $plan_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $plan_data_result = mysqli_query($con, $plan_data);
     }
 ?>
 
