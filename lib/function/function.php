@@ -1734,5 +1734,9 @@
 
         echo $plan_view;
     }
+
+    function view_activities_my_plan(){
+        $con = Connection();
+    }
 ?>
 
