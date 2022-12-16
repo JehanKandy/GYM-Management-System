@@ -1528,11 +1528,15 @@ td {
     font-size: 25px;
 }
 
-.my-plan .complete-plan {
+.my-plan .complete-plan,
+.complete-plan20,
+.complete-plan40,
+.complete-plan60,
+.complete-plan80,
+.complete-plan100 {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    background-color: red;
     text-align: center;
     margin-left: 25%;
 }
