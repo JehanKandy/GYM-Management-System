@@ -12,7 +12,10 @@
 <div class="container">
     <div class="all-plans">
         <?php 
-            
+            if(isset($_POST['active_a_plan'])){
+                $result = active_plan_user($_POST['active_plan_user_id'], $_POST['plan_name']);
+                echo $result;
+            }
         
         ?>
 
