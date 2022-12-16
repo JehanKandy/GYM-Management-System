@@ -1750,9 +1750,17 @@
         $select_my_activities_result = mysqli_query($con, $select_my_activities);
         $select_my_activities_row = mysqli_fetch_assoc($select_my_activities_result);
 
+        $plan_name = $select_my_activities_row['plan_name'];
+
+        $select_my_plan = "SELECT * FROM plan_tbl WHERE plan_name  = '$plan_name'";
+        $select_my_plan_result = mysqli_query($con, $select_my_plan);
+        $select_my_plan_row = mysqli_fetch_assoc($select_my_plan_result);
+
         $my_activities = "
             <div>
-                Activity : ".$select_my_activities_row['plan_name']."
+                Plan Name : ".$select_my_activities_row['plan_name']."
+                <br><br>
+                
             </div>
         ";
 
