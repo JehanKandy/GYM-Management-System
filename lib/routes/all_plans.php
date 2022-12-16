@@ -10,6 +10,6 @@
 
 <div class="container">
     <div class="all-plans">
-        hi
+        
     </div>
 </div>
