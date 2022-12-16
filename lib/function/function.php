@@ -1683,6 +1683,12 @@
             <div class='my-plan'>
                 <div class='title'>My Plan</div>
                 <hr>
+                <div class='complete-plan'>
+                   <div class='text'>
+                    50%
+                   </div>
+                </div>
+                <a href='view_myu_plan.php?id=".$login_user."'><button class='btn btn-primary'>View My Plane</button></a>
             </div>
         ";
 
