@@ -12,7 +12,7 @@
 <div class="shop-content">
     <div class="product-content">
 
-        <a href="products.php"><button class="btn btn-primary">Back</button></a>
+        <?php all_product_back_btn(); ?>
         <div class="p-grid">
             <?php all_products_view(); ?>
         </div>
