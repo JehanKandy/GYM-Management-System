@@ -1208,7 +1208,7 @@
         header("location:plans.php");
     }
 
-    function add_plan($plan_name){
+    function add_plan($plan_name,$p20,$p40,$p60,$p80,$p100){
         $con = Connection();
 
         if(empty($plan_name)){
@@ -1548,7 +1548,8 @@
             $plan_row_view ="
                 <div class='p-item'>
                     <div class='p-infor'>
-                        <div class='p-name'>".$plan_row['p_name']."</div>
+                        <div class='p-name'>".$plan_row['plan_name']."</div>
+
                     </div>
                 </div>                           
             ";
