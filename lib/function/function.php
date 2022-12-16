@@ -1606,6 +1606,10 @@
                         <div>".$plan_row['60p']."</div>
                         <div>".$plan_row['80p']."</div>
                         <div>".$plan_row['100p']."</div>
+
+                        <form action='' method=''>
+                        
+                        </form>
                     </div>
                 </div>                           
             ";
