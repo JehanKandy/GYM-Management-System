@@ -271,7 +271,4 @@ GYM Management System
   - - - lib/routes/update_profile.php
   
 2. UPDATE
-  - lib/function/function.php 
-  - lib/routes/my_account.php
-  - css/dashboard.css
 
