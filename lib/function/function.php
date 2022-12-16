@@ -1636,12 +1636,17 @@
                         <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
+        }else{
+            $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
+            $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+            
+
+            if($select_data_row['user_type'] == 'admin'){
+                header("location:my_account_admin.php");
+            }elseif($select_data_row['user_type'] == 'user'){
+                header("location:user.php");
+            }
         }
-
-
-        $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
-        $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
-
     }
 ?>
 
