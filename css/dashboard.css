@@ -1546,23 +1546,23 @@ td {
 }
 
 .my-plan .complete-plan20 {
-    background-color: red;
+    background-color: rgb(255, 212, 20);
 }
 
 .my-plan .complete-plan40 {
-    background-color: red;
+    background-color: yellowgreen;
 }
 
 .my-plan .complete-plan60 {
-    background-color: red;
+    background-color: rgb(79, 202, 243);
 }
 
 .my-plan .complete-plan80 {
-    background-color: red;
+    background-color: rgb(0, 132, 255);
 }
 
 .my-plan .complete-plan100 {
-    background-color: red;
+    background-color: rgb(28, 165, 40);
 }
 
 .my-plan .text {
