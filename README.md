@@ -278,3 +278,4 @@ GYM Management System
   - lib/routes/all_product.php
   - lib/layouts/nav_loged_user.php
   - lib/routes/add_plan.php
+  - lib/routes/plans.php
