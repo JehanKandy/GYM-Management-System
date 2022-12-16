@@ -1419,7 +1419,7 @@
                 if($check_user_row['user_type'] == 'admin'){
                     header("location:my_account_admin.php");
                 }elseif($check_user_row['user_type'] == 'user'){
-                    header("location:my_account_user.php");
+                    header("location:user.php");
                 }             
             }
         }
