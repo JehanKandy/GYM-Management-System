@@ -1538,12 +1538,26 @@
             echo "<a href='user.php'><button class='btn btn-primary'>Back</button></a>";
         }
     }
-
-    function all_plans_view(){
+    function all_products_view(){
         $con = Connection();
 
-        $select_all_plans = "SELECT * FROM plan_tbl";
-        $select_all_plans_result = mysqli_query($con, $select_all_plans);
-    }
+        $select_all_products = "SELECT * FROM shop";
+        $select_all_products_result = mysqli_query($con, $select_all_products);
+        
+        while($product_row = mysqli_fetch_assoc($select_all_products_result)){
+            $product_row_view ="
+                <div class='p-item'>
+                    <center><img src='../../upload/".$product_row['product_img']."' class='supp-img'></center>
+                    <div class='p-infor'>
+                        <div class='p-name'>".$product_row['p_name']."</div>
+                        <div class='qty'>".$product_row['qty']."</div>
+                        <div class='p-price'>".$product_row['p_price']."</div>
+                    </div>
+                </div>
+                           
+            ";
+
+            echo $product_row_view;
+        }
 ?>
 
