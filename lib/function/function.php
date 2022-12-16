@@ -1677,6 +1677,7 @@
 
         $plan_data_tbl = "SELECT * FROM user_plan_tbl WHERE user_email  = '$login_user'";
         $plan_data_tbl_result = mysqli_query($con, $plan_data);
+        $plan_data_tbl_row = mysqli_fetch_assoc($plan_data_tbl_result);
     }
 ?>
 
