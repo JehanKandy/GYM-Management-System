@@ -11,8 +11,8 @@
 <div class="container">
     <div class="user-dashboard">
         <span>
-            <a href=""><button class="btn btn-primary"><i class="fas fa-gifts"></i>Prodcuts</button></a>
-            <a href=""><button class="btn btn-primary">Plans</button></a>
+            <a href=""><button class="btn btn-primary"><i class="fas fa-gifts"></i>&nbsp;Prodcuts</button></a>
+            <a href=""><button class="btn btn-primary"><i class="fas fa-book-reader"></i>&nbsp;Plans</button></a>
         </span>
 
         <br><hr><br>
