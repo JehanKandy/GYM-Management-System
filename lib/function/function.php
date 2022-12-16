@@ -1687,9 +1687,9 @@
                    <div class='text'>
                     50%
                    </div>
-                </div>
-                <a href='view_myu_plan.php?id=".$login_user."'><button class='btn btn-primary'>View My Plane</button></a>
+                </div>                
             </div>
+            <a href='view_myu_plan.php?id=".$login_user."'><button class='btn btn-primary' style='margin-top:20px;'>View My Plan</button></a>
         ";
 
         echo $plan_view;
