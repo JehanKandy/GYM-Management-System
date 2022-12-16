@@ -26,7 +26,7 @@
 			<a href="admins.php" class="menu-item"><i class="fas fa-user-tie"></i>Admin  &nbsp; <span class="count"><?php count_admins(); ?></span></a>
 			<a href="products.php" class="menu-item"><i class="fas fa-gifts"></i>Prodcuts  &nbsp; <span class="count"><?php count_products(); ?></span></a>
             <a href="plans.php" class="menu-item"><i class="fas fa-book-reader"></i>Plans  &nbsp; <span class="count"><?php count_plans(); ?></span></a>
-			<a href="my_account.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
+			<a href="my_account_admin.php" class="menu-item"><i class="fas fa-user-cog"></i>Account Settings</a>
 		</nav>
 		
 	</aside>
@@ -42,8 +42,11 @@
 				<tr>
 					<th scope="col">#</th>
 					<th scope="col">Plan</th>
-					<th scope="col">Enroll Users</th>
-					<th scope="col">Completed Users</th>
+					<th scope="col">20% Completed</th>
+					<th scope="col">40% Completed</th>
+					<th scope="col">60% Completed</th>
+					<th scope="col">80% Completed</th>
+					<th scope="col">100% Completed</th>
 					<th scope="col">Status</th>
 					<th scope="col">Add Date</th>
 					<th scope="col"></th>
