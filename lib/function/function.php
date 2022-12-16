@@ -1737,6 +1737,8 @@
 
     function view_activities_my_plan(){
         $con = Connection();
+        $login_user = strval($_SESSION['LoginSession']);
+        
     }
 ?>
 
