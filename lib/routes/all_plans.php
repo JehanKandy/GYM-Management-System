@@ -13,7 +13,7 @@
     <div class="all-plans">
         <?php all_product_back_btn(); ?>
         <div class="p-grid">
-            <?php all_products_view(); ?>
+            <?php all_plans_view(); ?>
         </div>
     </div>
 </div>
