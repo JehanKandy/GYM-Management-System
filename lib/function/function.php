@@ -1219,6 +1219,46 @@
                         </button>
                     </div>";
         }
+        if(empty($p20)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; 20% Completed Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($p40)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; 20% Completed Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($p60)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; 20% Completed Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($p80)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; 20% Completed Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
+        if(empty($p100)){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; 20% Completed Connot be empty.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
         else{
             $check_plan = "SELECT * FROM plan_tbl WHERE plan_name = '$plan_name'";
             $check_plan_result = mysqli_query($con, $check_plan);
