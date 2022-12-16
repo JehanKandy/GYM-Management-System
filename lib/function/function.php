@@ -1190,7 +1190,7 @@
         echo $plan_data;
     }
 
-    function update_plan_infor($plan_name){
+    function update_plan_infor($plan_name,$p20u,$p40u,$p60u,$p80u,$p100u){
         $con = Connection();
 
         $plan_id = strval($_SESSION['planId']);
