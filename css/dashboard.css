@@ -1518,7 +1518,8 @@ td {
 
 .my-plan {
     border: 1px solid black;
-    width: 100%;
+    width: 300px;
+    padding: 50px;
 }
 
 @media only screen and (max-width: 1400px) {
