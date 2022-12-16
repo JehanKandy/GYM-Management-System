@@ -1693,34 +1693,39 @@
                     </div> ";
             }elseif($plan_data_tbl_row['40p']){
                 $plan_view = "
-                    <div class='complete-plan20'>
+                    <div class='complete-plan40'>
                         <div class='text'>
 
                         </div>
                     </div> ";
             }elseif($plan_data_tbl_row['60p']){
                 $plan_view = "
-                <div class='complete-plan20'>
-                    <div class='text'>
+                    <div class='complete-plan60'>
+                        <div class='text'>
 
-                    </div>
-                </div> ";
+                        </div>
+                    </div> ";
             }elseif($plan_data_tbl_row['80p']){
                 $plan_view = "
-                <div class='complete-plan20'>
-                    <div class='text'>
+                    <div class='complete-plan80'>
+                        <div class='text'>
 
-                    </div>
-                </div> ";
+                        </div>
+                    </div> ";
             }elseif($plan_data_tbl_row['100p']){
                 $plan_view = "
-                <div class='complete-plan20'>
-                    <div class='text'>
+                    <div class='complete-plan100'>
+                        <div class='text'>
 
-                    </div>
-                </div> ";
+                        </div>
+                    </div> ";
             }else{
-
+                $plan_view = "
+                    <div class='complete-plan'>
+                        <div class='text'>
+                            0%
+                        </div>
+                    </div> ";
             }
 
         $plan_view = "
