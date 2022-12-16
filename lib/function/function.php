@@ -1624,6 +1624,15 @@
         $con = Connection();
         $login_user = strval($_SESSION['LoginSession']);
 
+        $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user' && plan_name='$pname'";
+        $select_data_result = mysqli_query($con, $select_data);
+        $select_data_row = mysqli_fetch_assoc($select_data_result);
+        
+
+
+        $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
+        $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+
     }
 ?>
 
