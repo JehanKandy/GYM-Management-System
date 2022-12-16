@@ -1531,6 +1531,12 @@
         $select_user = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $select_user_result = mysqli_query($con, $select_user);
         $select_user_row = mysqli_fetch_assoc($select_user_result);
+
+        if($select_user_row['user_type'] == 'admin'){
+            echo "<a href='products.php'><button class='btn btn-primary'>Back</button></a>";
+        }elseif($select_user_row['user_type'] == 'user'){
+
+        }
     }
 ?>
 
