@@ -10,6 +10,6 @@
 
 <div class="container">
     <div class="all-plans">
-        
+        <?php all_product_back_btn(); ?>
     </div>
 </div>
