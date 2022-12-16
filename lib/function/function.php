@@ -128,7 +128,7 @@
                         </div>";
             }else{
                 return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                            <strong>Success</strong> &nbsp; User Created Syccessflly..! <br>
+                            <strong>Success</strong> &nbsp; User Created Successflly..! <br>
                             <a href='../views/login.php'>Login To account</a>
                             <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                             <span aria-hidden='true'>&times;</span>
