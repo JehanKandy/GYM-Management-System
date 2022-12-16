@@ -1273,7 +1273,7 @@
                         </div>";
             }
             else{
-                $plan_insert = "INSERT INTO plan_tbl(plan_name,plan_status,add_date)VALUES('$plan_name',1,NOW())";
+                $plan_insert = "INSERT INTO plan_tbl(plan_name,20p,40p,60p,80p,100p,plan_status,add_date)VALUES('$plan_name','$p20','$p40','$p60','$p80','$p100',1,NOW())";
                 $plan_insert_result = mysqli_query($con, $plan_insert);
 
                 header("location:plans.php");
