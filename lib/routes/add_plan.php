@@ -22,7 +22,17 @@
         <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="POST">
             <span>
                 Plan Name : 
-                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name">
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
+                20% Completed : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
+                40% Completed  : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
+                60% Completed  : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
+                80% Completed  : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
+                100% Completed  : 
+                <input type="text" name="plan_name" id="" class="form-control" placeholder="Plan Name"><br>
 
                 <br><br>
                 <input type="submit" value="Add Plan" name="add_plan" class="btn btn-success">
