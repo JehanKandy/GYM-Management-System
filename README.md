@@ -265,10 +265,6 @@ GYM Management System
 
   <b>15 December 2022</b>
 1. DEVELOP
-  - lib
-  - - lib/routes
-  - - - lib/routes/update_pimg.php
-  - - - lib/routes/update_profile.php
-  
+
 2. UPDATE
 
