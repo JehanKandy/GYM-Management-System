@@ -14,7 +14,7 @@
     <div class="add-plan">
         <?php 
             if(isset($_POST['add_plan'])){
-                $result = add_plan($_POST['plan_name']);
+                $result = add_plan($_POST['plan_name'], $_POST['20pc'], $_POST['40pc'], $_POST['60pc'], $_POST['80pc'], $_POST['100pc']);
                 echo $result;
             }
 
