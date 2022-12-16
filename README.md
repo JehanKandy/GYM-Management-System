@@ -277,3 +277,4 @@ GYM Management System
   - lib/function/function.php 
   - css/dashboard.css
   - lib/routes/all_product.php
+  - lib/layouts/nav_loged_user.php
