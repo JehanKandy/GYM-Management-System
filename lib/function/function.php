@@ -1627,7 +1627,16 @@
         $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user' && plan_name='$pname'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
-        
+        $select_data_nor = mysqli_num_rows($select_data_result);
+
+        if($select_data_nor > 0){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; User already Active this plan.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }
 
 
         $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
