@@ -1535,7 +1535,7 @@
         if($select_user_row['user_type'] == 'admin'){
             echo "<a href='products.php'><button class='btn btn-primary'>Back</button></a>";
         }elseif($select_user_row['user_type'] == 'user'){
-
+            echo "<a href='user.php'><button class='btn btn-primary'>Back</button></a>";
         }
     }
 ?>
