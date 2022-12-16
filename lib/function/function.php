@@ -1682,10 +1682,24 @@
         $plan_view = "
             <div class='my-plan'>
                 <div class='title'>My Plan</div>
-                <hr>
-                <div class='complete-plan'>
+                <hr>";
+
+            if($plan_data_tbl_row['']){
+
+            }elseif($plan_data_tbl_row['']){
+
+            }elseif($plan_data_tbl_row['']){
+                
+            }elseif($plan_data_tbl_row['']){
+                
+            }elseif($plan_data_tbl_row['']){
+                
+            }
+
+        $plan_view = "
+                <div class='complete-plan20'>
                    <div class='text'>
-                    50%
+
                    </div>
                 </div>                
             </div>
