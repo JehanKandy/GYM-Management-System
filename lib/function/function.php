@@ -1541,6 +1541,9 @@
 
     function all_plans_view(){
         $con = Connection();
+
+        $select_all_plans = "SELECT * FROM plan_tbl";
+        $select_all_plans_result = mysqli_query($con, $select_all_plans);
     }
 ?>
 
