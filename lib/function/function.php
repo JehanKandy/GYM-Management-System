@@ -1538,5 +1538,9 @@
             echo "<a href='user.php'><button class='btn btn-primary'>Back</button></a>";
         }
     }
+
+    function all_plans_view(){
+        $con = Connection();
+    }
 ?>
 
