@@ -1386,7 +1386,7 @@
             if($select_profile_row['user_type'] == 'admin'){
                 $view_form .="<a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
             }elseif($select_profile_row['user_type'] == 'user'){
-                $view_form .="<a href='my_account_user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+                $view_form .="<a href='user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
             }          
         
         echo $view_form;
