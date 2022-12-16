@@ -1640,7 +1640,16 @@
                         <span aria-hidden='true'>&times;</span>
                         </button>
                     </div>";
-        }else{
+        }
+        if($select_data_back_row['any_plan'] == 1){
+            return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                        <strong>Error : </strong> &nbsp; User already Active a plan.....!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                        </button>
+                    </div>";
+        }        
+        else{
             $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname', any_plan = 1 WHERE user_email = '$login_user'";
             $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
 
