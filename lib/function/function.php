@@ -1760,7 +1760,15 @@
             <div>
                 Plan Name : ".$select_my_activities_row['plan_name']."
                 <br><br>
-                
+                <table class='table'>
+                    <thead class='thead-dark'>
+                        <tr>
+                        <th scope='col'>Activity</th>
+                        <th scope='col'>Doing</th>
+                        <th scope='col'></th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         ";
 
