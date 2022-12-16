@@ -1143,10 +1143,19 @@
                 <input type='text' name='update_plan_name' class='form-control' value='".$check_plan_row['plan_name']."'>
                 <br>
                 Enroll Users :
-                <input type='number' class='form-control' value='".$check_plan_row['enroll_users']."' disabled>
+                <input type='text' class='form-control' value='".$check_plan_row['20p']."' disabled>
                 <br>
                 Completed Users :
-                <input type='number' class='form-control' value='".$check_plan_row['completed_users']."' disabled>
+                <input type='text' class='form-control' value='".$check_plan_row['40p']."' disabled>
+                <br>
+                Enroll Users :
+                <input type='text' class='form-control' value='".$check_plan_row['60p']."' disabled>
+                <br>
+                Completed Users :
+                <input type='text' class='form-control' value='".$check_plan_row['80p']."' disabled>
+                <br>
+                Completed Users :
+                <input type='text' class='form-control' value='".$check_plan_row['100p']."' disabled>
                 <br>
                 <input type='submit' name='update_plan_data' value='Update Plane' class='btn btn-success btn-lg btn-block'>                
             </form>
