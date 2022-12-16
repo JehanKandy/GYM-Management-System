@@ -270,7 +270,7 @@ GYM Management System
   - lib
   - - lib/routes
   - - - lib/routes/user.php
-  - - - lib/routes/user.php
+  - - - lib/routes/all_plans.php
   - - lib/layouts
   - - - lib/layouts/nav_loged_users.php
   
