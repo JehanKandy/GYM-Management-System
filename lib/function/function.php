@@ -1737,8 +1737,11 @@
 
     function view_activities_my_plan(){
         $con = Connection();
-        $login_user = strval($_SESSION['LoginSession']);
-        
+        $login_user = strval($_SESSION['LoginSession']);        
+
+        $select_my_activities = "SELECT * FROM user_plan_tbl WHERE user_email = '$login_user'";
+        $select_my_activities_result = mysqli_query($con, $select_my_activities);
+        $select_my_activities_row = mysqli_fetch_assoc($select_my_activities_result);
     }
 ?>
 
