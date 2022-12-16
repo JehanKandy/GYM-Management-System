@@ -1142,19 +1142,19 @@
                 Plan Name : 
                 <input type='text' name='update_plan_name' class='form-control' value='".$check_plan_row['plan_name']."'>
                 <br>
-                Enroll Users :
+                20% Completed :
                 <input type='text' name='u20p' class='form-control' value='".$check_plan_row['20p']."' >
                 <br>
-                Completed Users :
+                40% Completed :
                 <input type='text' name='u40p' class='form-control' value='".$check_plan_row['40p']."' >
                 <br>
-                Enroll Users :
+                60% Completed :
                 <input type='text' name='u60p' class='form-control' value='".$check_plan_row['60p']."' >
                 <br>
-                Completed Users :
+                80% Completed :
                 <input type='text' name='u80p' class='form-control' value='".$check_plan_row['80p']."' >
                 <br>
-                Completed Users :
+                100% Completed :
                 <input type='text' name='u100p' class='form-control' value='".$check_plan_row['100p']."' >
                 <br>
                 <input type='submit' name='update_plan_data' value='Update Plane' class='btn btn-success btn-lg btn-block'>                
