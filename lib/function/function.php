@@ -1601,7 +1601,11 @@
                 <div class='p-item'>
                     <div class='p-infor'>
                         <div class='p-name'>".$plan_row['plan_name']."</div>
-
+                        <div>".$plan_row['20p']."</div>
+                        <div>".$plan_row['40p']."</div>
+                        <div>".$plan_row['60p']."</div>
+                        <div>".$plan_row['80p']."</div>
+                        <div>".$plan_row['100p']."</div>
                     </div>
                 </div>                           
             ";
