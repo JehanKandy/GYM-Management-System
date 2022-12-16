@@ -269,7 +269,7 @@ GYM Management System
   - - lib/routes
   - - - lib/routes/user.php
   - - lib/layouts
-  - - - lib/layouts/
+  - - - lib/layouts/nav_loged_users.php
   
 2. UPDATE
   - lib/function/function.php 
