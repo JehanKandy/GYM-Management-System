@@ -12,7 +12,7 @@
     <div class="user-dashboard">
         <span>
             <a href="all_product.php"><button class="btn btn-primary"><i class="fas fa-gifts"></i>&nbsp;Prodcuts</button></a>
-            <a href=""><button class="btn btn-primary"><i class="fas fa-book-reader"></i>&nbsp;Plans</button></a>
+            <a href="all_plans.php"><button class="btn btn-primary"><i class="fas fa-book-reader"></i>&nbsp;Plans</button></a>
         </span>
 
         <br><hr><br>
