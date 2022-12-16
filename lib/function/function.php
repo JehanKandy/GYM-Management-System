@@ -1688,35 +1688,35 @@
                 $plan_view .= "
                     <div class='complete-plan20'>
                         <div class='text'>
-
+                            20%
                         </div>
                     </div> ";
             }elseif($plan_data_tbl_row['40p']){
                 $plan_view .= "
                     <div class='complete-plan40'>
                         <div class='text'>
-
+                            40%
                         </div>
                     </div> ";
             }elseif($plan_data_tbl_row['60p']){
                 $plan_view .= "
                     <div class='complete-plan60'>
                         <div class='text'>
-
+                            60%
                         </div>
                     </div> ";
             }elseif($plan_data_tbl_row['80p']){
                 $plan_view .= "
                     <div class='complete-plan80'>
                         <div class='text'>
-
+                            80%
                         </div>
                     </div> ";
             }elseif($plan_data_tbl_row['100p']){
                 $plan_view .= "
                     <div class='complete-plan100'>
                         <div class='text'>
-
+                            100%
                         </div>
                     </div> ";
             }else{
