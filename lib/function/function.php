@@ -1607,7 +1607,7 @@
                         <div>".$plan_row['80p']."</div>
                         <div>".$plan_row['100p']."</div>
 
-                        <form action='' method=''>
+                        <form action='' method='POST'>
                             <input type='hidden' name='active_plan_user_id' value='1'>
                             <input type='hidden' name='plan_name' value='".$plan_row['plan_name']."'>
                             <input type='submit' name='active_a_plan' class='btn btn-primary' value='Active' style='margin-top:15px'>
@@ -1640,10 +1640,13 @@
             $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
             $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
             
+            $select_data_back = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+            $select_data_back_result = mysqli_query($con, $select_data_back);
+            $select_data_back_row = mysqli_fetch_assoc($select_data_back_result);
 
-            if($select_data_row['user_type'] == 'admin'){
+            if($select_data_back_row['user_type'] == 'admin'){
                 header("location:my_account_admin.php");
-            }elseif($select_data_row['user_type'] == 'user'){
+            }elseif($select_data_back_row['user_type'] == 'user'){
                 header("location:user.php");
             }
         }
