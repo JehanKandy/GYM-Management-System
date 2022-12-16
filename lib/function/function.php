@@ -1622,6 +1622,8 @@
 
     function active_plan_user($id, $pname){
         $con = Connection();
+        $login_user = strval($_SESSION['LoginSession']);
+
     }
 ?>
 
