@@ -1609,6 +1609,7 @@
 
                         <form action='' method=''>
                             <input type='hidden' name='active_plan_user' value='1'>
+                            <input type='hidden' name='plan_name' value='".$plan_row['plan_name']."'>
                             <input type='submit' name='active_a_plan' class='btn btn-priamary' value='Active'>
                         </form>
                     </div>
