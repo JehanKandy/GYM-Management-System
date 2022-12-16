@@ -1629,6 +1629,10 @@
         $select_data_row = mysqli_fetch_assoc($select_data_result);
         $select_data_nor = mysqli_num_rows($select_data_result);
 
+        $select_data_back = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
+        $select_data_back_result = mysqli_query($con, $select_data_back);
+        $select_data_back_row = mysqli_fetch_assoc($select_data_back_result);
+
         if($select_data_nor > 0){
             return  "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                         <strong>Error : </strong> &nbsp; User already Active this plan.....!
@@ -1637,15 +1641,13 @@
                         </button>
                     </div>";
         }else{
-            $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname' WHERE user_email = '$login_user'";
+            $update_user_tbl = "UPDATE user_tbl SET plan_name ='$pname', any_plan = 1 WHERE user_email = '$login_user'";
             $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
 
             $insert_plan_active = "INSERT INTO user_plan_tbl(user_email,plan_name,active_date,last_update_date,is_completed)VALUES('$login_user','$pname',NOW(),NOW(),0)";
             $insert_plan_active_result = mysqli_query($con, $insert_plan_active);
             
-            $select_data_back = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
-            $select_data_back_result = mysqli_query($con, $select_data_back);
-            $select_data_back_row = mysqli_fetch_assoc($select_data_back_result);
+
 
             if($select_data_back_row['user_type'] == 'admin'){
                 header("location:my_account_admin.php");
