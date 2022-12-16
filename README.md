@@ -271,6 +271,7 @@ GYM Management System
   - - lib/routes
   - - - lib/routes/user.php
   - - lib/layouts
+  - - - lib/layouts/
   
 2. UPDATE
   - lib/function/function.php 
