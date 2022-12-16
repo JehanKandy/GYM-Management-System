@@ -1517,10 +1517,15 @@ td {
 }
 
 .my-plan {
-    border: 1px solid black;
+    border: 1px solid rgb(119, 119, 119);
     width: 300px;
     padding: 50px;
     border-radius: 15px;
+}
+
+.my-plan .title {
+    text-align: center;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 1400px) {
