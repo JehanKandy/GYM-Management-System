@@ -1654,6 +1654,8 @@
 
     function plan_data(){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);
     }
 ?>
 
