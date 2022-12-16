@@ -11,6 +11,6 @@
 
 <div class="container">
     <div class="my-plan-view">
-        
+        <?php view_activities_my_plan(); ?>
     </div>
 </div>
