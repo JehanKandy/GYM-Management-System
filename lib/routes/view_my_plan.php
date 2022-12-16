@@ -11,6 +11,6 @@
 
 <div class="container">
     <div class="my-plan-view">
-        hi
+        
     </div>
 </div>
