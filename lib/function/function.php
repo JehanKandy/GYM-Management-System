@@ -1684,16 +1684,43 @@
                 <div class='title'>My Plan</div>
                 <hr>";
 
-            if($plan_data_tbl_row['']){
+            if($plan_data_tbl_row['20p']){
+                $plan_view = "
+                    <div class='complete-plan20'>
+                        <div class='text'>
 
-            }elseif($plan_data_tbl_row['']){
+                        </div>
+                    </div> ";
+            }elseif($plan_data_tbl_row['40p']){
+                $plan_view = "
+                    <div class='complete-plan20'>
+                        <div class='text'>
 
-            }elseif($plan_data_tbl_row['']){
-                
-            }elseif($plan_data_tbl_row['']){
-                
-            }elseif($plan_data_tbl_row['']){
-                
+                        </div>
+                    </div> ";
+            }elseif($plan_data_tbl_row['60p']){
+                $plan_view = "
+                <div class='complete-plan20'>
+                    <div class='text'>
+
+                    </div>
+                </div> ";
+            }elseif($plan_data_tbl_row['80p']){
+                $plan_view = "
+                <div class='complete-plan20'>
+                    <div class='text'>
+
+                    </div>
+                </div> ";
+            }elseif($plan_data_tbl_row['100p']){
+                $plan_view = "
+                <div class='complete-plan20'>
+                    <div class='text'>
+
+                    </div>
+                </div> ";
+            }else{
+
             }
 
         $plan_view = "
