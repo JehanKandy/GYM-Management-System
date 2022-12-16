@@ -1571,6 +1571,10 @@ td {
     font-weight: 900;
 }
 
+.my-plan-view {
+    padding: 40 0 40 0;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
