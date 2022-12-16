@@ -1105,8 +1105,11 @@
                 <tr>
                     <th scope='row'>".$all_plans_row['id']."</th>
                     <td>".$all_plans_row['plan_name']."</td>
-                    <td>".$all_plans_row['enroll_users']."</td>
-                    <td>".$all_plans_row['completed_users']."</td>"; 
+                    <td>".$all_plans_row['20p']."</td>
+                    <td>".$all_plans_row['40p']."</td>
+                    <td>".$all_plans_row['60p']."</td>
+                    <td>".$all_plans_row['80p']."</td>
+                    <td>".$all_plans_row['100p']."</td>"; 
 
                     if($all_plans_row['plan_status'] == 1){
                         $all_planes_view .= "<td><h4><span class='badge badge-success'>Plan Active</span></h4></td>";
