@@ -1651,5 +1651,9 @@
             }
         }
     }
+
+    function plan_data(){
+        $con = Connection();
+    }
 ?>
 
