@@ -16,6 +16,8 @@
         </span>
 
         <br><hr><br>
+        <?php plan_data();?>
+        <br><hr><br>
         <?php profile_info(); ?>
     </div>
 </div>
