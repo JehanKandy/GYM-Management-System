@@ -1681,7 +1681,8 @@
 
         $plan_view = "
             <div class='my-plan'>
-                hi
+                <div class='title'>My Plan</div>
+                <hr>
             </div>
         ";
 
