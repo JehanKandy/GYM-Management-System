@@ -1624,8 +1624,6 @@
         $con = Connection();
         $login_user = strval($_SESSION['LoginSession']);
 
-        $_SESSION['PlanName'] = $pname;
-
         $select_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user' && plan_name='$pname'";
         $select_data_result = mysqli_query($con, $select_data);
         $select_data_row = mysqli_fetch_assoc($select_data_result);
@@ -1672,11 +1670,17 @@
         $con = Connection();
 
         $login_user = strval($_SESSION['LoginSession']);
-        $pname = strval($_SESSION['PlanName']);
+
 
         $plan_data = "SELECT * FROM user_tbl WHERE user_email = '$login_user'";
         $plan_data_result = mysqli_query($con, $plan_data);
         $plan_data_row = mysqli_fetch_assoc($plan_data_result);
+
+        $pname = $plan_data_row['plan_name'];
+
+        $plan_data_plan = "SELECT * FROM plan_tbl WHERE user_email = '$login_user'";
+        $plan_data_plan_result = mysqli_query($con, $plan_data_plan);
+        $plan_data_plan_row = mysqli_fetch_assoc($plan_data_plan_result);
 
         $plan_data_tbl = "SELECT * FROM user_plan_tbl WHERE user_email  = '$login_user'";
         $plan_data_tbl_result = mysqli_query($con, $plan_data_tbl);
@@ -1684,7 +1688,7 @@
 
         $plan_view = "
             <div class='my-plan'>
-                <div class='title'>".$pname."</div>
+                <div class='title'>".$plan_data_row['plan_name']."</div>
                 <hr>";
 
             if($plan_data_tbl_row['20p']){
