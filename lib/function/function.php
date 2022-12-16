@@ -1619,5 +1619,9 @@
             echo $plan_row_view;
         }
     }
+
+    function active_plan_user($id, $pname){
+        $con = Connection();
+    }
 ?>
 
