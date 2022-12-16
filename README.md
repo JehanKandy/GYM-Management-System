@@ -273,4 +273,4 @@ GYM Management System
   
 2. UPDATE
   - lib/function/function.php 
-
+  - css/dashboard.css
