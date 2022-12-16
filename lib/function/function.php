@@ -1678,7 +1678,7 @@
 
         $pname = $plan_data_row['plan_name'];
 
-        $plan_data_plan = "SELECT * FROM plan_tbl WHERE user_email = '$login_user'";
+        $plan_data_plan = "SELECT * FROM plan_tbl WHERE plan_name = '$pname'";
         $plan_data_plan_result = mysqli_query($con, $plan_data_plan);
         $plan_data_plan_row = mysqli_fetch_assoc($plan_data_plan_result);
 
@@ -1688,38 +1688,38 @@
 
         $plan_view = "
             <div class='my-plan'>
-                <div class='title'>".$plan_data_row['plan_name']."</div>
+                <div class='title'>".$plan_data_plan_row['plan_name']."</div>
                 <hr>";
 
-            if($plan_data_tbl_row['20p']){
+            if($plan_data_tbl_row['20p'] == 1){
                 $plan_view .= "
                     <div class='complete-plan20'>
                         <div class='text'>
                             20%
                         </div>
                     </div> ";
-            }elseif($plan_data_tbl_row['40p']){
+            }elseif($plan_data_tbl_row['40p'] == 1){
                 $plan_view .= "
                     <div class='complete-plan40'>
                         <div class='text'>
                             40%
                         </div>
                     </div> ";
-            }elseif($plan_data_tbl_row['60p']){
+            }elseif($plan_data_tbl_row['60p'] == 1){
                 $plan_view .= "
                     <div class='complete-plan60'>
                         <div class='text'>
                             60%
                         </div>
                     </div> ";
-            }elseif($plan_data_tbl_row['80p']){
+            }elseif($plan_data_tbl_row['80p'] == 1){
                 $plan_view .= "
                     <div class='complete-plan80'>
                         <div class='text'>
                             80%
                         </div>
                     </div> ";
-            }elseif($plan_data_tbl_row['100p']){
+            }elseif($plan_data_tbl_row['100p'] == 1){
                 $plan_view .= "
                     <div class='complete-plan100'>
                         <div class='text'>
