@@ -1608,7 +1608,8 @@
                         <div>".$plan_row['100p']."</div>
 
                         <form action='' method=''>
-                        
+                            <input type='hidden' name='active_plan_user' value='1'>
+                            <input type='submit' name='active_a_plan' class='btn btn-priamary' value='Active'>
                         </form>
                     </div>
                 </div>                           
