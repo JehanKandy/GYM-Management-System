@@ -1508,6 +1508,10 @@ td {
     padding: 40 0 40 0;
 }
 
+.user-dashboard {
+    padding: 80 0 80 0;
+}
+
 @media only screen and (max-width: 1400px) {
     .menu-toggle {
         display: block;
