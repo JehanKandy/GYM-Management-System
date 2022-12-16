@@ -1195,7 +1195,7 @@
 
         $plan_id = strval($_SESSION['planId']);
 
-        $update_plan_info = "UPDATE plan_tbl SET plan_name ='$plan_name' WHERE id = '$plan_id'";
+        $update_plan_info = "UPDATE plan_tbl SET plan_name ='$plan_name', 20p = '$p20u', 40p = '$p40u', 60p = '$p60u', 80p = '$p80u', 100p = '$p100u' WHERE id = '$plan_id'";
         $update_plan_info_result = mysqli_query($con, $update_plan_info);
 
         header("location:plans.php");
