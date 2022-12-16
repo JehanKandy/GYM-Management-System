@@ -1506,7 +1506,7 @@
             if($select_data_row['user_type'] == 'admin'){
                 $update_data .="<a href='my_account_admin.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
             }elseif($select_data_row['user_type'] == 'user'){
-                $update_data .="<a href='my_account_user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
+                $update_data .="<a href='user.php'><button class='btn btn-primary' style='margin-top:30px;'>Back</button></a>";
             }   
 
         echo $update_data;
