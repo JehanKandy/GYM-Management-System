@@ -269,7 +269,7 @@ GYM Management System
 1. DEVELOP
   - lib
   - - lib/routes/
-  - - - lib/routes/
+  - - - lib/routes/user.php
 2. UPDATE
   - lib/function/function.php 
 
