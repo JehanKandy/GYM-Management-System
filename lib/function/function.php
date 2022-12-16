@@ -1728,7 +1728,7 @@
                     </div> ";
             }
 
-        $plan_view .= "
+        $plan_view .= "</div>
             <a href='view_myu_plan.php?id=".$login_user."'><button class='btn btn-primary' style='margin-top:20px;'>View My Plan</button></a>
         ";
 
