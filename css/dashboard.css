@@ -1520,6 +1520,7 @@ td {
     border: 1px solid black;
     width: 300px;
     padding: 50px;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 1400px) {
