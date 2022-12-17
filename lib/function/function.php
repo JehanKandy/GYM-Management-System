@@ -1741,7 +1741,7 @@
                                 <input type='submit' name='plan_complete' value='Complete Plan' class='btn btn-success'>
                             </form>
                         </div>";
-                }
+                }&
             
 
                 $plan_view .= "</div>
@@ -1951,6 +1951,10 @@
 
         $update_user_plan = "UPDATE user_plan_tbl SET 100p = '$u100p', is_completed = 1 WHERE user_email = '$login_user'";
         $update_user_plan = mysqli_query($con, $update_user_plan);
+    }
+
+    function plan_complete_user($id){
+        $con = Connection();
     }
 ?>
 
