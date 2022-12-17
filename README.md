@@ -20,6 +20,10 @@ End Development - 17 December 2022</b>
 
 https://drive.google.com/drive/folders/1isnvaKH4R17RvIIzpMxwYoGm6iO5jM6G?usp=share_link
 
+
+DOWNLOAD ALL FILES 
+and ALL FILES MUST BE in SAME FOLDER
+
 # Logins
  admin 
   
