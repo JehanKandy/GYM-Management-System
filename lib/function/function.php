@@ -1963,6 +1963,13 @@
 
         $delete_user_plan_tbl = "DELETE FROM user_plan_tbl WHERE user_email =' $login_user'";
         $delete_user_plan_tbl_result = mysqli_query($con, $delete_user_plan_tbl);
+
+        return  "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                    <strong>Plan Complete : </strong> &nbsp; The Plan Successfully Completed.....!
+                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>";
     }
 ?>
 
