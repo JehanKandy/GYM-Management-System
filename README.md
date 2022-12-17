@@ -261,7 +261,7 @@ GYM Management System
   - lib/routes/my_account.php
   - css/dashboard.css
   
-         <hr> 
+       <hr> 
 
   <b>16 December 2022</b>
 1. DEVELOP
@@ -281,7 +281,7 @@ GYM Management System
   - lib/routes/add_plan.php
   - lib/routes/plans.php
   
-           <hr> 
+       <hr> 
 
   <b>16 December 2022</b>
 1. DEVELOP
