@@ -1960,6 +1960,9 @@
 
         $update_user_tbl = "UPDATE user_tbl SET plan_name = '', any_plan = '$id' WHERE user_pass = '$login_user'";
         $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
+
+        $delete_user_plan_tbl = "DELETE FROM user_plan_tbl WHERE user_email =' $login_user'";
+        $delete_user_plan_tbl_result = mysqli_query($con, $delete_user_plan_tbl);
     }
 ?>
 
