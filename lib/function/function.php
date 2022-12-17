@@ -1733,8 +1733,11 @@
                         <div class='complete-plan100'>
                             <div class='text'>
                                 100%
-                            </div>
-                        </div> ";
+                            </div>                            
+                        </div> 
+                        <div style='text-align:center; padding-top:15px;'>
+                            
+                        </div>";
                 }
             
 
