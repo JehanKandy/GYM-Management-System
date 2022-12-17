@@ -1685,61 +1685,69 @@
         $plan_data_tbl = "SELECT * FROM user_plan_tbl WHERE user_email  = '$login_user'";
         $plan_data_tbl_result = mysqli_query($con, $plan_data_tbl);
         $plan_data_tbl_row = mysqli_fetch_assoc($plan_data_tbl_result);
+        $plan_data_tbl_nor = mysqli_num_rows($plan_data_tbl_result);
 
-        $plan_view = "
-            <div class='my-plan'>
-                <div class='title'>".$plan_data_plan_row['plan_name']."</div>
-                <hr>";
+        if($plan_data_tbl_nor > 0){
+            $plan_view = "
+                <div class='my-plan'>
+                    <div class='title'>".$plan_data_tbl_row['plan_name']."</div>
+                    <hr>";
 
-            if($plan_data_tbl_row['20p'] == 1){
-                $plan_view .= "
-                    <div class='complete-plan20'>
-                        <div class='text'>
-                            20%
-                        </div>
-                    </div> ";
-            }elseif($plan_data_tbl_row['40p'] == 1){
-                $plan_view .= "
-                    <div class='complete-plan40'>
-                        <div class='text'>
-                            40%
-                        </div>
-                    </div> ";
-            }elseif($plan_data_tbl_row['60p'] == 1){
-                $plan_view .= "
-                    <div class='complete-plan60'>
-                        <div class='text'>
-                            60%
-                        </div>
-                    </div> ";
-            }elseif($plan_data_tbl_row['80p'] == 1){
-                $plan_view .= "
-                    <div class='complete-plan80'>
-                        <div class='text'>
-                            80%
-                        </div>
-                    </div> ";
-            }elseif($plan_data_tbl_row['100p'] == 1){
-                $plan_view .= "
-                    <div class='complete-plan100'>
-                        <div class='text'>
-                            100%
-                        </div>
-                    </div> ";
-            }else{
-                $plan_view .= "
-                    <div class='complete-plan'>
-                        <div class='text'>
-                            0%
-                        </div>
-                    </div> ";
-            }
+                if($plan_data_tbl_row['20p'] == 1){
+                    $plan_view .= "
+                        <div class='complete-plan20'>
+                            <div class='text'>
+                                20%
+                            </div>
+                        </div> ";
+                }elseif($plan_data_tbl_row['40p'] == 1){
+                    $plan_view .= "
+                        <div class='complete-plan40'>
+                            <div class='text'>
+                                40%
+                            </div>
+                        </div> ";
+                }elseif($plan_data_tbl_row['60p'] == 1){
+                    $plan_view .= "
+                        <div class='complete-plan60'>
+                            <div class='text'>
+                                60%
+                            </div>
+                        </div> ";
+                }elseif($plan_data_tbl_row['80p'] == 1){
+                    $plan_view .= "
+                        <div class='complete-plan80'>
+                            <div class='text'>
+                                80%
+                            </div>
+                        </div> ";
+                }elseif($plan_data_tbl_row['100p'] == 1){
+                    $plan_view .= "
+                        <div class='complete-plan100'>
+                            <div class='text'>
+                                100%
+                            </div>
+                        </div> ";
+                }else{
+                    $plan_view .= "
+                        <div class='complete-plan'>
+                            <div class='text'>
+                                0%
+                            </div>
+                        </div> ";
+                }
+            
 
-        $plan_view .= "</div>
-            <a href='view_my_plan.php?id=".$login_user."'><button class='btn btn-primary' style='margin-top:20px;'>View My Plan</button></a>
-        ";
+                $plan_view .= "</div>
+                    <a href='view_my_plan.php?id=".$login_user."'><button class='btn btn-primary' style='margin-top:20px;'>View My Plan</button></a>
+                ";
+                echo $plan_view;
+        }
+        else{
+            echo "<span style='color:red;'>No Plan Select</span>";
+        }
 
-        echo $plan_view;
+       
     }
 
     function view_activities_my_plan(){
@@ -1794,6 +1802,8 @@
                                         $my_activities .="<input type='submit' name='up40' value='Done' class='btn btn-success'>";
                                     }elseif($select_my_activities_row['20p'] == 0){
                                         $my_activities .="<span style='color:red;'>Complete Previous Activities</span>";
+                                    }if($select_my_activities_row['40p'] == 1){
+                                        $my_activities .="<span style='color:green;'>Done</span>";
                                     }
 
                                     
