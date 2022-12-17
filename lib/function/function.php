@@ -1741,7 +1741,7 @@
                                 <input type='submit' name='plan_complete' value='Complete Plan' class='btn btn-success'>
                             </form>
                         </div>";
-                }&
+                }
             
 
                 $plan_view .= "</div>
