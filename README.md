@@ -12,6 +12,7 @@ End Development - 17 December 2022</b>
 # How to use
 
  - copy all Files to xampp/htdocs/
+ - and run mysql and Apache Servers
 
 # Download Link
 
