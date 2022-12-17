@@ -1693,35 +1693,35 @@
                     <div class='title'>".$plan_data_tbl_row['plan_name']."</div>
                     <hr>";
 
-                if($plan_data_tbl_row['20p'] == 1){
+                if($plan_data_tbl_row['20p'] == 1 && $plan_data_tbl_row['40p'] == 0){
                     $plan_view .= "
                         <div class='complete-plan20'>
                             <div class='text'>
                                 20%
                             </div>
                         </div> ";
-                }elseif($plan_data_tbl_row['40p'] == 1){
+                }if($plan_data_tbl_row['40p'] == 1 && $plan_data_tbl_row['60p'] == 0){
                     $plan_view .= "
                         <div class='complete-plan40'>
                             <div class='text'>
                                 40%
                             </div>
                         </div> ";
-                }elseif($plan_data_tbl_row['60p'] == 1){
+                }if($plan_data_tbl_row['60p'] == 1 && $plan_data_tbl_row['80p'] == 0){
                     $plan_view .= "
                         <div class='complete-plan60'>
                             <div class='text'>
                                 60%
                             </div>
                         </div> ";
-                }elseif($plan_data_tbl_row['80p'] == 1){
+                }if($plan_data_tbl_row['80p'] == 1 && $plan_data_tbl_row['100p'] == 0){
                     $plan_view .= "
                         <div class='complete-plan80'>
                             <div class='text'>
                                 80%
                             </div>
                         </div> ";
-                }elseif($plan_data_tbl_row['100p'] == 1){
+                }if($plan_data_tbl_row['100p'] == 1){
                     $plan_view .= "
                         <div class='complete-plan100'>
                             <div class='text'>
