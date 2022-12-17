@@ -9,6 +9,13 @@ End Development - 17 December 2022</b>
 
 <br>
 
+# Logins
+ admin 
+  
+  Username : jehan
+  
+  Password : 789
+
 # DEVELOPMENT HISTORY
 
 <br>
