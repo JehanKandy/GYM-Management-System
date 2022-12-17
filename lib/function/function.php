@@ -1834,7 +1834,7 @@
                             <td>".$select_my_plan_row['80p']."</td>
                             <td>
                                 <form action='' method='POST'>
-                                    <input type='hidden' name='u60p' value='1'>";
+                                    <input type='hidden' name='u80p' value='1'>";
 
                                     if($select_my_activities_row['60p'] == 1 && $select_my_activities_row['80p'] == 0){
                                         $my_activities .="<input type='submit' name='up60' value='Done' class='btn btn-success'>";
@@ -1852,7 +1852,7 @@
                             <td>".$select_my_plan_row['100p']."</td>
                             <td>
                                 <form action='' method='POST'>
-                                    <input type='hidden' name='u60p' value='1'>";
+                                    <input type='hidden' name='u100p' value='1'>";
 
                                     if($select_my_activities_row['80p'] == 1 && $select_my_activities_row['100p'] == 0){
                                         $my_activities .="<input type='submit' name='up60' value='Done' class='btn btn-success'>";
