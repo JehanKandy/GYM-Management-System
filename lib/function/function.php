@@ -1798,9 +1798,9 @@
                             <td>
                                 <form action='' method='POST'>
                                     <input type='hidden' name='u40p' value='1'>";
-                                    if($select_my_activities_row['20p'] == 1){
+                                    if($select_my_activities_row['20p'] == 1 && $select_my_activities_row['40p'] == 0){
                                         $my_activities .="<input type='submit' name='up40' value='Done' class='btn btn-success'>";
-                                    }elseif($select_my_activities_row['20p'] == 0){
+                                    }if($select_my_activities_row['20p'] == 0){
                                         $my_activities .="<span style='color:red;'>Complete Previous Activities</span>";
                                     }if($select_my_activities_row['40p'] == 1){
                                         $my_activities .="<span style='color:green;'>Done</span>";
