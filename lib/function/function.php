@@ -1772,7 +1772,12 @@
                         <tr>
                             <td>Activity 01</td>
                             <td>".$select_my_plan_row['20p']."</td>
-                            <td>@mdo</td>
+                            <td>
+                                <form action='' method='POST'>
+                                    <input type='hidden' name='u20p' value='1'>
+                                    <input type='submit' name='up20' value='Done' class='btn btn-success'>
+                                </form>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
