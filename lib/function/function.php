@@ -1736,7 +1736,10 @@
                             </div>                            
                         </div> 
                         <div style='text-align:center; padding-top:15px;'>
-                            
+                            <form action='' method='POST'>
+                                <input type='hidden' name='complete_plan' value='0'>
+                                <input type='submit' name='plan_complete' value='Complete Plan' class='btn btn-success'>
+                            </form>
                         </div>";
                 }
             
