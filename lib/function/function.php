@@ -1912,17 +1912,22 @@
 
     function update_20p($u20p){
         $con = Connection();
+        $login_user = strval($_SESSION['LoginSession']);   
+
+        $update_user_plan = "UPDATE user_plan_tbl SET 20p = '$u20p' WHERE user_email = '$login_user'";
+        $update_user_plan = mysqli_query($con, $update_user_plan);
+
     }
-    function update_40p($u20p){
+    function update_40p($u40p){
         $con = Connection();
     }
-    function update_60p($u20p){
+    function update_60p($u60p){
         $con = Connection();
     }
-    function update_80p($u20p){
+    function update_80p($u80p){
         $con = Connection();
     }
-    function update_100p($u20p){
+    function update_100p($u100p){
         $con = Connection();
     }
 ?>
