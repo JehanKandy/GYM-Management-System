@@ -1692,7 +1692,14 @@
                 <div class='my-plan'>
                     <div class='title'>".$plan_data_tbl_row['plan_name']."</div>
                     <hr>";
-
+                if($plan_data_tbl_row['20p'] == 0){
+                    $plan_view .= "
+                        <div class='complete-plan'>
+                            <div class='text'>
+                                0%
+                            </div>
+                        </div> ";
+                    }
                 if($plan_data_tbl_row['20p'] == 1 && $plan_data_tbl_row['40p'] == 0){
                     $plan_view .= "
                         <div class='complete-plan20'>
@@ -1728,15 +1735,7 @@
                                 100%
                             </div>
                         </div> ";
-                }else{
-                    $plan_view .= "
-                        <div class='complete-plan'>
-                            <div class='text'>
-                                0%
-                            </div>
-                        </div> ";
-                }
-            
+           
 
                 $plan_view .= "</div>
                     <a href='view_my_plan.php?id=".$login_user."'><button class='btn btn-primary' style='margin-top:20px;'>View My Plan</button></a>
