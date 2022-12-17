@@ -1837,7 +1837,7 @@
 
                                     if($select_my_activities_row['60p'] == 1 && $select_my_activities_row['80p'] == 0){
                                         $my_activities .="<input type='submit' name='up60' value='Done' class='btn btn-success'>";
-                                    }if($select_my_activities_row['80p'] == 0){
+                                    }if($select_my_activities_row['60p'] == 0){
                                         $my_activities .="<span style='color:red;'>Complete Previous Activities</span>";
                                     }if($select_my_activities_row['80p'] == 1){
                                         $my_activities .="<span style='color:green;'>Done</span>";
@@ -1855,7 +1855,7 @@
 
                                     if($select_my_activities_row['80p'] == 1 && $select_my_activities_row['100p'] == 0){
                                         $my_activities .="<input type='submit' name='up60' value='Done' class='btn btn-success'>";
-                                    }if($select_my_activities_row['100p'] == 0){
+                                    }if($select_my_activities_row['80p'] == 0){
                                         $my_activities .="<span style='color:red;'>Complete Previous Activities</span>";
                                     }if($select_my_activities_row['100p'] == 1){
                                         $my_activities .="<span style='color:green;'>Done</span>";
