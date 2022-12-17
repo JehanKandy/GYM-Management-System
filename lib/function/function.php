@@ -1765,6 +1765,7 @@
         $select_my_plan_row = mysqli_fetch_assoc($select_my_plan_result);
 
         $my_activities = "
+            <a href='user.php'><button class='btn btn-primary' style='margin-bottom:50px;'>Back</button></a>
             <div>
                 Plan Name : ".$select_my_activities_row['plan_name']."
                 <br><br>
@@ -1894,7 +1895,12 @@
                 }if($select_my_activities_row['100p'] == 1){
                     $my_activities .=" <div class='progress'>
                         <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'>100%</div>
-                    </div>";
+                    </div>
+                    
+                    <div style='margin-top:50px;'>
+                        <p style='color:green; font-size:20px;'>You Successfully Compleated This Activity</p>
+                    </div>
+                    ";
                 }                               
 
             $my_activities .="
