@@ -1875,7 +1875,15 @@
                     $my_activities .=" <div class='progress'>
                         <div class='progress-bar' role='progressbar' style='width: 0%;' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'>0%</div>
                     </div>";
-                }                        
+                }elseif($select_my_activities_row['20p'] == 1){
+                    $my_activities .=" <div class='progress'>
+                        <div class='progress-bar bg-danger' role='progressbar' style='width: 20%;' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'>20%</div>
+                    </div>";
+                }elseif($select_my_activities_row['40p'] == 0){
+                    $my_activities .=" <div class='progress'>
+                        <div class='progress-bar bg-warning' role='progressbar' style='width: 20%;' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'>20%</div>
+                    </div>";
+            }                     
 
             $my_activities .="
             </div>
