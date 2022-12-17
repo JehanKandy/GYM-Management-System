@@ -1869,7 +1869,7 @@
             </div>
                                 
             <div style='margin-top:60px;'>
-                hi
+                Activity Progress
             </div>
         ";
 
