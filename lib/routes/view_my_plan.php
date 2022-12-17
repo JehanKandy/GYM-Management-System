@@ -14,6 +14,22 @@
         $result = update_20p($_POST['u20p']);
         echo $result;
     }
+    if(isset($_POST['up20'])){
+        $result = update_20p($_POST['u20p']);
+        echo $result;
+    }
+    if(isset($_POST['up20'])){
+        $result = update_20p($_POST['u20p']);
+        echo $result;
+    }
+    if(isset($_POST['up20'])){
+        $result = update_20p($_POST['u20p']);
+        echo $result;
+    }
+    if(isset($_POST['up20'])){
+        $result = update_20p($_POST['u20p']);
+        echo $result;
+    }
 
 ?>
 
