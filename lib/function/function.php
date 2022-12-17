@@ -1871,9 +1871,9 @@
             <div style='margin-top:60px;'>
                 Activity Progress";
                 
-                if($select_my_activities_row['20p'] == 1){
+                if($select_my_activities_row['20p'] == 0){
                     $my_activities .=" <div class='progress'>
-                        <div class='progress-bar' role='progressbar' style='width: 25%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'>25%</div>
+                        <div class='progress-bar' role='progressbar' style='width: 0%;' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'>0%</div>
                     </div>";
                 }                        
 
