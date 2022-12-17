@@ -1770,8 +1770,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
+                            <td>Activity 01</td>
+                            <td>".$select_my_plan_row['20p']."</td>
                             <td>@mdo</td>
                         </tr>
                     </tbody>
