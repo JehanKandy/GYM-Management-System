@@ -1909,5 +1909,21 @@
 
         echo $my_activities;
     }
+
+    function update_20p($u20p){
+        $con = Connection();
+    }
+    function update_40p($u20p){
+        $con = Connection();
+    }
+    function update_60p($u20p){
+        $con = Connection();
+    }
+    function update_80p($u20p){
+        $con = Connection();
+    }
+    function update_100p($u20p){
+        $con = Connection();
+    }
 ?>
 
