@@ -1955,6 +1955,11 @@
 
     function plan_complete_user($id){
         $con = Connection();
+
+        $login_user = strval($_SESSION['LoginSession']);   
+
+        $update_user_tbl = "UPDATE user_tbl SET plan_name = '', any_plan = '$id' WHERE user_pass = '$login_user'";
+        $update_user_tbl_result = mysqli_query($con, $update_user_tbl);
     }
 ?>
 
