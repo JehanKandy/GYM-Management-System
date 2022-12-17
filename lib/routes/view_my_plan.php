@@ -15,19 +15,19 @@
         echo $result;
     }
     if(isset($_POST['up40'])){
-        $result = update_20p($_POST['u20p']);
+        $result = update_40p($_POST['u20p']);
         echo $result;
     }
     if(isset($_POST['up60'])){
-        $result = update_20p($_POST['u20p']);
+        $result = update_60p($_POST['u20p']);
         echo $result;
     }
     if(isset($_POST['up80'])){
-        $result = update_20p($_POST['u20p']);
+        $result = update_80p($_POST['u20p']);
         echo $result;
     }
     if(isset($_POST['up100'])){
-        $result = update_20p($_POST['u20p']);
+        $result = update_100p($_POST['u20p']);
         echo $result;
     }
 
