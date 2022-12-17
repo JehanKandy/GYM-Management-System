@@ -2,7 +2,7 @@
 GYM Management System
 
 
-<b>Start Development - 17 December 2022
+<b>Start Development - 23 November 2022
 
 
 End Development - 17 December 2022</b>
