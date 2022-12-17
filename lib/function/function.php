@@ -1771,22 +1771,33 @@
                     <tbody>
                         <tr>
                             <td>Activity 01</td>
-                            <td>".$select_my_plan_row['20p']."</td>
-                            <td>
+                                <td>".$select_my_plan_row['20p']."</td>
+                                <td>
                                 <form action='' method='POST'>
-                                    <input type='hidden' name='u20p' value='1'>
-                                    <input type='submit' name='up20' value='Done' class='btn btn-success'>
-                                </form>
-                            </td>
+                                    <input type='hidden' name='u20p' value='1'>";
+                                    if($select_my_activities_row['20p'] == 0){
+                                        $my_activities .="<input type='submit' name='up20' value='Done' class='btn btn-success'>";
+                                    }elseif($select_my_activities_row['20p'] == 1){
+                                        $my_activities .="<span style='color:green;'>Done</span>";
+                                    }
+
+                $my_activities .="</form>                       
+                            </td>                    
                         </tr>
                         <tr>
                             <td>Activity 02</td>
                             <td>".$select_my_plan_row['40p']."</td>
                             <td>
                                 <form action='' method='POST'>
-                                    <input type='hidden' name='u40p' value='1'>
-                                    <input type='submit' name='up40' value='Done' class='btn btn-success'>
-                                </form>
+                                    <input type='hidden' name='u40p' value='1'>";
+                                    if($select_my_activities_row['20p'] == 1){
+                                        $my_activities .="<input type='submit' name='up40' value='Done' class='btn btn-success'>";
+                                    }elseif($select_my_activities_row['20p'] == 0){
+                                        $my_activities .="<span style='color:red;'>Complete Previous Activities</span>";
+                                    }
+
+                                    
+                     $my_activities .="</form>
                             </td>
                         </tr>
                         <tr>
