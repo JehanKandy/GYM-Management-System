@@ -10,6 +10,7 @@ End Development - 17 December 2022</b>
 <img src="https://wakatime.com/badge/github/JehanKandy/GYM-Management-System.svg">
 
 <br>
+# Download Link
 
 # Logins
  admin 
