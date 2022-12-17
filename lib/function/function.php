@@ -1779,6 +1779,26 @@
                                 </form>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Activity 02</td>
+                            <td>".$select_my_plan_row['40p']."</td>
+                            <td>
+                                <form action='' method='POST'>
+                                    <input type='hidden' name='u40p' value='1'>
+                                    <input type='submit' name='up40' value='Done' class='btn btn-success'>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activity 03</td>
+                            <td>".$select_my_plan_row['60p']."</td>
+                            <td>
+                                <form action='' method='POST'>
+                                    <input type='hidden' name='u60p' value='1'>
+                                    <input type='submit' name='up60' value='Done' class='btn btn-success'>
+                                </form>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
