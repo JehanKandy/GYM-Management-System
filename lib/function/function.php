@@ -1867,6 +1867,10 @@
                     </tbody>
                 </table>
             </div>
+                                
+            <div style='margin-top:60px;'>
+                hi
+            </div>
         ";
 
         echo $my_activities;
