@@ -10,6 +10,11 @@ End Development - 17 December 2022</b>
 <img src="https://wakatime.com/badge/github/JehanKandy/GYM-Management-System.svg">
 
 <br>
+
+# How to use
+
+ - copy all Files to xampp/htdocs/
+
 # Download Link
 
 # Logins
