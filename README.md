@@ -18,6 +18,13 @@ End Development - 17 December 2022</b>
 
 ## For SQL file (gym_system.sql)
 
+1. Run mysql and Apache Servers
+2. open web browser
+3. address bar type- localhost/phpmyadmin
+4. Create Database named gym_system
+5. import gym_system.sql file
+
+
 # Download Link
 
 https://drive.google.com/drive/folders/1isnvaKH4R17RvIIzpMxwYoGm6iO5jM6G?usp=share_link
