@@ -1879,11 +1879,15 @@
                     $my_activities .=" <div class='progress'>
                         <div class='progress-bar bg-danger' role='progressbar' style='width: 20%;' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'>20%</div>
                     </div>";
+                }if($select_my_activities_row['40p'] == 1 && $select_my_activities_row['60p'] == 0){
+                    $my_activities .=" <div class='progress'>
+                        <div class='progress-bar bg-warning' role='progressbar' style='width: 40%;' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100'>40%</div>
+                    </div>";
                 }if($select_my_activities_row['40p'] == 1){
                     $my_activities .=" <div class='progress'>
                         <div class='progress-bar bg-warning' role='progressbar' style='width: 40%;' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100'>40%</div>
                     </div>";
-            }                     
+                }                        
 
             $my_activities .="
             </div>
