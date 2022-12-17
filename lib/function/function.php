@@ -1934,6 +1934,10 @@
     }
     function update_80p($u80p){
         $con = Connection();
+        $login_user = strval($_SESSION['LoginSession']);   
+
+        $update_user_plan = "UPDATE user_plan_tbl SET 80p = '$u80p' WHERE user_email = '$login_user'";
+        $update_user_plan = mysqli_query($con, $update_user_plan);
     }
     function update_100p($u100p){
         $con = Connection();
