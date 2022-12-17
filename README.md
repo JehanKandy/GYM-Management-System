@@ -1,6 +1,8 @@
 # GYM-Management-System
 GYM Management System
 
+End Development - 17 December 2022
+
 <br>
 
 # DEVELOPMENT HISTORY
