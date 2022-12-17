@@ -11,7 +11,8 @@
 
 <?php 
     if(isset($_POST['up20'])){
-        $result = 
+        $result = update_20p($_POST['u20p']);
+        echo $result;
     }
 
 ?>
