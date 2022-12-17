@@ -8,6 +8,11 @@ GYM Management System
 End Development - 17 December 2022</b>
 
 <br>
+
+# How to use
+
+ - copy all Files to xampp/htdocs/
+
 # Download Link
 
 # Logins
