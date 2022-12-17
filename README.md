@@ -288,3 +288,5 @@ GYM Management System
   
 2. UPDATE
   - lib/function/function.php 
+  - lib/routes/user.php
+  - lib/routes/view_my_plan.php
