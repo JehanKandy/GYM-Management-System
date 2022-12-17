@@ -1884,8 +1884,8 @@
                         <div class='progress-bar bg-warning' role='progressbar' style='width: 40%;' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100'>40%</div>
                     </div>";
                 }if($select_my_activities_row['60p'] == 1){
-                    $my_activities .=" <div class='info'>
-                        <div class='progress-bar bg-warning' role='progressbar' style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
+                    $my_activities .=" <div class='progress'>
+                        <div class='progress-bar bg-info' role='progressbar' style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                     </div>";
                 }                        
 
