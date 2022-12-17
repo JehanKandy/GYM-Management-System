@@ -15,6 +15,14 @@
             <a href="all_plans.php"><button class="btn btn-primary"><i class="fas fa-book-reader"></i>&nbsp;Plans</button></a>
         </span>
 
+            <?php 
+                if(isset($_POST['plan_complete'])){
+                    $result = plan_complete_user($_POST['complete_plan']);
+                    echo $result;
+                }
+            
+            ?>
+
         <br><hr><br>
         <?php plan_data();?>
         <br><hr><br>
