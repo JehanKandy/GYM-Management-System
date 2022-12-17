@@ -16,6 +16,8 @@ End Development - 17 December 2022</b>
  - copy all Files to xampp/htdocs/
  - and run mysql and Apache Servers
 
+## For SQL file (gym_system.sql)
+
 # Download Link
 
 https://drive.google.com/drive/folders/1isnvaKH4R17RvIIzpMxwYoGm6iO5jM6G?usp=share_link
